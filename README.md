@@ -21,6 +21,6 @@
 
 ### Big Data and NLP platform for marketing intelligence, sentiment analysis and distributed analytics of Real Estate Investment Funds (FIIs)
 
-Big Data • Apache Spark • PySpark • NLP • Distributed Systems • Streamlit • Docker • Data Engineering
+Big Data [•]() Apache Spark ['•]() PySpark [•]() NLP [•]() Distributed Systems [•]() Streamlit [•]() Docker [•]() Data Engineering
 
 </div>
