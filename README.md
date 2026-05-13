@@ -98,6 +98,8 @@ Big Data [•]() Apache Spark ['•]() PySpark [•]() NLP [•]() Distributed S
 <!-- ========= END SPONSOR BADGES ========= -->
 
 
+<!-- ========= START Ambient BIG DATA ========= -->
+
 [Hadoop Setting up a Single Node Cluste (Stand Alone)](https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html)
 
 [Setting Up a Hadoop Multi-Node Cluster](https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/ClusterSetup.html)
@@ -106,6 +108,7 @@ Big Data [•]() Apache Spark ['•]() PySpark [•]() NLP [•]() Distributed S
 
 [Installation Guide: Hadoop & HDFS and Open JDK - Java on Mac OS] ( )
 
+<!-- ========= END Ambient BIG DATA ========= -->
 
 
 
