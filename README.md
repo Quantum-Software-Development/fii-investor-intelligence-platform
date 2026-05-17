@@ -309,3 +309,28 @@ The main objective of this platform is to build a distributed financial marketin
 
 <br><br>
 
+## [ High-Level Architecture]()
+
+```text
+Web Scraping
+      ↓
+MinIO Data Lake
+      ↓
+PySpark Distributed Processing
+      ↓
+NLP + Sentiment Analysis
+      ↓
+Financial Marketing Analytics
+      ↓
+Analytics Artifacts
+      ↓
+FastAPI Backend
+      ↓
+Streamlit + Plotly Dashboard
+      ↓
+Groq AI Assistant (Llama 3.1 8B Instant)
+```
+
+
+<br><br>
+
