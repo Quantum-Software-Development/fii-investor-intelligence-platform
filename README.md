@@ -10,13 +10,17 @@
 <!-- ========= START REPO TITLE ========= -->
 <div align="center">
 
-# [Enterprise End-to-End Architecture for Intelligent FII Marketing Analytics with PySpark]()
+# [Marketing & Investor Behavior Intelligence System]()  [Brazilian Real Estate Investment Funds (FIIs)]()
 
-### Scalable Big Data, Distributed Computing, NLP & Market Intelligence Platform for Real Estate Investment Funds (FIIs)
+A data-driven intelligence platform designed to analyze investor behavior, financial discussions, and market sentiment across multiple digital sources, transforming unstructured content into actionable strategic insights for investment decision-making.
 
 <br>
 
-Big Data [•]() Distributed Systems [•]() PySpark • NLP [•]() Sentiment Analysis [•]() FastAPI [•]() Streamlit [•]() Plotly [•]() Docker [•]() MinIO [•]() Data Engineering
+###  [Scalable Big Data](, [Distributed Computing](, [NLP]( & [BM25]( Market Intelligence Platform for Brazilian FIIs
+
+<br>
+
+Big Data [•]() Distributed Systems [•]() PySpark [•]()  BM25 Ranking [•]() NLP [•]() Sentiment Analysis [•]() FastAPI [•]() Streamlit [•]() Plotly [•]() Docker [•]() MinIO [•]() Data Engineering
 
 </div>
 
@@ -103,20 +107,27 @@ Big Data [•]() Distributed Systems [•]() PySpark • NLP [•]() Sentiment A
 
 ###  [Project Context]()
 
-This project applies Big Data, Distributed Analytics, Natural Language Processing (NLP), and Market Intelligence techniques to analyze the Brazilian Real Estate Investment Fund (FII) ecosystem.
+This platform is not a simple analytics dashboard.
+
+It is an AI-powered Investor Intelligence System capable of:
+
+[](-) analyzing investor sentiment across financial communities
+[](-) identifying high-value discussion topics in FIIs
+[](-) ranking content relevance using BM25 + NLP hybrid retrieval
+[](-) detecting market behavior patterns
+[](-) supporting indirect marketing strategy decisions
+[](-) mapping investor engagement across digital ecosystems
 
 <br>
 
-[The platform collects and processes large-scale financial content from specialized websites and social networks, generating strategic insights about:]()
+[The system processes structured and unstructured data from financial portals and Reddit to:]()
 
-- investor sentiment
-- market perception
-- dividend discussions
-- passive income trends
-- financial engagement
-- digital investment behavior
-- financial content performance
-- investment communication patterns
+
+[](-)identify where investors concentrate discussions
+[](-) detect emerging financial narratives
+[](-) measure engagement strength per platform
+[](-) rank information relevance using BM25
+[](-) generate strategic insights for asset managers and analysts
 
 <br>
 
