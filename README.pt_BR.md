@@ -10,24 +10,22 @@
 <!-- ========= START REPO TITLE ========= -->
 <div align="center">
 
-# [Plataforma de Inteligência para Investidores - FIIs Brasil ]() 🇧🇷
-### Fundos de Investimento Imobiliário (FIIs) — Inteligência de Mercado & Análise Comportamental
+# [Investor Intelligence Platform — FIIs Brasil ]() 🇧🇷
+### Inteligência de Mercado & Análise Comportamental para Fundos de Investimento Imobiliário (FIIs)
 
 <br>
 
-Uma plataforma de inteligência orientada por dados, desenvolvida para analisar o comportamento dos investidores, discussões financeiras e o sentimento do mercado em múltiplas fontes digitais, transformando conteúdo não estruturado em insights estratégicos acionáveis para apoiar a tomada de decisão em investimentos.
+Uma solução de inteligência orientada por dados para analisar o comportamento dos investidores, discussões financeiras e o sentimento do mercado a partir de múltiplas fontes digitais. O projeto transforma grandes volumes de dados não estruturados em insights estratégicos acionáveis, apoiando decisões de investimento mais informadas, orientadas por evidências e guiadas por dados.
 
 <br>
 
-### Plataforma Escalável de Inteligência de Mercado com [Big Data](), [Computação Distribuída](), [PLN (NLP)]() & [BM25]() para FIIs Brasileiros
+### Arquitetura escalável de inteligência de mercado baseada em [Big Data](), [Computação Distribuída](), [PLN (NLP)]() e [BM25]() aplicada ao ecossistema de FIIs no Brasil
 
 <br><br>
 
-Big Data [•]() Sistemas Distribuídos [•]() PySpark [•]() Ranqueamento BM25 [•]() PLN (NLP) [•]() Análise de Sentimento [•]() FastAPI [•]() Streamlit [•]() Plotly [•]() Docker [•]() MinIO [•]() Engenharia de Dados
+Big Data [•]() Sistemas Distribuídos [•]() PySpark [•]() BM25 Ranking [•]() PLN (NLP) [•]() Análise de Sentimento [•]() FastAPI [•]() Streamlit [•]() Plotly [•]() Docker [•]() MinIO [•]() Engenharia de Dados
 
 </div>
-
-
 
 <br><br>
 
