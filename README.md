@@ -216,18 +216,11 @@ It is an AI-powered Investor Intelligence System capable of:
 <!-- ========= START NOTE ========= -->
 > [!NOTE]
 >
-> ⚠️ This project was designed for academic, portfolio, and applied research purposes.
+> A scalable platform for financial market intelligence, combining **[Big Data](), [PySpark](), [MapReduce](), [Word Count](), [NLP](), [TF-IDF](), [BM25](), and AI-assisted analytics** to transform large-scale unstructured financial content into actionable insights.
 >
-> The platform demonstrates real-world concepts involving:
+> The platform leverages **[PySpark]()** for distributed processing and scalable data pipelines, supporting the analysis of financial discussions, investor sentiment, and market signals.
 >
-> - Big Data engineering
-> - distributed processing
-> - financial NLP
-> - market intelligence
-> - AI-assisted analytics
-> - scalable data architectures
->
-> All implementations prioritize educational realism, maintainability, and professional engineering practices.
+> Built with a focus on maintainability, scalability, and production-oriented engineering practices.
 
 <br><br>
 <!-- ========= END NOTE ========= -->
