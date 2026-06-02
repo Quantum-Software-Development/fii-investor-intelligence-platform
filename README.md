@@ -8,10 +8,9 @@
 
 
 <!-- ========= START REPO TITLE ========= -->
-<div align="center">
-
-# [Investor Intelligence Platform - FIIs Brasil ]()  🇧🇷
-### Real Estate Investment Funds (FIIs) - Market Intelligence & Behavioral Analytics
+# <p align="center">  [Investor Intelligence Platform - FIIs Brasil ]()  🇧🇷
+### <p align="center">  Real Estate Investment Funds (FIIs) - Market Intelligence & Behavioral 
+##### <p align="center"> Big Data [•]() Distributed Systems [•]() PySpark [•]() Map‑Reduce Word Count [•]() BM25 Ranking [•]() NLP [•]() Sentiment Analysis [•]() FastAPI [•]() Streamlit [•]() Plotly [•]() Docker [•]() MinIO [•]() Data Engineering
 
 <br>
 
@@ -25,9 +24,7 @@ A data-driven intelligence platform designed to analyze investor behavior, finan
 <br><br>
 
 
-Big Data [•]() Distributed Systems [•]() PySpark [•]() Map‑Reduce Word Count [•]() BM25 Ranking [•]() NLP [•]() Sentiment Analysis [•]() FastAPI [•]() Streamlit [•]() Plotly [•]() Docker [•]() MinIO [•]() Data Engineering
 
-</div>
 
 
 <br><br>
