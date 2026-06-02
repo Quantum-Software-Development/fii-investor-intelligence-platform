@@ -8,17 +8,27 @@
 
 
 <!-- ========= START REPO TITLE ========= -->
-# <p align="center">  [Investor Intelligence Platform - FIIs Brasil ]()  🇧🇷
-### <p align="center">  Real Estate Investment Funds (FIIs) - Market Intelligence & Behavioral 
-##### <p align="center"> Big Data [•]() Distributed Systems [•]() PySpark [•]() Map‑Reduce Word Count [•]() BM25 Ranking [•]() NLP [•]() Sentiment Analysis [•]() FastAPI [•]() Streamlit [•]() Plotly [•]() Docker [•]() MinIO [•]() Data Engineering
+
+# <p align="center"> [Investor Intelligence Platform — FIIs Brasil]() 🇧🇷
+
+### <p align="center"> Real Estate Investment Funds (FIIs) — Market Intelligence & Behavioral Analytics
+
+##### <p align="center">
+[Big Data]() [•]() [PySpark]() [•]() [MapReduce Word Count]() [•]() [NLP]() [•]() [TF-IDF]() [•]() [BM25 Ranking]() [•]() [Web Scraping]() [•]() [FastAPI]() [•]() [Streamlit]() [•]() [Docker]() [•]() [AI Governance]() [•]() [LGPD Compliance — Law No. 13.709/2018]() [•]() [EU AI Act Alignment]()
+  
+<br>
+
+A data-driven intelligence platform designed to analyze investor behavior, financial discussions, and market sentiment across multiple digital sources, transforming unstructured financial content into actionable intelligence for investment decision-making in Brazilian FIIs.
+
+Built with a focus on scalable analytics, intelligent information retrieval, human-centered AI, governance, and responsible engineering practices.
 
 <br>
 
-A data-driven intelligence platform designed to analyze investor behavior, financial discussions, and market sentiment across multiple digital sources, transforming unstructured content into actionable strategic insights for investment decision-making.
+### <p align="center"> Scalable [Big Data](), [PySpark](), [NLP](), [BM25]() & [AI Governance]() Platform for Brazilian FIIs
 
-<br>
 
-###  Scalable [Big Data](), [Distributed Computing](), [NLP]() & [BM25]() Market Intelligence Platform for Brazilian FIIs
+
+
 
 <br><br>
 
