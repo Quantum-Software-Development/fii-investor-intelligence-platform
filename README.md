@@ -25,7 +25,7 @@ A data-driven intelligence platform designed to analyze investor behavior, finan
 <br><br>
 
 
-Big Data [•]() Distributed Systems [•]() PySpark [•]()  BM25 Ranking [•]() NLP [•]() Sentiment Analysis [•]() FastAPI [•]() Streamlit [•]() Plotly [•]() Docker [•]() MinIO [•]() Data Engineering
+Big Data [•]() Distributed Systems [•]() PySpark [•]() Map‑Reduce Word Count [•]() BM25 Ranking [•]() NLP [•]() Sentiment Analysis [•]() FastAPI [•]() Streamlit [•]() Plotly [•]() Docker [•]() MinIO [•]() Data Engineering
 
 </div>
 
