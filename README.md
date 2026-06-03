@@ -24,6 +24,8 @@ More than a conventional dashboard, the project operates as an end-to-end analyt
 
 Its architecture is modular and extensible by design, allowing new editorial sources, social channels, ingestion connectors, scraping adapters, NLP components, ranking methods, and visualization layers to be incorporated with limited impact on the core workflow. This separation between collection, storage, processing, enrichment, and delivery also makes the system easier to maintain, scale, and expand as the research evolves.
 
+This platform is designed for asset managers, financial institutions, research teams, and marketing squads that need to transform large-scale investor conversations about Brazilian Real Estate Investment Funds (FIIs) into structured, actionable market intelligence for decision-making. It is especially valuable for organizations that need to monitor investor sentiment, identify emerging narratives, evaluate engagement patterns across digital channels, and support communication, product, and strategic analysis with data-driven evidence.
+
 <br><br>
 
 ## [What this platform actually delivers]()
