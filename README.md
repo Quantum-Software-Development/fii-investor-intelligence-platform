@@ -21,13 +21,52 @@
 A data-driven intelligence platform for Brazilian Real Estate Investment Funds (FIIs) that transforms large-scale financial content into actionable market intelligence through distributed data engineering, Spark, PySpark, MapReduce-inspired word count analysis, NLP, relevance ranking, sentiment analysis, and responsible AI practices.
 
 Rather than acting as a simple dashboard, the platform is structured as an end-to-end analytical system that collects data from editorial financial portals and behavioral social environments, organizes it through a Bronze/Silver/Gold medallion pipeline, applies interpretable analytical methods, and exposes the results through APIs, dashboards, and AI-assisted exploration layers.
+
+The platform is built on a modular and extensible architecture, allowing new editorial sources, social platforms, ingestion connectors, scraping adapters, NLP components, ranking strategies, and visualization layers to be added with limited impact on the existing pipeline. Its separation between data collection, lakehouse organization, distributed processing, analytical enrichment, and delivery interfaces was intentionally designed to support incremental expansion, maintainability, and future research evolution.
+
+<br><br>
+
+## [What this platform actually delivers]()
+
+This repository is not just an academic Big Data exercise. It implements an **Investor Intelligence Platform for Brazilian FIIs** whose core product is:
+
 <br>
 
+> a consolidated market-intelligence layer that turns fragmented public conversations about FIIs into structured, searchable, and explainable insights for analysts, fund managers, and communication teams.
 
+<br>
 
+Concretely, the platform offers:
 
+- [**Source intelligence for FIIs**]()  
+  It shows **where** FIIs are being discussed (which portals and communities), **how often**, and **with what narrative intensity**, so teams can prioritize channels and understand their visibility landscape.
 
+- [**Behavioral and sentiment analytics**]()  
+  It measures **sentiment**, **negative context**, and **recurrent topics** across editorial and social sources, helping to detect early signals of enthusiasm, concern, or reputation risk around specific funds or themes.
 
+- [**Relevance-ranked information retrieval**]()  
+  It uses **Spark, PySpark, MapReduce-inspired word count, TF‑IDF, and BM25** to rank FII-related content by relevance, making it easier to find the most important articles, discussions, and narratives instead of manually scanning dozens of sites.
+
+- [**Executive dashboards and AI-assisted exploration**]()  
+  It exposes the processed intelligence through **Streamlit dashboards**, **FastAPI services**, and an **AI assistant layer** that allows exploratory questions over a governed, explainable context instead of a black-box model.
+
+<br><br>
+
+## [Why this is important]()
+
+In practice, FII managers, analysts, and financial communication teams struggle with:
+
+- information scattered across many portals and communities,
+- high noise-to-signal ratio in market discussions,
+- difficulty tracking how sentiment and narratives evolve over time,
+- lack of transparent, explainable tooling aligned with **AI Governance**, **LGPD**, and **EU AI Act** principles.
+
+This platform addresses that gap by:
+
+- organizing **21 monitored sources** into a transparent taxonomy (editorial RSS, editorial scraping, behavioral social),  
+- processing them through a **Bronze/Silver/Gold Spark/PySpark pipeline**,  
+- and delivering **reproducible, interpretable analytics** that can be audited, explained, and reused in academic, corporate, or research contexts.
+`
 
 <br><br>
 
