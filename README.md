@@ -217,19 +217,19 @@ Distributed Data Processing (PySpark)
 
 <br>
 
-### Architecture Overview
+### [Architecture Overview]()
 
-| Layer | Technology | Purpose |
+| [Layer]() | [Technology]() | [Purpose]() |
 |---------|---------|---------|
-| Operating System | Ubuntu, macOS, Windows | Environment preparation and software dependencies |
-| Distributed Storage | HDFS | Distributed file storage |
-| Resource Management | YARN | Cluster resource allocation and scheduling |
-| Distributed Processing | Spark | Large-scale data processing and analytics |
-| Containerization | Docker | Infrastructure portability and reproducibility |
-| Data Lake | MinIO | S3-compatible object storage |
-| Analytics & ETL | PySpark | Distributed data engineering workflows |
+| [Operating System]() | Ubuntu, macOS, Windows | Environment preparation and software dependencies |
+| [Distributed Storage]() | HDFS | Distributed file storage |
+| [Resource Management]() | YARN | Cluster resource allocation and scheduling |
+| [Distributed Processing]() | Spark | Large-scale data processing and analytics |
+| [Containerization]() | Docker | Infrastructure portability and reproducibility |
+| [Data Lake]() | MinIO | S3-compatible object storage |
+| [Analytics & ETL]() | PySpark | Distributed data engineering workflows |
 
-
+<br><br>
 <!-- ========= END Ambient BIG DATA INSTALL ========= -->
 
 
