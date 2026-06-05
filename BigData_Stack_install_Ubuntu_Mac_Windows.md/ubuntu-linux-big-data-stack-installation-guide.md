@@ -1,6 +1,6 @@
 # Apache Hadoop & Spark Installation Guide on Ubuntu Linux
 
-This guide explains how to install OpenJDK, Hadoop, HDFS, YARN, Spark, and optional `mrjob` support on Ubuntu in a single-node environment.
+This guide explains how to install OpenJDK, Hadoop, HDFS, YARN, Spark, and optional `mrjob` support on Ubuntu Linux in a single-node environment.
 
 ## Prerequisites
 
