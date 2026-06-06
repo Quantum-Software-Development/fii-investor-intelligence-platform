@@ -1,0 +1,22 @@
+# Investor Intelligence Platform - FIIs Brasil
+.env
+.streamlit/secrets.toml
+
+
+# Medallion layers — local only, NOT committed
+data/bronze/
+data/silver/
+data/gold/
+
+# data/external/ IS committed (frozen reproducible dataset)
+# No global parquet files rule — it would silently block data/external/
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+spark-warehouse/
+metastore_db/
+derby.log
+logs/*.log
+.DS_Store
+Thumbs.db
