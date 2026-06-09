@@ -1,3 +1,4 @@
+
 # ==========================================================
 # FII Intelligence Platform
 # Plataforma de Inteligência de Investidores — FIIs Brasil
