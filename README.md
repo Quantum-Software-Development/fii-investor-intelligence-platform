@@ -42,33 +42,15 @@
 
 
 <!-- ========= START Institutional INFO ========= -->
+## 🎓 Academic 
+
+<br>
+
 **Institution:** Pontifical Catholic University of São Paulo (PUC-SP) — FACEI  
 [**Bachelor’s Program:**]() Humanistic AI & Data Science • 5th Semester • 2026  
 [**Course:**]() AI Security, Cybersecurity & Social Engineering  
-**Faculty:** [✨ Eduardo Savino Gomes]() and [✨ Carlos Eduardo Paes]() <br>  
-**Project Authors:** [Fabiana ⚡️ Campanari](https://linktr.ee/fabianacampanari) and [Pedro Vyctor Almeida]()
-
-
-
-## 🎓 Academic Affiliation
-
-**Institution:**  
-Pontifical Catholic University of São Paulo (PUC-SP) — School of Engineering, Administration, and Computer Science (FACEI)
-
-**Program:**  
-Bachelor’s Degree in Humanistic AI & Data Science  
-*5th Semester • 2026*
-
-**Course:**  
-AI Security, Cybersecurity & Social Engineering
-
-**Faculty Members:**  
-✨ Eduardo Savino Gomes  
-✨ Carlos Eduardo Paes
-
-**Project Authors:**  
-⚡️ [Fabiana Campanari](https://linktr.ee/fabianacampanari)  
-Pedro Vyctor Almeida
+**Course Instructors:** [✨ Eduardo Savino Gomes]() and [✨ Carlos Eduardo Paes](https://www.linkedin.com/in/carlos-eduardo-de-barros-paes-ph-d-7b137a4/)  
+**Project Authors:** [Fabiana ⚡️ Campanari](https://linktr.ee/fabianacampanari) and [Pedro Vyctor ⭐️ Almeida]()
 
 <br><br>
 
