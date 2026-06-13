@@ -12,21 +12,17 @@
 
 ### <p align="center"> Real Estate Investment Funds (FIIs) - Market Intelligence & Behavioral Analytics
 
-#### <p align="center"> [CRISP-DM]() • [Data Lakehouse]() • [NLP]() • [Responsible AI]() • [Regulatory Alignment]()
+<br>
+
+$$\large {\textbf{\color{green} CRISP-D} \space \textbf{\color{white} •} \space \textbf{\color{yellow}  Data Lakehouse} \space \textbf{\color{white} •} \space \textbf{\color{green} NLP} \space \textbf{\color{white} •} \space \textbf{\color{yellow} Responsible AI} \space \textbf{\color{white} •} \space \textbf{\color{green} Regulatory Alignment}}$$
 
 <br>
 
-##### <p align="center"> Big Data [•]() PySpark [•]() MapReduce Word Count [•]() NLP [•]() TF-IDF [•]() BM25 Ranking [•]() Web Scraping [•]() TOFU Strategy [•]() CRISP-DM [•]() FastAPI [•]() Streamlit [•]() Docker [•]() AI Governance [•]() LGPD Compliance [•]() Brazilian General Data Protection Law — Law No. 13.709/2018 [•]() EU AI Act Alignment
+##### <p align="center"> [Big Data]() • [PySpark]() • [MapReduce Word Count]() • [NLP]() • [TF-IDF]() • [BM25 Ranking]() • [Web Scraping]() • [TOFU Strategy]() • [CRISP-DM]() • [FastAPI]() • [Streamlit]() • [Docker]() • [AI Governance]() • [LGPD Compliance]() • [Brazilian General Data Protection Law No. 13.709/2018]() • [EU AI Act Alignment]()
 
 <br>
 
 #### <p align="center"> ***An institutional-grade intelligence platform for monitoring, structuring, ranking, and interpreting Brazilian Real Estate Investment Fund (FII) signals from financial media, research portals, and investor communities.***
-
-
-
-$$\Huge {\textbf{\color{green}  An institutional-grade intelligence platform for monitoring, structuring, ranking and interpreting Brazilian Real Estate Investment Fund (FII) signals from financial media, research portals, and investor communities.}}$$
-
-
 
   
 <br><br>
