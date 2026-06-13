@@ -13,7 +13,9 @@
 
 ### <p align="center"> Real Estate Investment Funds (FIIs) — Market Intelligence & Behavioral Analytics
 
-##### <p align="center">
+<br>
+
+###### <p align="center">
 [Big Data]() • [PySpark]() • [MapReduce Word Count]() • [NLP]()• [TF-IDF]() • [BM25 Ranking]() • [Web Scraping]() • [TOFU Strategy]() • [CRISP-MD]() • [FastAPI]() • [Streamlit]() • [Docker]() • [AI Governance]() • [LGPD Compliance]() • [Law No. 13.709/2018]() • [EU AI Act Alignment]()
 
 
