@@ -8,321 +8,126 @@
 <!-- ========= END LANGUAGE BUTTON ========= -->
 
 <!-- ========= START REPO TITLE ========= -->
-<div align="center">
 
-# [Investor Intelligence Platform — FIIs Brasil ]() 🇧🇷
-### Inteligência de Mercado & Análise Comportamental para Fundos de Investimento Imobiliário (FIIs)
 
-<br>
 
-Uma solução de inteligência orientada por dados para analisar o comportamento dos investidores, discussões financeiras e o sentimento do mercado a partir de múltiplas fontes digitais. O projeto transforma grandes volumes de dados não estruturados em insights estratégicos acionáveis, apoiando decisões de investimento mais informadas, orientadas por evidências e guiadas por dados.
 
-<br>
 
-### Arquitetura escalável de inteligência de mercado baseada em [Big Data](), [Computação Distribuída](), [PLN (NLP)]() e [BM25]() aplicada ao ecossistema de FIIs no Brasil
+
+
+
+
+
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+
+
+## [Arquitetura e Pipeline]()
+
+### ***Visão Macro+++
 
 <br><br>
 
-Big Data [•]() Distributed Systems [•]() PySpark [•]() Map‑Reduce Word Count [•]() BM25 Ranking [•]() NLP [•]() Sentiment Analysis [•]() FastAPI [•]() Streamlit [•]() Plotly [•]() Docker [•]() MinIO [•]() Data Engineering
-
-</div>
-
-<br><br>
-
-#
-
-<br><br>
-
-<!-- ========= END REPO TITLE ========= -->
-
-<!-- ========= START Dashboard Streamlit ========= -->
-
-<p align="center">
-  <a href="" target="_blank" rel="noopener noreferrer">
-    <img 
-      src="https://img.shields.io/badge/Dashboard_Inteligência_Marketing_FIIs-Streamlit-0f172a?style=for-the-badge&logo=streamlit&logoColor=white" 
-      alt="Dashboard Inteligência de Marketing FIIs"
-      style="height: 32px; width: auto;"
-    />
-  </a>
-</p>
-<!-- ========= END Dashboard Streamlit ========= -->
-
-<!-- ========= START REACT APP ========= -->
-
-<p align="center">
-
-  <a href="" target="_blank" rel="noopener noreferrer">
-    <img 
-      src="https://img.shields.io/badge/React-Analytics_Interativo_FIIs-14532d?style=for-the-badge&logo=react&logoColor=white" 
-      alt="React Analytics Interativo FIIs"
-      style="height: 30px; width: auto;"
-    />
-  </a>
-
-<!-- ========= END REACT APP ========= -->
-
-<!-- ========= START PPTX ========= -->
-
-  <a href="" target="_blank" rel="noopener noreferrer">
-    <img 
-      src="https://img.shields.io/badge/Apresentação_Estratégica_FIIs-PPTX-0f766e?style=for-the-badge&logo=microsoftpowerpoint&logoColor=white" 
-      alt="Apresentação Estratégica FIIs PPTX"
-      style="height: 30px; width: auto;"
-    />
-  </a>
-
-</p>
-
-<!-- ========= END PPTX ========= -->
-
-<!-- ========= START DATA ANALYSING REPORT ========= -->
-
-<p align="center">
-  <a href="">
-    <img 
-      src="https://img.shields.io/badge/Análise_Mercado_FIIs-Relatório_Executivo-134e4a?style=for-the-badge&logo=googleanalytics&logoColor=white&labelColor=022c22" 
-      alt="Relatório Executivo Mercado FIIs"
-    />
-  </a>
-</p>
-
-<br><br>
-
-#
-
-<br><br>
-
-<!-- ========= END DATA ANALYSING REPORT ========= -->
-
-<!-- ===================== END BADGE GROUP 1 ===================== -->
-
-<!-- ========= START Institutional INFO ========= -->
-
-[**Instituição:**]() Pontifícia Universidade Católica de São Paulo (PUC-SP – IA Humanística e Ciência de Dados • 5º Semestre • 2026)
-[**Escola:**]() FACEI – Faculdade de Estudos Interdisciplinares
-[**Curso:**]() Segurança em IA, Cibersegurança e Engenharia Social
-**Professor:** [✨ Eduardo Savino Gomes]() e
-**Professor:** [✨ Carlos Eduardo Paes]()
-**Autores:** [Fabiana ⚡️ Campanari](https://linktr.ee/fabianacampanari) e [Pedro Vyctor Almeida]()  <br>
-[**Contexto:**]() Este projeto explora Fundos de Investimento Imobiliário (FIIs) por meio de Big Data, Processamento de Linguagem Natural (NLP) e inteligência de mercado, com foco em análise de sentimentos e insights baseados em dados para o setor imobiliário.
-
-<br><br>
-
-<!-- ========= START SPONSOR BADGES ========= -->
-
-### <p align="center"> [![Patrocinar Quantum Software Development](https://img.shields.io/badge/Patrocinar-Quantum%20Software%20Development-brightgreen?logo=GitHub)](https://github.com/sponsors/Quantum-Software-Development)
-
-<br><br><br>
-
-<!-- ========= END SPONSOR BADGES ========= -->
-
-### [Contexto do Projeto]()
-
-Este projeto aplica Big Data, Análise Distribuída, Processamento de Linguagem Natural (NLP) e Inteligência de Mercado para analisar o ecossistema brasileiro de Fundos Imobiliários (FIIs).
-
-<br>
-
-[A plataforma coleta e processa grandes volumes de conteúdo financeiro de sites especializados e redes sociais, gerando insights estratégicos sobre:]()
-
-* sentimento dos investidores
-* percepção de mercado
-* discussões sobre dividendos
-* tendências de renda passiva
-* engajamento financeiro
-* comportamento de investimento digital
-* desempenho de conteúdo financeiro
-* padrões de comunicação de investimento
-
-<br>
-
-[A solução combina:]()
-
-* pipelines de dados distribuídos
-* processamento com PySpark
-* arquitetura de Data Lake com MinIO
-* análises de NLP
-* análise de sentimentos
-* dashboards interativos
-* análises assistidas por IA
-
-[com o objetivo de construir um ecossistema escalável de inteligência de marketing financeiro.]()
-
-<br><br>
-
-<!-- ========= end Institutional INFO ========= -->
-
-## ⚡️ [Ecossistema Tecnológico]()
-
-<br>
-
-<!-- ========= START BADGES GROUP ========= -->
-
-<div align="center">
-
-<!-- ===== BIG DATA ===== -->
-
-<img src="https://img.shields.io/badge/PySpark-Análise_Distribuída-0f172a?style=for-the-badge&logo=apachespark&logoColor=white" />
-
-<img src="https://img.shields.io/badge/Hadoop-Infraestrutura_Big_Data-111827?style=for-the-badge&logo=apachehadoop&logoColor=white" />
-
-<img src="https://img.shields.io/badge/MinIO-Armazenamento_Data_Lake-172554?style=for-the-badge&logo=minio&logoColor=white" />
-
-<img src="https://img.shields.io/badge/Sistemas_Distribuídos-Processamento_Escalável-082f49?style=for-the-badge&logo=databricks&logoColor=white" />
-
-<br><br>
-
-<!-- ===== ENGENHARIA DE DADOS ===== -->
-
-<img src="https://img.shields.io/badge/Engenharia_de_Dados-Pipelines_ETL-164e63?style=for-the-badge&logo=apacheairflow&logoColor=white" />
-
-<img src="https://img.shields.io/badge/Data_Lake-Bronze_Silver_Gold-155e75?style=for-the-badge&logo=databricks&logoColor=white" />
-
-<img src="https://img.shields.io/badge/Parquet-Armazenamento_Distribuído-0f766e?style=for-the-badge&logo=apacheparquet&logoColor=white" />
-
-<img src="https://img.shields.io/badge/Web_Scraping-Coleta_de_Dados-115e59?style=for-the-badge&logo=selenium&logoColor=white" />
-
-<br><br>
-
-<!-- ===== NLP ===== -->
-
-<img src="https://img.shields.io/badge/NLP-Processamento_de_Linguagem_Natural-134e4a?style=for-the-badge&logo=spacy&logoColor=white" />
-
-<img src="https://img.shields.io/badge/Análise_de_Sentimentos-Insights_Financeiros-14532d?style=for-the-badge&logo=tensorflow&logoColor=white" />
-
-<img src="https://img.shields.io/badge/Inteligência_de_Mercado-Comportamento_Investidor-166534?style=for-the-badge&logo=googleanalytics&logoColor=white" />
-
-<img src="https://img.shields.io/badge/Análise_de_Tendências-Conteúdo_Financeiro-0f766e?style=for-the-badge&logo=scikitlearn&logoColor=white" />
-
-<br><br>
-
-<!-- ===== BACKEND ===== -->
-
-<img src="https://img.shields.io/badge/FastAPI-API_REST-082f49?style=for-the-badge&logo=fastapi&logoColor=white" />
-
-<img src="https://img.shields.io/badge/Python-Engenharia_Backend-0f172a?style=for-the-badge&logo=python&logoColor=white" />
-
-<img src="https://img.shields.io/badge/Groq-Inferência_de_IA-164e63?style=for-the-badge&logo=groq&logoColor=white" />
-
-<img src="https://img.shields.io/badge/Llama_3.1-Assistente_de_IA-0f766e?style=for-the-badge&logo=meta&logoColor=white" />
-
-<br><br>
-
-<!-- ===== DASHBOARD ===== -->
-
-<img src="https://img.shields.io/badge/Streamlit-Dashboard_Analítico-0f172a?style=for-the-badge&logo=streamlit&logoColor=white" />
-
-<img src="https://img.shields.io/badge/Plotly-Visualizações_Interativas-082f49?style=for-the-badge&logo=plotly&logoColor=white" />
-
-<img src="https://img.shields.io/badge/Analytics_Executivo-Monitoramento_KPI-164e63?style=for-the-badge&logo=googleanalytics&logoColor=white" />
-
-<img src="https://img.shields.io/badge/Dashboard_Financeiro-Insights_de_Mercado-155e75?style=for-the-badge&logo=powerbi&logoColor=white" />
-
-<br><br>
-
-<!-- ===== DEPLOYMENT ===== -->
-
-<img src="https://img.shields.io/badge/Docker-Containerização-0f172a?style=for-the-badge&logo=docker&logoColor=white" />
-
-<img src="https://img.shields.io/badge/Render-Deploy_Backend-082f49?style=for-the-badge&logo=render&logoColor=white" />
-
-<img src="https://img.shields.io/badge/Streamlit_Cloud-Deploy_Dashboard-164e63?style=for-the-badge&logo=streamlit&logoColor=white" />
-
-<img src="https://img.shields.io/badge/Cloud_Native-Arquitetura-155e75?style=for-the-badge&logo=googlecloud&logoColor=white" />
-
-</div>
-
-<br><br>
-
-#
-
-<br><br>
-
-<!-- ========= END BADGES GROUP 2 ========= -->
-
-<!-- ========= START NOTE ========= -->
-> [!NOTE]
->
-> ⚠️ Este projeto foi projetado para fins acadêmicos, portfólio e pesquisa aplicada.
->
-> A plataforma demonstra conceitos do mundo real envolvendo:
->
-> * engenharia de Big Data
->
-> * processamento distribuído
->
-> * NLP financeiro
->
-> * inteligência de mercado
->
-> * análises assistidas por IA
->
-> * arquiteturas de dados escaláveis
->
-> Todas as implementações priorizam realismo educacional, manutenibilidade e práticas profissionais de engenharia.
-
-<br><br>
-<!-- ========= END NOTE ========= -->
-
-
-<!-- ========= START Ambient BIG DATA ========= -->
-## ⚙️ [Configuração do Ambiente Big Data]()
-
-### Documentação Hadoop
-
-* [Configuração de Cluster Hadoop Single Node](https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html)
-
-* [Configuração de Cluster Hadoop Multi-Node](https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/ClusterSetup.html)
-
-<br>
-
-### [Guias de Instalação de Ambiente]()
-
-* Hadoop + HDFS + OpenJDK no Ubuntu
-* Hadoop + HDFS + OpenJDK no macOS
-* Configuração de Data Lake MinIO Local
-* Ambiente Distribuído PySpark
-* Infraestrutura Acadêmica com Docker
-<!-- ========= END Ambient BIG DATA ========= -->
-
-<br><br>
-
-## [Objetivo Estratégico]()
-
-O principal objetivo desta plataforma é construir um ecossistema de inteligência de marketing financeiro distribuído capaz de transformar conteúdo de investimento não estruturado em insights estratégicos acionáveis.
-
-<br>
-
-[A plataforma analisa:]()
-
-* narrativas de mercado
-* sentimento dos investidores
-* engajamento financeiro
-* discussões sobre dividendos
-* tendências de renda passiva
-* comportamento de investimento
-* desempenho de comunicação de FIIs
-* comunidades financeiras digitais
-
-[usando:]()
-
-* análise distribuída
-* pipelines de NLP
-* análise de sentimentos
-* engenharia de dados escalável
-* exploração assistida por IA
-
-<br>
-
-[O ecossistema final permite:]()
-
-* análises executivas
-* visualização estratégica
-* insights com IA
-* monitoramento de comunicação financeira
-* fluxos de pesquisa escaláveis
-* experimentação com sistemas distribuídos em nível de portfólio
+```mermaid
+flowchart LR
+
+    classDef source fill:#0f172a,stroke:#22d3ee,color:#ffffff,stroke-width:2px;
+    classDef bronze fill:#1e293b,stroke:#22d3ee,color:#ffffff,stroke-width:2px;
+    classDef silver fill:#334155,stroke:#22d3ee,color:#ffffff,stroke-width:2px;
+    classDef gold fill:#475569,stroke:#22d3ee,color:#ffffff,stroke-width:2px;
+    classDef serving fill:#0f172a,stroke:#06b6d4,color:#ffffff,stroke-width:3px;
+
+    A["📡 21 Fontes Monitoradas<br/>6 RSS + 4 RSS Supl.<br/>10 Portais + Reddit"]
+
+    subgraph Bronze["🥉 Bronze Layer"]
+        B["Raw External Data<br/>Schema 17 campos<br/>SHA-256 article_id<br/>Parquet Snappy"]
+    end
+
+    subgraph Silver["🥈 Silver Layer"]
+        C["Data Cleaning<br/>Quality Gates"]
+        D["NB03<br/>MapReduce"]
+        E["NB04<br/>TF-IDF + BM25"]
+        F["NB05<br/>Sentiment Analysis"]
+    end
+
+    subgraph Gold["🥇 Gold Layer"]
+        G["MI Signals<br/>Top Articles<br/>Marketing Funnel"]
+    end
+
+    subgraph Dashboard["📊 Dashboard Datasets"]
+        H["Analytics Views<br/>KPIs & Insights"]
+    end
+
+    subgraph Serving["🚀 Serving Layer"]
+        I["FastAPI"]
+        J["Streamlit"]
+        K["Groq Chatbot<br/>Llama 3.1"]
+    end
+
+    A --> B
+    B --> C
+    C --> D
+    C --> E
+    C --> F
+
+    D --> G
+    E --> G
+    F --> G
+
+    G --> H
+
+    H --> I
+    H --> J
+
+    I --> K
+    J --> K
+
+    class A source
+    class B bronze
+    class C,D,E,F silver
+    class G gold
+    class H,I,J,K serving
+
+    linkStyle default stroke:#22d3ee,stroke-width:2px
+```
 
 <br><br>
 
 
+## [Official Data Collection — 21 Monitored Sources]()
+
+<br><br>
+
+
+| #  | Portal/Fonte                                   | Tipo                    | Método principal                    | Fallback     | URL base / endpoint de referência        |
+| -- | ---------------------------------------------- | ----------------------- | ----------------------------------- | ------------ | ---------------------------------------- |
+| 1  | InfoMoney                                      | Editorial               | RSS primário                        | —            | infomoney.com.br/feed/                   |
+| 2  | Empiricus                                      | Editorial               | RSS primário                        | Scraping     | empiricus.com.br/feed/                   |
+| 3  | Money Times                                    | Editorial               | RSS primário                        | —            | moneytimes.com.br/feed/                  |
+| 4  | Seu Dinheiro                                   | Editorial               | RSS primário                        | —            | seudinheiro.com/feed/                    |
+| 5  | Exame Invest                                   | Editorial               | RSS primário                        | —            | exame.com/feed/                          |
+| 6  | CNN Brasil Business                            | Editorial               | RSS primário                        | —            | cnnbrasil.com.br/feed/                   |
+| 7  | Suno Research                                  | Editorial               | RSS suplementar                     | —            | sunoresearch.com.br/feed/                |
+| 8  | E-Investidor Estadão                           | Editorial               | RSS suplementar                     | —            | einvestidor.estadao.com.br/feed          |
+| 9  | NeoFeed                                        | Editorial               | RSS suplementar                     | —            | neofeed.com.br/feed/                     |
+| 10 | Toro Investimentos                             | Editorial               | RSS suplementar                     | Scraping     | blog.toroinvestimentos.com.br/feed/      |
+| 11 | Funds Explorer                                 | Portal                  | Scraping                            | —            | fundsexplorer.com.br/ranking             |
+| 12 | Status Invest                                  | Portal                  | Scraping                            | —            | statusinvest.com.br/fundos-imobiliarios  |
+| 13 | Clube FII                                      | Portal                  | Scraping                            | —            | clubefii.com.br                          |
+| 14 | FIIs.com.br                                    | Portal                  | Scraping                            | —            | fiis.com.br                              |
+| 15 | Portal do FII                                  | Portal                  | Scraping                            | RSS fallback | portaldofii.com.br                       |
+| 16 | Investidor10                                   | Portal                  | Scraping                            | —            | investidor10.com.br/fiis/                |
+| 17 | Eu Quero Investir                              | Portal                  | Scraping                            | —            | euqueroinvestir.com/fundos-imobiliarios/ |
+| 18 | Bora Investir (B3)                             | Portal                  | Scraping                            | —            | borainvestir.b3.com.br                   |
+| 19 | XP Conteúdos                                   | Portal                  | Scraping                            | —            | conteudos.xpi.com.br                     |
+| 20 | Investing Brasil                               | Portal                  | Scraping                            | —            | br.investing.com/news/stock-market-news  |
+| 21 | Reddit (`r/investimentos` e `r/farialimabets`) | Social / comportamental | PRAW → API pública → frozen parquet | 3 níveis     | reddit.com / JSON público / PRAW         |
+
+
+<br><br>
