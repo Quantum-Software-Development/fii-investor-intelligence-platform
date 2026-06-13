@@ -28,14 +28,13 @@
 <br><br>
 
 
-
-# 🏗️ Arquitetura & Pipeline de Dados
+# 🏗️ [Architecture & Data Pipeline]()
 
 <br><br>
 
-## ⚡ 1. Visão Geral do Sistema
+## ⚡ 1. [Visão Geral do Sistema (High-Level)]()
 
-O sistema foi projetado como um **pipeline multicamadas de inteligência de dados**, transformando conteúdo financeiro não estruturado em insights acionáveis e respostas impulsionadas por IA.
+O sistema é projetado como um **pipeline de inteligência de dados em múltiplas camadas**, transformando conteúdo financeiro não estruturado em insights acionáveis e respostas impulsionadas por IA.
 
 <br>
 
@@ -51,7 +50,7 @@ flowchart LR
     A["📡 21 Fontes Monitoradas<br/>6 RSS Primários + 4 RSS de Backup<br/>10 Portais Web + Reddit"]
 
     subgraph Bronze["🥉 Camada Bronze — Ingestão Bruta"]
-        B["Dados Externos Brutos<br/>Schema Padronizado de 17 Campos<br/>article_id com SHA-256<br/>Armazenado em Parquet (Snappy)"]
+        B["Dados Externos Brutos<br/>Schema Padronizado (17 Campos)<br/>article_id com SHA-256<br/>Armazenado em Parquet (Snappy)"]
     end
 
     subgraph Silver["🥈 Camada Silver — Processamento & NLP"]
@@ -62,16 +61,16 @@ flowchart LR
     end
 
     subgraph Gold["🥇 Camada Gold — Inteligência"]
-        G["Sinais de Inteligência de Mercado<br/>Artigos Mais Relevantes<br/>Recursos do Funil de Marketing"]
+        G["Sinais de Inteligência de Mercado<br/>Artigos Mais Relevantes<br/>Features de Funil de Marketing"]
     end
 
     subgraph Dashboard["📊 Camada Analítica"]
-        H["Visões de Dados Curadas<br/>KPIs & Insights"]
+        H["Views de Dados Curadas<br/>KPIs & Insights"]
     end
 
-    subgraph Serving["🚀 Camada de Servição"]
+    subgraph Serving["🚀 Camada de Serving"]
         I["FastAPI (Camada de API)"]
-        J["Streamlit (Interface do Dashboard)"]
+        J["Streamlit (Interface Dashboard)"]
         K["Interface LLM<br/>Groq + Llama 3.1"]
     end
 
@@ -100,49 +99,46 @@ flowchart LR
     class H,I,J,K serving
 
     linkStyle default stroke:#22d3ee,stroke-width:2px
-````
+```
 
 <br><br>
 
 ## 2. [Fontes de Dados — 21 Canais Monitorados]()
 
-O sistema ingere continuamente dados de um conjunto diversificado de **fontes editoriais, institucionais e comportamentais**, garantindo tanto profundidade informacional quanto cobertura de sentimento.
+O sistema ingere continuamente dados de um conjunto diversificado de fontes **editoriais, institucionais e comportamentais**, garantindo profundidade informacional e cobertura de sentimento.
+
+| #  | [Source]()                                    | [Category]()  | [Primary Method]() | [Fallback]() | [Endpoint]()                        |
+| -- | --------------------------------------------- | ------------- | ------------------ | ------------ | ----------------------------------- |
+| 1  | [InfoMoney]()                                 | Editorial     | RSS                | —            | infomoney.com.br/feed/              |
+| 2  | [Empiricus]()                                 | Editorial     | RSS                | Scraping     | empiricus.com.br/feed/              |
+| 3  | [Money Times]()                               | Editorial     | RSS                | —            | moneytimes.com.br/feed/             |
+| 4  | [Seu Dinheiro]()                              | Editorial     | RSS                | —            | seudinheiro.com/feed/               |
+| 5  | [Exame Invest]()                              | Editorial     | RSS                | —            | exame.com/feed/                     |
+| 6  | [CNN Brasil Business ]()                      | Editorial     | RSS                | —            | cnnbrasil.com.br/feed/              |
+| 7  | [Suno Research]()                             | Editorial     | RSS (Secundário)   | —            | sunoresearch.com.br/feed/           |
+| 8  | [E-Investidor]()                              | Editorial     | RSS (Secundário)   | —            | einvestidor.estadao.com.br/feed     |
+| 9  | [NeoFeed]()                                   | Editorial     | RSS (Secundário)   | —            | neofeed.com.br/feed/                |
+| 10 | [Toro Investimentos]()                        | Editorial     | RSS                | Scraping     | blog.toroinvestimentos.com.br/feed/ |
+| 11 | [Funds Explorer]()                            | Portal        | Scraping           | —            | fundsexplorer.com.br                |
+| 12 | [Status Invest]()                             | Portal        | Scraping           | —            | statusinvest.com.br                 |
+| 13 | [Clube FII]()                                 | Portal        | Scraping           | —            | clubefii.com.br                     |
+| 14 | [FIIs.com.br]()                               | Portal        | Scraping           | —            | fiis.com.br                         |
+| 15 | [Portal do FII]()                             | Portal        | Scraping           | RSS          | portaldofii.com.br                  |
+| 16 | [Investidor10]()                              | Portal        | Scraping           | —            | investidor10.com.br                 |
+| 17 | [Eu Quero Investir]()                         | Portal        | Scraping           | —            | euqueroinvestir.com                 |
+| 18 | [Bora Investir (B3)]()                        | Institutional | Scraping           | —            | borainvestir.b3.com.br              |
+| 19 | [XP Conteúdos]()                              | Institutional | Scraping           | —            | conteudos.xpi.com.br                |
+| 20 | [Investing Brasil]()                          | Portal        | Scraping           | —            | br.investing.com                    |
+| 21 | [Reddit (r/investimentos, r/farialimabets)]() | Behavioral    | API (PRAW)         | JSON backup  | reddit.com                          |
 
 <br><br>
 
+## 3. [Arquitetura de Serving — FastAPI + RAG]()
 
-| #  | [Fonte]()                                     | [Categoria]()  | [Método Principal]() | [Fallback]() | [Endpoint]()                        |
-| -- | --------------------------------------------- | -------------- | -------------------- | ------------ | ----------------------------------- |
-| 1  | [InfoMoney]()                                 | Editorial      | RSS                  | —            | infomoney.com.br/feed/              |
-| 2  | [Empiricus]()                                 | Editorial      | RSS                  | Scraping     | empiricus.com.br/feed/              |
-| 3  | [Money Times]()                               | Editorial      | RSS                  | —            | moneytimes.com.br/feed/             |
-| 4  | [Seu Dinheiro]()                              | Editorial      | RSS                  | —            | seudinheiro.com/feed/               |
-| 5  | [Exame Invest]()                              | Editorial      | RSS                  | —            | exame.com/feed/                     |
-| 6  | [CNN Brasil Business]()                       | Editorial      | RSS                  | —            | cnnbrasil.com.br/feed/              |
-| 7  | [Suno Research]()                             | Editorial      | RSS (Secundário)     | —            | sunoresearch.com.br/feed/           |
-| 8  | [E-Investidor]()                              | Editorial      | RSS (Secundário)     | —            | einvestidor.estadao.com.br/feed     |
-| 9  | [NeoFeed]()                                   | Editorial      | RSS (Secundário)     | —            | neofeed.com.br/feed/                |
-| 10 | [Toro Investimentos]()                        | Editorial      | RSS                  | Scraping     | blog.toroinvestimentos.com.br/feed/ |
-| 11 | [Funds Explorer]()                            | Portal         | Scraping             | —            | fundsexplorer.com.br                |
-| 12 | [Status Invest]()                             | Portal         | Scraping             | —            | statusinvest.com.br                 |
-| 13 | [Clube FII]()                                 | Portal         | Scraping             | —            | clubefii.com.br                     |
-| 14 | [FIIs.com.br]()                               | Portal         | Scraping             | —            | fiis.com.br                         |
-| 15 | [Portal do FII]()                             | Portal         | Scraping             | RSS          | portaldofii.com.br                  |
-| 16 | [Investidor10]()                              | Portal         | Scraping             | —            | investidor10.com.br                 |
-| 17 | [Eu Quero Investir]()                         | Portal         | Scraping             | —            | euqueroinvestir.com                 |
-| 18 | [Bora Investir (B3)]()                        | Institucional  | Scraping             | —            | borainvestir.b3.com.br              |
-| 19 | [XP Conteúdos]()                              | Institucional  | Scraping             | —            | conteudos.xpi.com.br                |
-| 20 | [Investing Brasil]()                          | Portal         | Scraping             | —            | br.investing.com                    |
-| 21 | [Reddit (r/investimentos, r/farialimabets)]() | Comportamental | API (PRAW)           | Backup JSON  | reddit.com                          |
-
-<br><br>
-
-## 3. [Arquitetura de Servição — FastAPI + RAG]()
-
-O sistema expõe inteligência por meio de uma arquitetura **Retrieval-Augmented Generation (RAG)**.
+O sistema expõe inteligência por meio de uma arquitetura de **Geração Aumentada por Recuperação (RAG)**.
 
 ```text
-Pipeline de Dados → Banco Vetorial → FastAPI → LLM → Usuário
+Data Pipeline → Banco Vetorial → FastAPI → LLM → Usuário
 ```
 
 <br><br>
@@ -172,37 +168,114 @@ app/
 
 <br>
 
+```python
+from fastapi import FastAPI
+from app.api.routes import router
+
+app = FastAPI(
+    title="Market Intelligence API",
+    description="Sistema de inteligência financeira com RAG",
+    version="1.0.0"
+)
+
+app.include_router(router)
+```
+
+<br><br>
+
 ## 6. [Endpoint Principal — Consulta Semântica]()
 
 <br>
+
+```python
+@router.post("/query")
+async def query_system(question: str):
+    
+    context = retrieve_context(question)
+    answer = generate_answer(question, context)
+
+    return {
+        "question": question,
+        "context": context,
+        "answer": answer
+    }
+```
+
+<br><br>
 
 ## 7. [Camada de Recuperação (RAG)]()
 
 <br>
 
+```python
+def retrieve_context(query: str, k: int = 5):
+    query_embedding = embed_query(query)
+    results = search_vectors(query_embedding, k=k)
+    return [r["text"] for r in results]
+```
+
+<br><br>
+
 ## 8. [Camada de Embeddings]()
 
 <br>
+
+```python
+from sentence_transformers import SentenceTransformer
+
+model = SentenceTransformer("all-MiniLM-L6-v2")
+
+def embed_query(text: str):
+    return model.encode(text)
+```
+
+<br><br>
 
 ## 9. [Banco Vetorial (FAISS)]()
 
 <br>
 
-## 10. [Camada de Geração LLM]()
+```python
+index = faiss.IndexFlatL2(384)
+
+def search_vectors(query_embedding, k=5):
+    D, I = index.search(np.array([query_embedding]), k)
+    return [{"text": f"doc_{i}"} for i in I[0]]
+```
+
+<br><br>
+
+## 10. [Camada de Geração (LLM)]()
 
 <br>
+
+```python
+def generate_answer(question, context):
+    prompt = f"""
+    Context:
+    {context}
+
+    Question:
+    {question}
+
+    Answer:
+    """
+    return call_llm(prompt)
+```
+
+<br><br>
 
 ## 11. [Fluxo End-to-End]()
 
 <br>
 
-| [Camada]()    | [Função]()                           |
+| [Layer]()     | [Function]()                         |
 | ------------- | ------------------------------------ |
 | 🥉 [Bronze]() | Ingestão e armazenamento bruto       |
 | 🥈 [Silver]() | Limpeza de dados e processamento NLP |
-| 🥇 [Gold]()   | Geração e classificação de sinais    |
-| [RAG]()       | Recuperação semântica                |
-| [FastAPI]()   | Interface da API                     |
+| 🥇 [Gold]()   | Geração de sinais e ranking          |
+| [RAG ]()      | Recuperação semântica                |
+| [FastAPI]()   | Interface de API                     |
 | [LLM]()       | Raciocínio em linguagem natural      |
 
 <br><br>
@@ -213,7 +286,7 @@ app/
 
 ```json
 {
-  "question": "Qual é o sentimento atual dos investidores em relação aos FIIs logísticos?"
+  "question": "Qual é o sentimento atual dos investidores sobre FIIs logísticos?"
 }
 ```
 
@@ -223,7 +296,7 @@ app/
 
 ```json
 {
-  "answer": "Dados recentes indicam um sentimento moderadamente positivo impulsionado por rendimentos estáveis de dividendos e taxas de ocupação."
+  "answer": "Os dados recentes indicam um sentimento moderadamente positivo impulsionado por dividend yields estáveis e altas taxas de ocupação."
 }
 ```
 
@@ -231,14 +304,11 @@ app/
 
 ## [Nota Final]()
 
-Esta arquitetura transforma um pipeline de dados tradicional em um **sistema full-stack de inteligência artificial**, permitindo:
+Esta arquitetura transforma um pipeline de dados tradicional em um **sistema completo de inteligência com IA**, permitindo:
 
 [*]() busca semântica <br>
-[*]() sentimento do investidor <br>
+[*]() sentimento de investidores  <br>
 [*]() insights em tempo real <br>
 [*]() interação em linguagem natural
-
-<br><br>
-
 
 
