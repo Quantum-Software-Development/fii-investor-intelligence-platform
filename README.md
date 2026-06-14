@@ -256,10 +256,10 @@ Instead of being a simple dashboard, the system operates as an end-to-end analyt
 
 <br>
 
-[-]() Asset and fund managers who monitor investor perception
-[-]() Financial analysts who track market narratives
-[-]() Marketing teams interested in FII visibility and engagement
-[-]() Academic evaluators assessing Big Data, Spark, NLP and RAG
+[-]() Asset and fund managers who monitor investor perception <br>
+[-]() Financial analysts who track market narratives <br>
+[-]() Marketing teams interested in FII visibility and engagement <br>
+[-]() Academic evaluators assessing Big Data, Spark, NLP and RAG <br>
 [-]() Recruiters and technical portfolio reviewers
 
 <br><br>
@@ -274,19 +274,21 @@ Analysts, managers and financial communication teams face:
 
 [-]() information dispersed across dozens of portals and communities <br>
 [-]() high noise-to-signal ratio in market discussions <br>
-[-]() difficulty tracking how sentiment and narratives evolvev <br><br>
+[-]() difficulty tracking how sentiment and narratives evolvev <br>
 [-]()  lack of transparent tools aligned with LGPD and the EU AI Act
 
-This platform addresses this gap with 21 monitored sources, a Bronze/Silver/Gold pipeline and reproducible, interpretable analytics.
+<br>
+
+> This platform addresses this gap with 21 monitored sources, a Bronze/Silver/Gold pipeline and reproducible, interpretable analytics.
 
 <br><br>
 
 
 ## [ Source Coverage]()
 
-<br>
-
 The platform monitors a curated set of editorial and behavioral sources relevant to the Brazilian FII ecosystem. Instead of treating all inputs as an undifferentiated corpus, the project distinguishes:
+
+<br>
 
 - [**Editorial RSS sources**]() — collected via structured feeds
 - [**Editorial portals via scraping**]() — controlled extraction of public metadata
@@ -299,11 +301,10 @@ The platform monitors a curated set of editorial and behavioral sources relevant
 <br><br>
 
 
-## [ Collection Strategy by Source Type]()
+## [Collection Strategy by Source Type]()
 
-<br>
 
-### [RSS-First]()
+### [***RSS-First***]()
 
 <br>
 
@@ -311,23 +312,21 @@ When available, RSS is preferred: lower extraction cost, native structured metad
 
 <br>
 
-### [Scraping as Controlled Fallback]()
-
-<br>
+### [***Scraping as Controlled Fallback***]()
 
 When RSS is unavailable or unstable, controlled HTML extraction of public pages. It does not simulate human navigation — it collects observable metadata (titles, links, timestamps, categories, excerpts).
 
 <br>
 
-### [Collection of Social Sources]()
-
-<br>
+### [***Collection of Social Sources***]()
 
 Reddit: separate logical path as it represents conversational and community data. Treated as behavioral and discursive input, complementing editorial coverage with public sentiment and emerging narratives.
 
+<br>
 
+### [***3-level strategy:***](docs/data_collection.md)
 
-[**3-level strategy:**](docs/data_collection.md)
+<br>
 
 | [Level]() | [Method]() | [Requires]() |
 |---|---|---|
@@ -374,16 +373,16 @@ Following changes to Reddit’s public API policy in April 2023 (HTTP 403 restri
 
 <br>
 
-### [Source #21 — Reddit / Google News (Fallback)]()
+### [***Source #21 — Reddit / Google News (Fallback)***]()
 
 <br>
 
-1. [**Level 1 — PRAW]() (when `REDDIT_API_AVAILABLE = True`)**  
+1. [**Level 1 — PRAW**]() (when `REDDIT_API_AVAILABLE = True`) 
    Uses the authenticated Reddit API to collect recent posts from the target subreddits.
 
    <br>
 
-2. [**Level 2 — Google News RSS PT-BR (fallback)**]()
+2. [**Level 2 — Google News RSS PT-BR (fallback)*]()
    
    - When Level 1 is unavailable (e.g., missing `REDDIT_CLIENT_ID` in `.env` or public API restrictions), NB01 triggers `collect_google_news_rss()`, which:
    - queries Google News in Portuguese using FII-specific search terms,
