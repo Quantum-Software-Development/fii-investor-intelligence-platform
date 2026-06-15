@@ -206,6 +206,7 @@ $$\Huge {\textbf{\color{green} CRISP-DM} \space \textbf{\color{white} •} \spac
 
 <br><br>
 
+
  TERMOS TOFU 
 
 Priorizar:
@@ -249,8 +250,10 @@ Detectar:
 - juros altos
 - risco de crédito
 
-<br>
-<br>
+<br><br>
+
+
+<!--
 
 
 ## 1. Por que usar MapReduce?.
@@ -553,7 +556,7 @@ para realizar:
 
 **inteligência de marketing baseada em contexto, recuperação de conhecimento, IA generativa e processamento escalável em nuvem.**
 
-
+-->
 
 
 
