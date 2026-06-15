@@ -204,6 +204,7 @@ $$\Huge {\textbf{\color{green} CRISP-DM} \space \textbf{\color{white} •} \spac
 
 ## [🎓 Academic and Institutional Context]()
 
+<br>
 
 This project was developed at PUC-SP in the courses of cybersecurity, social engineering, data engineering and Big Data analytics applied to financial markets. The original requirement focused on demonstrating a distributed word count solution using PySpark and the MapReduce paradigm.
 
@@ -235,10 +236,11 @@ From this starting point, the repository was extended to incorporate more advanc
 The [**Investor Intelligence Platform 🇧🇷 FIIs Brazil**]() is not just an academic Big Data exercise. It is an investor intelligence platform for Brazilian Real Estate Investment Funds (FIIs), designed to transform fragmented public financial discussions into structured, searchable, explainable and decision-oriented market intelligence.
 
 Instead of being a simple dashboard, the system operates as an end-to-end analytical environment that:
-- collects data from 21 sources (RSS · scraping · Reddit)
-- organizes them in a Bronze/Silver/Gold architecture
-- enriches them with hybrid retrieval (TF-IDF + BM25 + FAISS semantic search with multilingual PT-BR embeddings), FII PT-BR sentiment and explainable marketing intelligence signals
-- exposes results via [**FastAPI + RAG + Groq chatbot + Streamlit**]()
+
+[-]() collects data from 21 sources (RSS · scraping · Reddit)
+[-]()organizes them in a Bronze/Silver/Gold architecture
+[-]() enriches them with hybrid retrieval (TF-IDF + BM25 + FAISS semantic search with multilingual PT-BR embeddings), FII PT-BR sentiment and explainable marketing intelligence signals
+[-]() exposes results via [**FastAPI + RAG + Groq chatbot + Streamlit**]()
 
 <br><br>
 
@@ -247,9 +249,9 @@ Instead of being a simple dashboard, the system operates as an end-to-end analyt
 
 <br>
 
-1. [**Complete end-to-end pipeline**]() — from ingestion to analytical output.
-2. [**Distributed processing + NLP**]() — PySpark MapReduce combined with TF-IDF, BM25 and contextual sentiment.
-3. [**RAG over FII corpus**]() — hybrid retrieval via TF-IDF, BM25 and FAISS-backed multilingual PT-BR embeddings, followed by contextual generation via Groq.
+1. [**Complete end-to-end pipeline**]() — from ingestion to analytical output. <br>
+2. [**Distributed processing + NLP**]() — PySpark MapReduce combined with TF-IDF, BM25 and contextual sentiment. <br>
+3. [**RAG over FII corpus**]() — hybrid retrieval via TF-IDF, BM25 and FAISS-backed multilingual PT-BR embeddings, followed by contextual generation via Groq. <br>
 4. [**Cybersecurity and Social Engineering**]() — security perspective in interpreting channels and narratives.
 
 <br><br>
@@ -266,8 +268,6 @@ Instead of being a simple dashboard, the system operates as an end-to-end analyt
 
 <br><br>
 
-
-
 ## [ Why This Matters ❓]()
 
 <br>
@@ -281,6 +281,7 @@ Analysts, managers and financial communication teams face:
 
 <br>
 
+> [!NOTE]
 > This platform addresses this gap with 21 monitored sources, a Bronze/Silver/Gold pipeline and reproducible, interpretable analytics.
 
 <br><br>
@@ -292,12 +293,13 @@ The platform monitors a curated set of editorial and behavioral sources relevant
 
 <br>
 
-- [**Editorial RSS sources**]() — collected via structured feeds
-- [**Editorial portals via scraping**]() — controlled extraction of public metadata
-- [**Behavioral social sources**]() — Reddit as a community sentiment layer
+[-]() [**Editorial RSS sources**]() — collected via structured feeds ><br>
+[-]() [**Editorial portals via scraping**]() — controlled extraction of public metadata ><br>
+[-]() [**Behavioral social sources**]() — Reddit as a community sentiment layer
 
 <br>
 
+> [!TIP]
 > Detailed documentation per source: [`docs/data_sources.md`](https://github.com/Quantum-Software-Development/5-cybersecurity-social-engineering-fii-marketing-intelligence-platform/blob/2b697bb54a78f4d31424ecd334466f9fc4a8d6e0/docs/data_sources.md)
 
 <br><br>
@@ -370,16 +372,18 @@ It is treated as a behavioral and discursive input layer that complements editor
 <br>
 
 
-The original behavioral source uses Reddit (subreddits `r/investimentos` and `r/farialimabets`) as a [**social intelligence and market narrative layer**]().  
-Following changes to Reddit’s public API policy in April 2023 (HTTP 403 restrictions), the pipeline was redesigned to operate across three levels:
+> [!NOTE]
+> The original behavioral source uses Reddit (subreddits `r/investimentos` and `r/farialimabets`) as a [**social intelligence and market narrative layer**]().  
+> Following changes to Reddit’s public API policy in April 2023 (HTTP 403 restrictions), the pipeline was redesigned to operate across three levels:
 
 <br>
 
-### [***Source #21 — Reddit / Google News (Fallback)***]()
+### [***Source 21 — Reddit / Google News (Fallback)***]()
 
 <br>
 
 1. [**Level 1 — PRAW**]() (when `REDDIT_API_AVAILABLE = True`) 
+ 
    Uses the authenticated Reddit API to collect recent posts from the target subreddits.
 
    <br>
