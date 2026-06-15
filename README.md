@@ -750,7 +750,7 @@ pip install -r requirements.txt
 
 <br>
 
-[Whenever you add or remove dependencies:]()
+### [Whenever you add or remove dependencies:]()
 
 ```bash
 pip freeze > requirements.txt
