@@ -1,0 +1,4 @@
+stage,n_queries,n_docs,avg_score,avg_polarity,n_positivo,n_negativo,n_dividendo,n_risco
+BOFU,5,100,0.5328,0.3067,59,5,64,45
+MOFU,5,100,0.4569,0.2752,49,5,59,38
+TOFU,5,100,0.5108,0.4198,66,2,66,28

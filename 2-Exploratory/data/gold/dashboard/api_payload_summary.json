@@ -1,0 +1,81 @@
+{
+  "generated_at": "2026-06-14T18:55:16.391618+00:00",
+  "pipeline_version": "1.0.0",
+  "random_seed": 42,
+  "totals": {
+    "articles": 126,
+    "sources": 16,
+    "fii_entities": 15
+  },
+  "sentiment_distribution": {
+    "positivo": 70,
+    "neutro": 39,
+    "negativo": 17
+  },
+  "top_sources": [
+    {
+      "source_label": "Empiricus",
+      "total_articles": 32
+    },
+    {
+      "source_label": "CNN Brasil Business",
+      "total_articles": 17
+    },
+    {
+      "source_label": "Funds Explorer",
+      "total_articles": 12
+    },
+    {
+      "source_label": "FIIs.com.br",
+      "total_articles": 10
+    },
+    {
+      "source_label": "Investidor10",
+      "total_articles": 10
+    }
+  ],
+  "top_fii_by_mi_score": [
+    {
+      "ticker": "HCRI11",
+      "mi_score": 0.432,
+      "sentiment_avg": 0.2719,
+      "mentions": 90
+    },
+    {
+      "ticker": "XPML11",
+      "mi_score": 0.3959,
+      "sentiment_avg": 0.2759,
+      "mentions": 75
+    },
+    {
+      "ticker": "VGIP11",
+      "mi_score": 0.3954,
+      "sentiment_avg": 0.2596,
+      "mentions": 86
+    },
+    {
+      "ticker": "HSML11",
+      "mi_score": 0.3887,
+      "sentiment_avg": 0.214,
+      "mentions": 72
+    },
+    {
+      "ticker": "MXRF11",
+      "mi_score": 0.3834,
+      "sentiment_avg": 0.2657,
+      "mentions": 102
+    }
+  ],
+  "source_types": {
+    "rss": 69,
+    "scraping": 55,
+    "reddit": 2
+  },
+  "data_paths": {
+    "dashboard_articles": "/Users/fabicampanari/Desktop/project-fii-marketing-intelligence-platform/data/gold/dashboard/dashboard_articles.parquet",
+    "dashboard_fii_signals": "/Users/fabicampanari/Desktop/project-fii-marketing-intelligence-platform/data/gold/dashboard/dashboard_fii_signals.parquet",
+    "dashboard_source_stats": "/Users/fabicampanari/Desktop/project-fii-marketing-intelligence-platform/data/gold/dashboard/dashboard_source_stats.parquet",
+    "dashboard_funnel_stats": "/Users/fabicampanari/Desktop/project-fii-marketing-intelligence-platform/data/gold/dashboard/dashboard_funnel_stats.parquet",
+    "dashboard_word_cloud": "/Users/fabicampanari/Desktop/project-fii-marketing-intelligence-platform/data/gold/dashboard/dashboard_word_cloud.parquet"
+  }
+}

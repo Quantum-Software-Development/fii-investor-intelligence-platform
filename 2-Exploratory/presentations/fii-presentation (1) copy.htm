@@ -1,0 +1,1520 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FIIs Investor Intelligence Platform — Apresentação</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body, #root {
+    width: 100%; height: 100%; overflow: hidden;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+    background: var(--bg); color: var(--text);
+    transition: background 0.4s ease, color 0.4s ease;
+  }
+  :root {
+    --bg: #000000;
+    --text: #ffffff;
+    --text-secondary: rgba(255,255,255,0.65);
+    --accent: #00d2ff;
+    --accent-dim: rgba(0,210,255,0.12);
+    --accent-glow: rgba(0,210,255,0.35);
+    --glass: rgba(255,255,255,0.04);
+    --border: rgba(255,255,255,0.10);
+    --shadow: rgba(0,0,0,0.55);
+    --red: #ff4d4d;
+    --green: #2ecc71;
+    --gold: #ffd700;
+    --silver: #c0c0c0;
+    --bronze: #cd7f32;
+  }
+  .light-mode {
+    --bg: #f5f5f7;
+    --text: #1d1d1f;
+    --text-secondary: rgba(0,0,0,0.55);
+    --accent: #0066cc;
+    --accent-dim: rgba(0,102,204,0.08);
+    --accent-glow: rgba(0,102,204,0.25);
+    --glass: rgba(255,255,255,0.65);
+    --border: rgba(0,0,0,0.08);
+    --shadow: rgba(0,0,0,0.10);
+  }
+  .presentation {
+    position: relative; width: 100%; height: 100%;
+  }
+  .slide {
+    position: absolute; inset: 0; overflow-y: auto;
+    opacity: 0; transform: translateY(24px) scale(0.985);
+    transition: opacity 0.55s cubic-bezier(0.22,1,0.36,1), transform 0.55s cubic-bezier(0.22,1,0.36,1);
+    pointer-events: none; z-index: 0;
+    display: flex; flex-direction: column;
+    padding: 6vh 8vw;
+  }
+  .slide.active {
+    opacity: 1; transform: translateY(0) scale(1);
+    pointer-events: all; z-index: 1;
+  }
+  .progress-bar {
+    position: fixed; top: 0; left: 0; height: 3px; z-index: 50;
+    background: linear-gradient(90deg, var(--accent), var(--accent-glow));
+    transition: width 0.4s ease; box-shadow: 0 0 12px var(--accent-glow);
+  }
+  .controls {
+    position: fixed; bottom: 24px; right: 24px; z-index: 50;
+    display: flex; gap: 8px; align-items: center;
+  }
+  .controls-left {
+    position: fixed; bottom: 24px; left: 24px; z-index: 50;
+    display: flex; gap: 8px; align-items: center;
+  }
+  .btn {
+    background: var(--glass); color: var(--text); border: 1px solid var(--border);
+    backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+    padding: 10px 16px; border-radius: 12px; cursor: pointer; font-size: 13px; font-weight: 500;
+    display: flex; align-items: center; gap: 6px; transition: all 0.2s ease;
+    box-shadow: 0 4px 16px var(--shadow); user-select: none;
+  }
+  .btn:hover { background: var(--accent-dim); border-color: var(--accent); transform: translateY(-1px); }
+  .btn:active { transform: translateY(0); }
+  .btn svg { width: 16px; height: 16px; fill: currentColor; }
+  .slide-counter {
+    font-size: 12px; font-weight: 600; color: var(--text-secondary);
+    background: var(--glass); backdrop-filter: blur(12px); border: 1px solid var(--border);
+    padding: 8px 14px; border-radius: 10px; letter-spacing: 0.5px;
+  }
+  .glass-panel {
+    background: var(--glass); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--border); border-radius: 20px;
+    box-shadow: 0 8px 40px var(--shadow);
+  }
+  .layout-cover {
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    text-align: center; min-height: 100%; gap: 2vh;
+  }
+  .layout-standard {
+    display: flex; flex-direction: column; gap: 3vh; max-width: 1100px; margin: 0 auto; width: 100%;
+  }
+  .layout-split {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 3vw; align-items: center; width: 100%;
+  }
+  .layout-grid-2x2 {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 2vw; width: 100%;
+  }
+  .layout-grid-4 {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 2vw; width: 100%;
+  }
+  .layout-table { width: 100%; overflow-x: auto; }
+  h1.slide-title {
+    font-size: clamp(2rem, 4.5vw, 3.8rem); font-weight: 700; line-height: 1.1; letter-spacing: -0.02em;
+    background: linear-gradient(135deg, var(--text) 60%, var(--accent));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  h2.slide-subtitle {
+    font-size: clamp(1rem, 2vw, 1.5rem); font-weight: 400; color: var(--text-secondary); margin-top: 0.5rem;
+  }
+  h3.section-title {
+    font-size: clamp(1.1rem, 2vw, 1.4rem); font-weight: 600; color: var(--accent); margin-bottom: 1vh;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .bullets { list-style: none; display: flex; flex-direction: column; gap: 1.2vh; }
+  .bullets li {
+    position: relative; padding-left: 1.4rem; font-size: clamp(0.9rem, 1.4vw, 1.15rem);
+    line-height: 1.5; color: var(--text-secondary);
+  }
+  .bullets li::before {
+    content: ''; position: absolute; left: 0; top: 0.6em; width: 6px; height: 6px;
+    border-radius: 50%; background: var(--accent); box-shadow: 0 0 8px var(--accent-glow);
+  }
+  .tag {
+    display: inline-block; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 600;
+    background: var(--accent-dim); color: var(--accent); border: 1px solid var(--accent-glow); margin: 2px;
+  }
+  .tag-red { background: rgba(255,77,77,0.12); color: var(--red); border-color: rgba(255,77,77,0.3); }
+  .tag-green { background: rgba(46,204,113,0.12); color: var(--green); border-color: rgba(46,204,113,0.3); }
+  .tag-gold { background: rgba(255,215,0,0.12); color: var(--gold); border-color: rgba(255,215,0,0.3); }
+  .tag-silver { background: rgba(192,192,192,0.12); color: var(--silver); border-color: rgba(192,192,192,0.3); }
+  .tag-bronze { background: rgba(205,127,50,0.12); color: var(--bronze); border-color: rgba(205,127,50,0.3); }
+  .card {
+    background: var(--glass); backdrop-filter: blur(16px); border: 1px solid var(--border);
+    border-radius: 16px; padding: 2vh 2vw; transition: transform 0.2s ease, border-color 0.2s ease;
+  }
+  .card:hover { transform: translateY(-4px); border-color: var(--accent-glow); }
+  .card h4 { font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--text); }
+  .card p { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.5; }
+  .big-number {
+    font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; color: var(--accent); line-height: 1;
+    text-shadow: 0 0 30px var(--accent-glow);
+  }
+  .table-elegant {
+    width: 100%; border-collapse: separate; border-spacing: 0; font-size: 0.85rem;
+    background: var(--glass); backdrop-filter: blur(12px); border-radius: 16px; overflow: hidden;
+    border: 1px solid var(--border); box-shadow: 0 8px 32px var(--shadow);
+  }
+  .table-elegant th, .table-elegant td { padding: 10px 14px; text-align: left; border-bottom: 1px solid var(--border); }
+  .table-elegant th { background: var(--accent-dim); color: var(--accent); font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; }
+  .table-elegant tr:last-child td { border-bottom: none; }
+  .table-elegant tr:hover td { background: var(--accent-dim); }
+  .formula-box {
+    background: var(--glass); border: 1px solid var(--border); border-radius: 16px; padding: 2vh 2vw;
+    text-align: center; font-family: 'Courier New', monospace; font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+    color: var(--accent); backdrop-filter: blur(12px); box-shadow: 0 0 20px var(--accent-glow);
+  }
+  .modal-overlay {
+    position: fixed; inset: 0; z-index: 60; background: rgba(0,0,0,0.7); backdrop-filter: blur(4px);
+    display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: opacity 0.3s ease;
+  }
+  .modal-overlay.open { opacity: 1; pointer-events: all; }
+  .modal-content {
+    background: var(--glass); backdrop-filter: blur(24px); border: 1px solid var(--border); border-radius: 20px;
+    padding: 32px; max-width: 520px; width: 90%; box-shadow: 0 20px 60px var(--shadow); color: var(--text);
+  }
+  .modal-content h3 { margin-bottom: 16px; font-size: 1.2rem; }
+  .modal-content p, .modal-content li { font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; }
+  .modal-content ul { list-style: none; margin-top: 12px; }
+  .modal-content li { padding: 4px 0; }
+  .modal-content .kbd {
+    display: inline-block; background: var(--accent-dim); border: 1px solid var(--border);
+    border-radius: 6px; padding: 2px 8px; font-size: 0.8rem; font-weight: 600; color: var(--accent); margin-right: 4px;
+  }
+  .modal-buttons { display: flex; gap: 10px; justify-content: flex-end; margin-top: 20px; }
+  .exit-full { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 40; display: none; }
+  .exit-full.active { display: block; }
+  @media (max-width: 900px) {
+    .layout-split { grid-template-columns: 1fr; }
+    .layout-grid-4 { grid-template-columns: repeat(2, 1fr); }
+    .slide { padding: 4vh 5vw; }
+  }
+  @media (max-width: 600px) {
+    .layout-grid-2x2 { grid-template-columns: 1fr; }
+    .layout-grid-4 { grid-template-columns: 1fr; }
+    .controls, .controls-left { bottom: 12px; }
+    .controls { right: 12px; }
+    .controls-left { left: 12px; }
+  }
+  .scroll-indicator { position: absolute; bottom: 2vh; left: 50%; transform: translateX(-50%); opacity: 0.4; animation: bounce 2s infinite; }
+  @keyframes bounce { 0%, 100% { transform: translateX(-50%) translateY(0); } 50% { transform: translateX(-50%) translateY(-8px); } }
+  .subtle-glow { position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.15; pointer-events: none; z-index: 0; }
+  .logo-mark { font-weight: 800; font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 2vh; }
+  .teaser { font-size: clamp(1rem, 1.8vw, 1.35rem); color: var(--text-secondary); max-width: 760px; line-height: 1.6; }
+  .author-line { font-size: 0.9rem; color: var(--text-secondary); margin-top: 4vh; }
+  .author-line strong { color: var(--text); font-weight: 600; }
+  .institution-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2vw; width: 100%; max-width: 900px; }
+  .institution-card { background: var(--glass); border: 1px solid var(--border); border-radius: 16px; padding: 2vh 2vw; }
+  .institution-card label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); font-weight: 600; display: block; margin-bottom: 0.4rem; }
+  .institution-card span { font-size: 1rem; font-weight: 500; color: var(--text); line-height: 1.4; display: block; }
+  .negative-context { color: var(--red); }
+  .positive-context { color: var(--green); }
+  .phase-badge { display: inline-flex; align-items: center; gap: 6px; font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: 6px; text-transform: uppercase; letter-spacing: 0.04em; }
+  .phase-done { background: rgba(46,204,113,0.15); color: var(--green); border: 1px solid rgba(46,204,113,0.3); }
+  .phase-todo { background: rgba(255,193,7,0.15); color: #ffc107; border: 1px solid rgba(255,193,7,0.3); }
+  .link-url { color: var(--accent); text-decoration: none; font-weight: 500; word-break: break-all; }
+  .link-url:hover { text-decoration: underline; }
+  .github-card { display: flex; flex-direction: column; align-items: center; gap: 2vh; text-align: center; padding: 4vh 4vw; }
+  .github-icon { width: 64px; height: 64px; fill: var(--accent); filter: drop-shadow(0 0 12px var(--accent-glow)); }
+  .fade-in { animation: fadeIn 0.8s ease forwards; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+  .step-flow { display: flex; align-items: center; gap: 1vw; flex-wrap: wrap; justify-content: center; margin-top: 2vh; }
+  .step-box { background: var(--glass); border: 1px solid var(--border); border-radius: 12px; padding: 1vh 1.5vw; font-size: 0.85rem; font-weight: 500; }
+  .step-arrow { color: var(--accent); font-size: 1.2rem; }
+
+  /* ===== Cover enhancements ===== */
+  .cover-header-img { width: 100%; max-width: 900px; height: auto; max-height: 22vh; object-fit: contain; border-radius: 12px; margin-bottom: 1vh; }
+  .cover-footer-img { width: 100%; max-width: 900px; height: auto; max-height: 18vh; object-fit: contain; border-radius: 12px; margin-top: 2vh; }
+  .cover-divider { width: 100px; height: 2px; background: linear-gradient(90deg, transparent, var(--accent), transparent); border-radius: 2px; margin: 1vh auto; }
+  .cover-institutional { font-size: clamp(0.8rem, 1.3vw, 1rem); color: var(--text-secondary); max-width: 900px; line-height: 1.6; font-weight: 500; margin-top: 1vh; padding: 0 2vw; }
+  .cover-tagline { font-size: clamp(1.1rem, 2vw, 1.5rem); font-weight: 300; color: var(--accent); letter-spacing: 0.02em; line-height: 1.4; }
+  .cover-subtagline { font-size: clamp(0.85rem, 1.4vw, 1.05rem); color: var(--text-secondary); font-style: italic; line-height: 1.5; margin-top: 0.5vh; }
+  @media (max-width: 600px) {
+    .cover-header-img { max-height: 16vh; }
+    .cover-footer-img { max-height: 14vh; }
+  }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+const { useState, useEffect, useRef, useCallback } = React;
+
+const TOTAL_SLIDES = 28;
+
+/* ==================== Icon components ==================== */
+const Icons = {
+  Moon: () => <svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>,
+  Sun: () => <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>,
+  Fullscreen: () => <svg viewBox="0 0 24 24"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>,
+  Exit: () => <svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></svg>,
+  Home: () => <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>,
+  Download: () => <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>,
+  Help: () => <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>,
+  ArrowLeft: () => <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>,
+  ArrowRight: () => <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>,
+  Github: () => <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>,
+  Alert: () => <svg viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>,
+  Check: () => <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>,
+  ChevronDown: () => <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>,
+};
+
+/* ==================== Reusable components ==================== */
+function GlassCard({ children, style }) {
+  return <div className="card" style={style}>{children}</div>;
+}
+
+function Tag({ text, type }) {
+  return <span className={`tag ${type ? 'tag-' + type : ''}`}>{text}</span>;
+}
+
+function BigNumber({ n, label }) {
+  return (
+    <div style={{ textAlign: 'center' }}>
+      <div className="big-number">{n}</div>
+      <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginTop: '0.5rem', fontWeight: 500 }}>{label}</div>
+    </div>
+  );
+}
+
+/* ==================== Slides ==================== */
+
+function Slide01() {
+  return (
+    <div className="layout-cover">
+      <div className="subtle-glow" style={{ width: '60vw', height: '60vw', background: 'var(--accent)', top: '-20vw', left: '-10vw' }} />
+
+      {/* Header com imagem */}
+      <img
+        src="<<url_4>>"
+        alt="Investor Intelligence Platform Brazilian FIIs"
+        className="cover-header-img"
+      />
+
+      <div className="cover-divider" />
+
+      {/* Título principal */}
+      <h1 className="slide-title" style={{ fontSize: 'clamp(2rem, 4.5vw, 3.8rem)', marginTop: '1vh' }}>
+        Market Intelligence<br />& Behavioral Analytics
+      </h1>
+
+      {/* Teaser técnico */}
+      <p className="teaser" style={{ maxWidth: '900px', marginTop: '2vh' }}>
+        Uma plataforma escalável que combina <span style={{ color: 'var(--accent)', fontWeight: 600 }}>Big Data, PySpark, MapReduce, Word Count, NLP, TF-IDF, BM25, Web Scraping, RAG</span> e análises assistidas por IA para transformar discussões financeiras em larga escala em insights acionáveis para Fundos de Investimento Imobiliário (FIIs).
+      </p>
+
+      {/* Tagline */}
+      <div style={{ marginTop: '2vh', textAlign: 'center' }}>
+        <p className="cover-tagline">
+          Onde as discussões de mercado se tornam investimentos
+        </p>
+        <p className="cover-subtagline">
+          Porque os mercados falam muito...<br />Sistemas inteligentes apenas ouvem melhor
+        </p>
+      </div>
+
+      {/* Texto institucional */}
+      <p className="cover-institutional" style={{ marginTop: '2vh' }}>
+        <strong>Uma plataforma de inteligência de nível institucional projetada para monitorar, estruturar, ranquear e interpretar sinais relacionados aos Fundos de Investimento Imobiliário (FIIs) brasileiros em mídias financeiras, portais de pesquisa e comunidades de investidores.</strong>
+      </p>
+
+      {/* Tags */}
+      <div style={{ marginTop: '2vh', display: 'flex', gap: '8px', flexWrap: 'wrap', justifyContent: 'center' }}>
+        <Tag text="21 Fontes" />
+        <Tag text="Big Data" />
+        <Tag text="PySpark" />
+        <Tag text="MapReduce" />
+        <Tag text="TF-IDF" />
+        <Tag text="BM25" />
+        <Tag text="RAG" />
+        <Tag text="FastAPI" />
+      </div>
+
+      {/* Footer com imagem */}
+      <img
+        src="<<url_5>>"
+        alt="Big Data PySpark NLP Web Scraping AI Governance"
+        className="cover-footer-img"
+      />
+
+      <div className="scroll-indicator"><Icons.ChevronDown /></div>
+    </div>
+  );
+}
+
+function Slide02() {
+  return (
+    <div className="layout-cover" style={{ gap: '3vh' }}>
+      <h2 className="slide-subtitle" style={{ marginBottom: '1vh' }}>Contexto Acadêmico</h2>
+      <h1 className="slide-title" style={{ fontSize: 'clamp(1.8rem, 4vw, 3.2rem)' }}>PUC-SP — FACEI</h1>
+      <div className="institution-grid">
+        <div className="institution-card">
+          <label>Instituição</label>
+          <span>Pontifical Catholic University of São Paulo (PUC-SP)</span>
+        </div>
+        <div className="institution-card">
+          <label>Faculdade</label>
+          <span>FACEI — Faculdade de Ciências Exatas e de Informática</span>
+        </div>
+        <div className="institution-card">
+          <label>Programa</label>
+          <span>Humanistic AI & Data Science — 5º Semestre — 2026</span>
+        </div>
+        <div className="institution-card">
+          <label>Disciplina</label>
+          <span>AI Security, Cybersecurity & Social Engineering</span>
+        </div>
+        <div className="institution-card">
+          <label>Professor</label>
+          <span>Eduardo Savino Gomes</span>
+        </div>
+        <div className="institution-card">
+          <label>Autores</label>
+          <span>Fabiana Campanari · Pedro Vyctor Almeida</span>
+        </div>
+      </div>
+      <div className="author-line">
+        Desenvolvido nas disciplinas de cibersegurança, engenharia social, engenharia de dados e Big Data analytics.
+      </div>
+    </div>
+  );
+}
+
+function Slide03() {
+  return (
+    <div className="layout-standard">
+      <h2 className="slide-subtitle">Qual problema estamos resolvendo?</h2>
+      <h1 className="slide-title">O Problema de Mercado</h1>
+      <div className="layout-split">
+        <div>
+          <ul className="bullets">
+            <li>Excesso de informação financeira dispersa em dezenas de portais e comunidades</li>
+            <li>Alta razão ruído/sinal nas discussões de mercado de FIIs</li>
+            <li>Dificuldade para entender contexto e separar o relevante do trivial</li>
+            <li>Ruído informacional crítico que confunde investidores iniciantes</li>
+            <li>Ausência de ferramentas transparentes alinhadas à LGPD e EU AI Act</li>
+          </ul>
+        </div>
+        <div className="glass-panel" style={{ padding: '3vh 3vw' }}>
+          <h3 className="section-title" style={{ marginBottom: '2vh' }}>Dores do Investidor</h3>
+          <div className="layout-grid-2x2" style={{ gap: '1.5vw' }}>
+            <GlassCard><h4>📰 Dispersão</h4><p>Info, Exame, CNN, Reddit... Onde olhar?</p></GlassCard>
+            <GlassCard><h4>🔊 Ruído</h4><p>Todo mundo fala de FII, mas quem fala com base?</p></GlassCard>
+            <GlassCard><h4>🧭 Contexto</h4><p>"Dividendos" pode ser bom ou ruim dependendo do contexto.</p></GlassCard>
+            <GlassCard><h4>🛡️ Transparência</h4><p>Ferramentas de IA sem governança ou explicabilidade.</p></GlassCard>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Slide04() {
+  return (
+    <div className="layout-standard">
+      <h2 className="slide-subtitle">Público-alvo e personas</h2>
+      <h1 className="slide-title">Para Quem Fazemos Isso</h1>
+      <div className="layout-grid-4">
+        <GlassCard>
+          <h4>👤 Investidores Iniciantes</h4>
+          <p>Buscam clareza contextual para separar sinais de ruído no universo FII.</p>
+        </GlassCard>
+        <GlassCard>
+          <h4>💼 Investidores de FIIs</h4>
+          <p>Acompanham narrativas, sentimento e evolução de narrativas de mercado.</p>
+        </GlassCard>
+        <GlassCard>
+          <h4>🏦 Gestores de Ativos</h4>
+          <p>Monitoram percepção de investidores e ajustam posicionamento.</p>
+        </GlassCard>
+        <GlassCard>
+          <h4>📢 Marketing Financeiro</h4>
+          <p>Precisam de inteligência de termos, contextos e canais para campanhas.</p>
+        </GlassCard>
+      </div>
+      <div className="layout-grid-4" style={{ marginTop: '2vh' }}>
+        <GlassCard>
+          <h4>🌐 Plataformas de Investimento</h4>
+          <p>Agregam dados de FIIs e querem enriquecer com inteligência de narrativa.</p>
+        </GlassCard>
+        <GlassCard>
+          <h4>🔬 Analistas</h4>
+          <p>Rastreiam narrativas emergentes e correlacionam com performance.</p>
+        </GlassCard>
+        <GlassCard>
+          <h4>🎓 Avaliadores Acadêmicos</h4>
+          <p>Avaliam Big Data, Spark, NLP, RAG e governança aplicada.</p>
+        </GlassCard>
+        <GlassCard>
+          <h4>🚀 Recrutadores</h4>
+          <p>Revisam portfólios técnicos end-to-end de engenharia de dados.</p>
+        </GlassCard>
+      </div>
+    </div>
+  );
+}
+
+function Slide05() {
+  return (
+    <div className="layout-standard">
+      <h2 className="slide-subtitle">O que a plataforma faz e o valor entregue</h2>
+      <h1 className="slide-title">O Produto</h1>
+      <div className="step-flow">
+        <div className="step-box">📡 Ingestão <span className="tag">21 fontes</span></div>
+        <span className="step-arrow">→</span>
+        <div className="step-box">🧹 Bronze</div>
+        <span className="step-arrow">→</span>
+        <div className="step-box">✨ Silver</div>
+        <span className="step-arrow">→</span>
+        <div className="step-box">🥇 Gold</div>
+        <span className="step-arrow">→</span>
+        <div className="step-box">🚀 API + Dashboard</div>
+      </div>
+      <div className="layout-grid-2x2" style={{ marginTop: '3vh' }}>
+        <GlassCard>
+          <h4>1. Ingestão de Dados</h4>
+          <p>RSS-first, scraping controlado e Reddit API (PRAW) com fallbacks JSON. 21 fontes monitoradas continuamente.</p>
+        </GlassCard>
+        <GlassCard>
+          <h4>2. Análise Distribuída</h4>
+          <p>PySpark com RDD MapReduce, TF-IDF, BM25 e sentimento contextual via Spark UDF.</p>
+        </GlassCard>
+        <GlassCard>
+          <h4>3. Inteligência de Marketing</h4>
+          <p>Funil TOFU/MOFU/BOFU, detecção de contexto negativo e priorização de termos positivos.</p>
+        </GlassCard>
+        <GlassCard>
+          <h4>4. Consumo Multi-Canal</h4>
+          <p>Dashboard Streamlit, API REST FastAPI e Chatbot RAG com Groq (llama-3.1-8b-instant).</p>
+        </GlassCard>
+      </div>
+    </div>
+  );
+}
+
+function Slide06() {
+  return (
+    <div className="layout-standard">
+      <h2 className="slide-subtitle">Valor, ganhos e impacto na comunicação</h2>
+      <h1 className="slide-title">Por Que Isso Importa?</h1>
+      <div className="layout-grid-2x2">
+        <GlassCard>
+          <h4>🧠 Inteligência Contextual</h4>
+          <p>Entende o <strong>"porquê"</strong> por trás dos termos. Não apenas o que é frequente, mas o que é relevante e em que contexto.</p>
+        </GlassCard>
+        <GlassCard>
+          <h4>🔇 Redução de Ruído</h4>
+          <p>Foco apenas no que é estatisticamente relevante. TF-IDF e BM25 filtram termos genéricos que não agregam.</p>
+        </GlassCard>
+        <GlassCard>
+          <h4>🎯 Precisão de Campanhas</h4>
+          <p>Aloca budget nas fontes e termos certos. Evita gastar com termos que, naquele momento, carregam sentimento negativo.</p>
+        </GlassCard>
+        <GlassCard>
+          <h4>👤 Alinhamento ao Investidor</h4>
+          <p>Linguagem que ressoa com o público real. Conecta a narrativa do mercado ao tom da campanha de marketing.</p>
+        </GlassCard>
+      </div>
+      <div className="glass-panel" style={{ marginTop: '2vh', padding: '2vh 2vw', textAlign: 'center' }}>
+        <p style={{ fontSize: '1.1rem', fontWeight: 500, color: 'var(--text)' }}>
+          "Transformamos sinais não estruturados em inteligência analítica acionável para decisões de marketing e comunicação."
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function Slide07() {
+  return (
+    <div className="layout-standard">
+      <h2 className="slide-subtitle">Diferenciando contexto positivo vs. negativo</h2>
+      <h1 className="slide-title">Estratégia Top of Funnel</h1>
+      <div className="layout-split">
+        <div className="glass-panel" style={{ padding: '3vh 2vw', borderColor: 'var(--green)' }}>
+          <h3 className="section-title" style={{ color: 'var(--green)' }}>
+            <Icons.Check /> Termos Positivos — Priorizar
+          </h3>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginTop: '1vh' }}>
+            {['dividendos','renda passiva','patrimônio','recorrência','diversificação','yield','inflação','longo prazo','gestão','carteira','previsibilidade','geração de renda','fundos imobiliários','renda mensal','investimento imobiliário','independência financeira','proventos','valorização patrimonial','fluxo de caixa'].map(t => (
+              <span key={t} className="tag" style={{ color: 'var(--green)', borderColor: 'rgba(46,204,113,0.3)', background: 'rgba(46,204,113,0.1)' }}>{t}</span>
+            ))}
+          </div>
+        </div>
+        <div className="glass-panel" style={{ padding: '3vh 2vw', borderColor: 'var(--red)' }}>
+          <h3 className="section-title" style={{ color: 'var(--red)' }}>
+            <Icons.Alert /> Contextos Negativos — Detectar/Evitar
+          </h3>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginTop: '1vh' }}>
+            {['vacância','inadimplência','risco','prejuízo','corte de dividendos','alavancagem','queda','crise','desvalorização','deterioração','incerteza','baixa liquidez','má gestão','redução de proventos','juros altos','risco de crédito'].map(t => (
+              <span key={t} className="tag" style={{ color: 'var(--red)', borderColor: 'rgba(255,77,77,0.3)', background: 'rgba(255,77,77,0.1)' }}>{t}</span>
+            ))}
+          </div>
+        </div>
+      </div>
+      <div className="glass-panel" style={{ marginTop: '2vh', padding: '2vh 2vw' }}>
+        <p style={{ fontSize: '1rem', color: 'var(--text-secondary)', textAlign: 'center' }}>
+          A plataforma sinaliza automaticamente quando um termo aparentemente positivo <span className="positive-context">(ex: dividendos)</span> aparece em um contexto negativo <span className="negative-context">(ex: corte de dividendos)</span>, evitando erros de campanha.
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function Slide08() {
+  const sources = [
+    ['1','InfoMoney','Editorial','RSS','infomoney.com.br/feed/'],
+    ['2','Empiricus','Editorial','RSS','empiricus.com.br/feed/'],
+    ['3','Money Times','Editorial','RSS','moneytimes.com.br/feed/'],
+    ['4','Seu Dinheiro','Editorial','RSS','seudinheiro.com/feed/'],
+    ['5','Exame Invest','Editorial','RSS','exame.com/feed/'],
+    ['6','CNN Brasil Business','Editorial','RSS','cnnbrasil.com.br/feed/'],
+    ['7','Suno Research','Editorial','RSS (Sec.)','sunoresearch.com.br/feed/'],
+    ['8','E-Investidor','Editorial','RSS (Sec.)','einvestidor.estadao.com.br/feed'],
+    ['9','NeoFeed','Editorial','RSS (Sec.)','neofeed.com.br/feed/'],
+    ['10','Toro Investimentos','Editorial','RSS','blog.toroinvestimentos.com.br/feed/'],
+    ['11','Funds Explorer','Portal','Scraping','fundsexplorer.com.br'],
+    ['12','Status Invest','Portal','Scraping','statusinvest.com.br'],
+    ['13','Clube FII','Portal','Scraping','clubefii.com.br'],
+    ['14','FIIs.com.br','Portal','Scraping','fiis.com.br'],
+    ['15','Portal do FII','Portal','Scraping','portaldofii.com.br'],
+    ['16','Investidor10','Portal','Scraping','investidor10.com.br'],
+    ['17','Eu Quero Investir','Portal','Scraping','euqueroinvestir.com'],
+    ['18','Bora Investir (B3)','Institutional','Scraping','borainvestir.b3.com.br'],
+    ['19','XP Conteúdos','Institutional','Scraping','conteudos.xpi.com.br'],
+    ['20','Investing Brasil','Portal','Scraping','br.investing.com'],
+    ['21','Reddit','Behavioral','API (PRAW)','reddit.com'],
+  ];
+  return (
+    <div className="layout-standard">
+      <h2 className="slide-subtitle">Editoriais, Portais, Institucionais e Comportamentais</h2>
+      <h1 className="slide-title">21 Fontes Monitoradas</h1>
+      <div className="layout-table">
+        <table className="table-elegant">
+          <thead>
+            <tr><th>#</th><th>Fonte</th><th>Tipo</th><th>Método</th><th>Endpoint</th></tr>
+          </thead>
+          <tbody>
+            {sources.map(([n, name, cat, method, url]) => (
+              <tr key={n}>
+                <td style={{ fontWeight: 700, color: 'var(--accent)' }}>{n}</td>
+                <td>{name}</td>
+                <td><span className="tag" style={{ fontSize: '0.7rem' }}>{cat}</span></td>
+                <td>{method}</td>
+                <td style={{ fontSize: '0.75rem', color: 'var(--text-secondary)' }}>{url}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
+
+function Slide09() {
+  return (
+    <div className="layout-standard">
+      <h2 className="slide-subtitle">Bronze → Silver → Gold</h2>
+      <h1 className="slide-title">Medallion Architecture</h1>
+      <div className="layout-grid-2x2" style={{ gap: '2vw' }}>
+        <div className="glass-panel" style={{ padding: '3vh 2vw', borderColor: 'var(--bronze)' }}>
+          <h3 className="section-title" style={{ color: 'var(--bronze)' }}>
+            <span className="tag" style={{ background: 'rgba(205,127,50,0.15)', color: 'var(--bronze)', borderColor: 'var(--bronze)' }}>BRONZE</span>
+          </h3>
+          <ul className="bullets">
+            <li>Dados brutos de 21 fontes (RSS, scraping, Reddit)</li>
+            <li>Formato Parquet congelado (<code>data/external/</code>)</li>
+            <li>Preservação de <code>source</code>, <code>source_type</code>, <code>ingestion_method</code></li>
+            <li>Regra do Freeze: apenas NB01 faz requests HTTP ao vivo</li>
+          </ul>
+        </div>
+        <div className="glass-panel" style={{ padding: '3vh 2vw', borderColor: 'var(--silver)' }}>
+          <h3 className="section-title" style={{ color: 'var(--silver)' }}>
+            <span className="tag" style={{ background: 'rgba(192,192,192,0.15)', color: 'var(--silver)', borderColor: 'var(--silver)' }}>SILVER</span>
+          </h3>
+          <ul className="bullets">
+            <li>Limpeza HTML, normalização de datas para ISO UTC</li>
+            <li>Deduplicação e qualidade via PySpark Window</li>
+            <li>3 quality gates para garantir consistência</li>
+            <li>Output: <code>silver_articles.parquet</code></li>
+          </ul>
+        </div>
+        <div className="glass-panel" style={{ padding: '3vh 2vw', borderColor: 'var(--gold)' }}>
+          <h3 className="section-title" style={{ color: 'var(--gold)' }}>
+            <span className="tag" style={{ background: 'rgba(255,215,0,0.15)', color: 'var(--gold)', borderColor: 'var(--gold)' }}>GOLD</span>
+          </h3>
+          <ul className="bullets">
+            <li>Índices analíticos: TF-IDF, BM25, MapReduce</li>
+            <li>Sentimento contextual e Marketing Intelligence</li>
+            <li>Dashboard datasets, API payloads e chatbot RAG</li>
+            <li>Outputs: <code>*.parquet</code>, <code>*.pkl</code>, <code>*.json</code></li>
+          </ul>
+        </div>
+        <div className="glass-panel" style={{ padding: '3vh 2vw' }}>
+          <h3 className="section-title">Benefícios</h3>
+          <ul className="bullets">
+            <li>Rastreabilidade completa de dados</li>
+            <li>Confiabilidade e qualidade em cada estágio</li>
+            <li>Reprodutibilidade acadêmica garantida</li>
+            <li>Escalabilidade de laptop a clusters YARN</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Slide10() {
+  return (
+    <div className="layout-standard">
+      <h2 className="slide-subtitle">Processamento Distribuído e Escalabilidade</h2>
+      <h1 className="slide-title">Apache Spark</h1>
+      <div className="layout-split">
+        <div>
+          <ul className="bullets">
+            <li><strong>O que é:</strong> motor de processamento distribuído para Big Data, com operações em memória</li>
+            <li><strong>Processamento Distribuído:</strong> RDDs e DataFrames paralelizados em múltiplos nós</li>
+            <li><strong>Escalabilidade:</strong> horizontal, de laptop local até clusters YARN/Kubernetes</li>
+            <li><strong>Performance:</strong> 10–100x mais rápido que Hadoop MapReduce tradicional</li>
+            <li><strong>Por que Spark?</strong> Corpus de 21 fontes, NLP em escala, MapReduce, TF-IDF e BM25</li>
+          </ul>
+        </div>
+        <div className="glass-panel" style={{ padding: '3vh 2vw', textAlign: 'center' }}>
+          <BigNumber n="10-100x" label="Mais rápido que Hadoop" />
+          <div style={{ marginTop: '3vh', display: 'flex', flexDirection: 'column', gap: '1vh' }}>
+            <div className="step-flow" style={{ justifyContent: 'flex-start' }}>
+              <span className="tag" style={{ fontSize: '0.8rem' }}>spark.driver.memory = 4g</span>
+              <span className="tag" style={{ fontSize: '0.8rem' }}>KryoSerializer</span>
+            </div>
+            <div className="step-flow" style={{ justifyContent: 'flex-start' }}>
+              <span className="tag" style={{ fontSize: '0.8rem' }}>shuffle.partitions = 4</span>
+              <span className="tag" style={{ fontSize: '0.8rem' }}>adaptive.enabled = false</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Slide11() {
+  return (
+    <div className="layout-standard">
+      <h2 className="slide-subtitle">Conceito, tolerância a falhas e processamento distribuído</h2>
+      <h1 className="slide-title">Resilient Distributed Datasets</h1>
+      <div className="layout-split">
+        <div className="glass-panel" style={{ padding: '3vh 2vw' }}>
+          <h3 className="section-title">Conceito</h3>
+          <ul className="bullets">
+            <li>Coleção de dados <strong>imutável</strong>, particionada e distribuída</li>
+            <li><strong>Tolerância a falhas:</strong> lineage graph permite recomputação automática</li>
+            <li>Processamento distribuído: operações paralelas em múltiplos nós</li>
+            <li>Papel no pipeline: NB03 opera diretamente sobre RDDs via PySpark</li>
+          </ul>
+        </div>
+        <div className="glass-panel" style={{ padding: '3vh 2vw' }}>
+          <h3 className="section-title">Pipeline RDD — NB03</h3>
+          <div className="step-flow" style={{ flexDirection: 'column', alignItems: 'stretch' }}>
+            <div className="step-box" style={{ textAlign: 'center' }}>flatMap → tokenização</div>
+            <span className="step-arrow" style={{ textAlign: 'center' }}>↓</span>
+            <div className="step-box" style={{ textAlign: 'center' }}>map → par chave-valor</div>
+            <span className="step-arrow" style={{ textAlign: 'center' }}>↓</span>
+            <div className="step-box" style={{ textAlign: 'center' }}>reduceByKey → soma</div>
+            <span className="step-arrow" style={{ textAlign: 'center' }}>↓</span>
+            <div className="step-box" style={{ textAlign: 'center' }}>sortBy → ranking</div>
+          </div>
+        </div>
+      </div>
+      <div className="glass-panel" style={{ marginTop: '2vh', padding: '2vh 2vw', textAlign: 'center' }}>
+        <p style={{ fontSize: '1rem', color: 'var(--text-secondary)' }}>
+          Se um nó falhar, o Spark recomputa apenas aquela <strong>partição</strong> a partir do lineage — não do zero.
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function Slide12() {
+  return (
+    <div className="layout-standard">
+      <h2 className="slide-subtitle">Pipeline aplicado e resultados obtidos</h2>
+      <h1 className="slide-title">MapReduce</h1>
+      <div className="layout-split">
+        <div className="glass-panel" style={{ padding: '3vh 2vw' }}>
+          <h3 className="section-title">Conceito</h3>
+          <ul className="bullets">
+            <li><strong>Map:</strong> transforma cada entrada em pares chave-valor</li>
+            <li><strong>Reduce:</strong> agrega valores pela mesma chave</li>
+            <li>Executado sobre RDDs com PySpark para distribuição e resiliência</li>
+          </ul>
+          <h3 className="section-title" style={{ marginTop: '2vh' }}>Outputs Reais</h3>
+          <div className="step-flow" style={{ flexDirection: 'column', alignItems: 'stretch' }}>
+            <div className="step-box">global_word_count</div>
+            <div className="step-box">source_word_count</div>
+            <div className="step-box">tofu_frequency</div>
+            <div className="step-box">negative_context</div>
+          </div>
+        </div>
+        <div className="glass-panel" style={{ padding: '3vh 2vw' }}>
+          <h3 className="section-title">O Que Descobrimos</h3>
+          <ul className="bullets">
+            <li>Termos como <strong>"dividendos"</strong>, <strong>"renda"</strong> e <strong>"yield"</strong> dominam o corpus</li>
+            <li>Cada fonte tem peso diferente para termos específicos</li>
+            <li>MapReduce revelou a base quantitativa para orientar budget de campanha</li>
+            <li>Fontes editoriais geram mais volume; portais geram mais termos técnicos</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Slide13() {
+  return (
+    <div className="layout-standard">
+      <h2 className="slide-subtitle">Do que é frequente ao que é estatisticamente importante</h2>
+      <h1 className="slide-title">TF-IDF</h1>
+      <div className="layout-split">
+        <div>
+          <ul className="bullets">
+            <li><strong>Conceito:</strong> Term Frequency × Inverse Document Frequency</li>
+            <li><strong>Peso estatístico:</strong> palavras frequentes em um documento mas raras no corpus recebem peso alto</li>
+            <li><strong>Diferenciação:</strong> frequência pura não discrimina — "FII" aparece em todo documento</li>
+            <li><strong>Por que frequência não basta:</strong> termos genéricos dominam o ranking sem agregar valor analítico</li>
+          </ul>
+          <div className="formula-box" style={{ marginTop: '2vh' }}>
+            TF-IDF = TF(t,d) × IDF(t,D)
+          </div>
+        </div>
+        <div className="glass-panel" style={{ padding: '3vh 2vw' }}>
+          <h3 className="section-title">Exemplo Real</h3>
+          <p style={{ color: 'var(--text-secondary)', lineHeight: 1.6, marginBottom: '1.5vh' }}>
+            A frequência pura mostra <strong>"dividendos"</strong> no topo. O TF-IDF mostra que, em um portal específico, <strong>"CRIP"</strong> ou <strong>"inadimplência"</strong> pode ter peso alto porque aparece muito ali e pouco no resto do corpus.
+          </p>
+          <div className="step-flow" style={{ flexDirection: 'column', alignItems: 'stretch', gap: '8px' }}>
+            <div className="step-box" style={{ background: 'rgba(0,210,255,0.08)' }}>Frequência: termos comuns</div>
+            <div className="step-box" style={{ background: 'rgba(0,210,255,0.15)', borderColor: 'var(--accent)' }}>TF-IDF: termos discriminantes</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Slide14() {
+  return (
+    <div className="layout-standard">
+      <h2 className="slide-subtitle">Ranking contextual e refinamento semântico</h2>
+      <h1 className="slide-title">BM25</h1>
+      <div className="layout-split">
+        <div>
+          <ul className="bullets">
+            <li><strong>Conceito:</strong> Probabilistic Relevance Framework — ranking de similaridade entre query e documentos</li>
+            <li><strong>Refinamento semântico:</strong> considera comprimento do documento e saturação de termos</li>
+            <li><strong>Relevância contextual:</strong> conecta a intenção do investidor aos textos mais pertinentes</li>
+            <li><strong>Uso no projeto:</strong> motor de retrieval do chatbot RAG e das consultas da API</li>
+          </ul>
+          <div className="formula-box" style={{ marginTop: '2vh' }}>
+            BM25(d,q) = Σ IDF(qᵢ) · [ f(qᵢ,d)·(k₁+1) ] / [ f(qᵢ,d) + k₁·(1-b+b·|d|/avgdl) ]
+          </div>
+        </div>
+        <div className="glass-panel" style={{ padding: '3vh 2vw' }}>
+          <h3 className="section-title">Exemplo de Query</h3>
+          <div className="step-flow" style={{ flexDirection: 'column', alignItems: 'stretch', gap: '8px' }}>
+            <div className="step-box" style={{ textAlign: 'center', fontWeight: 600 }}>Query: "melhor FII de logística"</div>
+            <span className="step-arrow" style={{ textAlign: 'center' }}>↓</span>
+            <div className="step-box" style={{ textAlign: 'center' }}>BM25 recupera top 5 documentos</div>
+            <span className="step-arrow" style={{ textAlign: 'center' }}>↓</span>
+            <div className="step-box" style={{ textAlign: 'center' }}>Groq LLM gera resposta contextualizada</div>
+          </div>
+          <p style={{ marginTop: '2vh', color: 'var(--text-secondary)', fontSize: '0.9rem', textAlign: 'center' }}>
+            Evita que artigos longos dominem apenas por serem longos — equilibra frequência e comprimento.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Slide15() {
+  return (
+    <div className="layout-standard">
+      <h2 className="slide-subtitle">MapReduce + TF-IDF + BM25</h2>
+      <h1 className="slide-title">Por Que Combinar as 3 Técnicas?</h1>
+      <div className="step-flow" style={{ marginTop: '2vh', flexWrap: 'wrap' }}>
+        <div className="glass-panel" style={{ padding: '2vh 2vw', flex: '1 1 200px', textAlign: 'center' }}>
+          <div className="big-number" style={{ fontSize: '2.5rem' }}>01</div>
+          <h4 style={{ marginTop: '1vh', color: 'var(--text)' }}>MapReduce</h4>
+          <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>Nos mostrou o que era <strong>frequente</strong> no mercado.</p>
+        </div>
+        <span className="step-arrow" style={{ alignSelf: 'center' }}>→</span>
+        <div className="glass-panel" style={{ padding: '2vh 2vw', flex: '1 1 200px', textAlign: 'center' }}>
+          <div className="big-number" style={{ fontSize: '2.5rem' }}>02</div>
+          <h4 style={{ marginTop: '1vh', color: 'var(--text)' }}>TF-IDF</h4>
+          <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>Revelou o que era <strong>estatisticamente importante</strong> e discriminante.</p>
+        </div>
+        <span className="step-arrow" style={{ alignSelf: 'center' }}>→</span>
+        <div className="glass-panel" style={{ padding: '2vh 2vw', flex: '1 1 200px', textAlign: 'center' }}>
+          <div className="big-number" style={{ fontSize: '2.5rem' }}>03</div>
+          <h4 style={{ marginTop: '1vh', color: 'var(--text)' }}>BM25</h4>
+          <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>Refinou a <strong>relevância contextual</strong> para o investidor de FIIs.</p>
+        </div>
+      </div>
+      <div className="glass-panel" style={{ marginTop: '3vh', padding: '3vh 3vw', textAlign: 'center' }}>
+        <p style={{ fontSize: '1.15rem', fontWeight: 500, color: 'var(--text)', lineHeight: 1.6 }}>
+          A análise de sentimento contextual evitou que termos aparentemente positivos fossem usados em contextos negativos,
+          permitindo <span style={{ color: 'var(--accent)' }}>decisões de marketing mais inteligentes e alinhadas ao topo de funil</span>.
+        </p>
+      </div>
+      <div className="layout-grid-2x2" style={{ marginTop: '2vh' }}>
+        <GlassCard><h4>🎓 Requisito Inicial</h4><p>Contagem de palavras distribuída (MapReduce)</p></GlassCard>
+        <GlassCard><h4>🔬 Evolução Analítica</h4><p>TF-IDF + BM25 para ir além da frequência</p></GlassCard>
+        <GlassCard><h4>🧠 Contexto Semântico</h4><p>Sentimento detecta falsos positivos e negativos</p></GlassCard>
+        <GlassCard><h4>🎯 Decisão de Marketing</h4><p>Inteligência acionável baseada em evidências</p></GlassCard>
+      </div>
+    </div>
+  );
+}
+
+function Slide16() {
+  return (
+    <div className="layout-standard">
+      <h2 className="slide-subtitle">Metodologia, polaridade e contexto semântico</h2>
+      <h1 className="slide-title">Análise de Sentimento Contextual</h1>
+      <div className="layout-split">
+        <div className="glass-panel" style={{ padding: '3vh 2vw' }}>
+          <h3 className="section-title">Metodologia</h3>
+          <ul className="bullets">
+            <li>Léxico FII PT-BR com <strong>70+ termos</strong> + Spark UDF</li>
+            <li><strong>Polaridade:</strong> <code>polarity_score</code> (contínuo) e <code>sentiment_label</code> (positivo/negativo/neutro)</li>
+            <li><strong>Contexto semântico:</strong> análise por proximidade e negação, não apenas palavra isolada</li>
+          </ul>
+          <h3 className="section-title" style={{ marginTop: '2vh' }}>6 Flags de Sinal</h3>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginTop: '1vh' }}>
+            <span className="tag">flag_dividend_cut</span>
+            <span className="tag">flag_vacancy</span>
+            <span className="tag">flag_risk</span>
+            <span className="tag">flag_opportunity</span>
+            <span className="tag">flag_leverage</span>
+            <span className="tag">flag_growth</span>
+          </div>
+        </div>
+        <div className="glass-panel" style={{ padding: '3vh 2vw' }}>
+          <h3 className="section-title">Exemplos</h3>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1vh', marginTop: '1vh' }}>
+            <div className="card" style={{ borderLeft: '3px solid var(--green)' }}>
+              <p style={{ fontSize: '0.9rem' }}>"O FII recebeu <span className="positive-context">aumento de dividendos</span> e a <span className="positive-context">vacância caiu</span> para 2%."</p>
+              <span className="tag" style={{ marginTop: '6px', fontSize: '0.7rem' }}>Sentimento: Positivo</span>
+            </div>
+            <div className="card" style={{ borderLeft: '3px solid var(--red)' }}>
+              <p style={{ fontSize: '0.9rem' }}>"Houve <span className="negative-context">corte de dividendos</span> devido à <span className="negative-context">alta inadimplência</span>."</p>
+              <span className="tag tag-red" style={{ marginTop: '6px', fontSize: '0.7rem' }}>Sentimento: Negativo</span>
+            </div>
+            <div className="card" style={{ borderLeft: '3px solid var(--accent)' }}>
+              <p style={{ fontSize: '0.9rem' }}>"A <span className="positive-context">renda</span> é estável, mas o <span className="negative-context">risco de crédito</span> preocupa."</p>
+              <span className="tag" style={{ marginTop: '6px', fontSize: '0.7rem' }}>Sentimento: Misto</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Slide17() {
+  return (
+    <div className="layout-standard">
+      <h2 className="slide-subtitle">Quando termos positivos vivem em contextos negativos</h2>
+      <h1 className="slide-title">O Desafio dos Falsos Positivos</h1>
+      <div className="layout-split">
+        <div className="glass-panel" style={{ padding: '3vh 2vw', borderColor: 'var(--red)' }}>
+          <h3 className="section-title" style={{ color: 'var(--red)' }}><Icons.Alert /> Exemplo Crítico</h3>
+          <div style={{ marginTop: '2vh', display: 'flex', flexDirection: 'column', gap: '2vh' }}>
+            <div className="card" style={{ borderLeft: '4px solid var(--green)' }}>
+              <h4>Termo Isolado</h4>
+              <p>"<span className="positive-context">dividendos</span>" → <strong>Positivo</strong></p>
+              <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>Frequência pura classifica como positivo</p>
+            </div>
+            <div className="card" style={{ borderLeft: '4px solid var(--red)' }}>
+              <h4>Contexto Real</h4>
+              <p>"<span className="negative-context">corte de dividendos</span>" → <strong>Negativo</strong></p>
+              <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>Análise contextual detecta o verdadeiro sentimento</p>
+            </div>
+          </div>
+        </div>
+        <div className="glass-panel" style={{ padding: '3vh 2vw' }}>
+          <h3 className="section-title">Por Que Contexto Importa</h3>
+          <ul className="bullets">
+            <li>Um gestor pode gastar em campanha usando "dividendos" sem perceber que o mercado fala de <strong>cortes</strong></li>
+            <li>"renda" + "inadimplência" = contexto negativo apesar do termo isolado</li>
+            <li>"yield" + "queda" = alerta de sentimento, não oportunidade</li>
+            <li>A plataforma sinaliza esse desalinhamento <strong>antes</strong> do gasto em campanha</li>
+          </ul>
+          <div className="formula-box" style={{ marginTop: '2vh', fontSize: '1rem' }}>
+            Contexto &gt; Palavra Isolada
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Slide18() {
+  return (
+    <div className="layout-standard">
+      <h2 className="slide-subtitle">Fairness, Transparency, Explainability, Accountability</h2>
+      <h1 className="slide-title">Responsible AI</h1>
+      <div className="layout-grid-2x2">
+        <div className="glass-panel" style={{ padding: '3vh 2vw', borderTop: '3px solid var(--accent)' }}>
+          <h3 className="section-title">⚖️ Fairness</h3>
+          <ul className="bullets">
+            <li>Léxico FII PT-BR revisável e versionável</li>
+            <li>Nenhum profiling individual de investidores</li>
+            <li>Análise agregada e anônima por design</li>
+          </ul>
+        </div>
+        <div className="glass-panel" style={{ padding: '3vh 2vw', borderTop: '3px solid var(--accent)' }}>
+          <h3 className="section-title">🔍 Transparency</h3>
+          <ul className="bullets">
+            <li><code>source</code>, <code>source_type</code> e <code>ingestion_method</code> preservados do Bronze ao Gold</li>
+            <li>Rastreabilidade total de cada output até a fonte original</li>
+          </ul>
+        </div>
+        <div className="glass-panel" style={{ padding: '3vh 2vw', borderTop: '3px solid var(--accent)' }}>
+          <h3 className="section-title">🧠 Explainability</h3>
+          <ul className="bullets">
+            <li>Scores BM25 e TF-IDF decompõem em contribuições por termo</li>
+            <li>Model cards e data lineage publicados</li>
+            <li>CRISP-DM mapping documentado para cada notebook</li>
+          </ul>
+        </div>
+        <div className="glass-panel" style={{ padding: '3vh 2vw', borderTop: '3px solid var(--accent)' }}>
+          <h3 className="section-title">📋 Accountability</h3>
+          <ul className="bullets">
+            <li>Versionamento semântico de datasets e léxicos</li>
+            <li>Responsabilidade clara: plataforma analítica, não de recomendação de investimentos</li>
+            <li>Chatbot inclui disclaimer obrigatório</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Slide19() {
+  return (
+    <div className="layout-standard">
+      <h2 className="slide-subtitle">Compliance no contexto brasileiro</h2>
+      <h1 className="slide-title">LGPD</h1>
+      <div className="layout-split">
+        <div className="glass-panel" style={{ padding: '3vh 2vw' }}>
+          <h3 className="section-title">📜 Base Legal</h3>
+          <ul className="bullets">
+            <li><strong>Interesse legítimo</strong> (Art. 7º, VI) — inteligência pública de mercado</li>
+            <li>Não há coleta de dados pessoais sensíveis de investidores</li>
+            <li>Conteúdo editorial público e comunitário apenas</li>
+          </ul>
+          <h3 className="section-title" style={{ marginTop: '2vh' }}>🛡️ Princípios Aplicados</h3>
+          <ul className="bullets">
+            <li>Minimização: apenas dados necessários para a finalidade analítica</li>
+            <li>Sem profiling individual — análise agregada e anônima</li>
+            <li>Fontes públicas: RSS, metadados de scraping e API pública do Reddit</li>
+          </ul>
+        </div>
+        <div className="glass-panel" style={{ padding: '3vh 2vw', textAlign: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+          <BigNumber n="Art. 7º" label="Lei nº 13.709/2018" />
+          <p style={{ marginTop: '2vh', color: 'var(--text-secondary)', fontSize: '1rem' }}>
+            A plataforma opera sob <strong>interesse legítimo</strong>, com minimização de dados e ausência de profiling individual, em total conformidade com a LGPD.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Slide20() {
+  return (
+    <div className="layout-standard">
+      <h2 className="slide-subtitle">Governança aplicada ao pipeline de inteligência</h2>
+      <h1 className="slide-title">AI Governance</h1>
+      <div className="layout-split">
+        <div className="glass-panel" style={{ padding: '3vh 2vw' }}>
+          <h3 className="section-title">Mecanismos de Governança</h3>
+          <ul className="bullets">
+            <li><strong>XAI:</strong> scores decompostos, model cards publicados</li>
+            <li><strong>Data lineage:</strong> rastreabilidade Bronze → Silver → Gold → API</li>
+            <li><strong>CRISP-DM mapping:</strong> cada notebook (NB00–NB07) mapeado para uma fase</li>
+            <li><strong>Versionamento:</strong> datasets frozen, seeds fixas (<code>RANDOM_SEED = 42</code>), BM25 stateless</li>
+          </ul>
+        </div>
+        <div className="glass-panel" style={{ padding: '3vh 2vw' }}>
+          <h3 className="section-title">Garantias de Reprodutibilidade</h3>
+          <div className="step-flow" style={{ flexDirection: 'column', alignItems: 'stretch', gap: '8px' }}>
+            <div className="step-box" style={{ textAlign: 'center' }}>RANDOM_SEED = 42</div>
+            <div className="step-box" style={{ textAlign: 'center' }}>Dataset Frozen</div>
+            <div className="step-box" style={{ textAlign: 'center' }}>BM25 Stateless</div>
+            <div className="step-box" style={{ textAlign: 'center' }}>.orderBy() Explícito</div>
+          </div>
+          <p style={{ marginTop: '2vh', color: 'var(--text-secondary)', fontSize: '0.9rem', textAlign: 'center' }}>
+            Qualquer pessoa que execute o pipeline obtém os <strong>mesmos resultados</strong>.
+          </p>
+        </div>
+      </div>
+      <div className="glass-panel" style={{ marginTop: '2vh', padding: '2vh 2vw', textAlign: 'center' }}>
+        <p style={{ fontSize: '1rem', color: 'var(--text-secondary)' }}>
+          Governança não é um <em>afterthought</em>; está embutida no pipeline, com rastreabilidade, reproducibilidade e documentação técnica.
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function Slide21() {
+  return (
+    <div className="layout-standard">
+      <h2 className="slide-subtitle">Impacto regulatório e classificação de risco</h2>
+      <h1 className="slide-title">EU AI Act</h1>
+      <div className="layout-split">
+        <div className="glass-panel" style={{ padding: '3vh 2vw' }}>
+          <h3 className="section-title">Regulamento (UE) 2024/1689</h3>
+          <ul className="bullets">
+            <li>Sistema classificado como <strong>risco mínimo</strong> — artigo informacional</li>
+            <li>Não é sistema de crédito, emprego ou justiça</li>
+            <li>Não realiza profiling sensível ou decisões automatizadas sobre pessoas</li>
+            <li>Documentação técnica completa: model cards, data lineage, CRISP-DM mapping</li>
+          </ul>
+        </div>
+        <div className="glass-panel" style={{ padding: '3vh 2vw', textAlign: 'center' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1vh' }}>
+            <div className="step-box" style={{ opacity: 0.3, fontSize: '0.8rem' }}>Proibido (Unacceptable Risk)</div>
+            <div className="step-box" style={{ opacity: 0.4, fontSize: '0.85rem' }}>Alto Risco (High Risk)</div>
+            <div className="step-box" style={{ opacity: 0.5, fontSize: '0.9rem' }}>Risco Limitado (Limited Risk)</div>
+            <div className="step-box" style={{ background: 'var(--accent-dim)', borderColor: 'var(--accent)', color: 'var(--accent)', fontWeight: 700, fontSize: '1rem' }}>
+              ✅ Risco Mínimo (Minimal Risk) ← Nossa Plataforma
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="glass-panel" style={{ marginTop: '2vh', padding: '2vh 2vw', textAlign: 'center' }}>
+        <p style={{ fontSize: '1rem', fontWeight: 500, color: 'var(--text)' }}>
+          O sistema é puramente <strong>informacional</strong>, não toma decisões automatizadas sobre pessoas. Documentação completa mantida mesmo na categoria de risco mínimo.
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function Slide22() {
+  return (
+    <div className="layout-standard">
+      <h2 className="slide-subtitle">Visualização inteligente para tomada de decisão</h2>
+      <h1 className="slide-title">Dashboard & Analytics</h1>
+      <div className="layout-grid-2x2">
+        <div className="glass-panel" style={{ padding: '3vh 2vw' }}>
+          <h3 className="section-title">📊 Visual Analytics</h3>
+          <ul className="bullets">
+            <li>Streamlit + Plotly para interatividade</li>
+            <li>Gráficos de MI Score por FII, sentimento agregado e termos relevantes</li>
+            <li>Validação visual de datasets antes de publicação</li>
+          </ul>
+        </div>
+        <div className="glass-panel" style={{ padding: '3vh 2vw' }}>
+          <h3 className="section-title">🎯 KPIs Principais</h3>
+          <ul className="bullets">
+            <li>MI Score por FII: <code>0.5·relevance + 0.3·|sentiment| + 0.2·opportunity</code></li>
+            <li>Sentimento agregado por fonte e por período</li>
+            <li>Volume de menções e top termos por categoria</li>
+          </ul>
+        </div>
+        <div className="glass-panel" style={{ padding: '3vh 2vw' }}>
+          <h3 className="section-title">🔧 Filtros</h3>
+          <ul className="bullets">
+            <li>Por fonte (editorial, portal, institucional, behavioral)</li>
+            <li>Por FII específico e por sentimento</li>
+            <li>Por período e por tipo de sinal (flags)</li>
+          </ul>
+        </div>
+        <div className="glass-panel" style={{ padding: '3vh 2vw' }}>
+          <h3 className="section-title">💡 Insights</h3>
+          <ul className="bullets">
+            <li>Funil TOFU/MOFU/BOFU com termos prioritários</li>
+            <li>Contexto negativo e oportunidades detectadas</li>
+            <li>Correlação entre volume de menções e sentimento</li>
+          </ul>
+        </div>
+      </div>
+      <div className="glass-panel" style={{ marginTop: '2vh', padding: '2vh 2vw', textAlign: 'center' }}>
+        <p style={{ fontSize: '1rem', color: 'var(--text-secondary)' }}>
+          O NB07 consolida todos os outputs Gold em datasets prontos para Plotly, conectando o analista diretamente à evidência.
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function Slide23() {
+  return (
+    <div className="layout-standard">
+      <h2 className="slide-subtitle">Descobertas, padrões e ganhos analíticos</h2>
+      <h1 className="slide-title">Resultados Analíticos</h1>
+      <div className="layout-grid-2x2">
+        <div className="glass-panel" style={{ padding: '3vh 2vw' }}>
+          <h3 className="section-title">🔍 Descobertas</h3>
+          <ul className="bullets">
+            <li>Termos dominantes do mercado FII identificados via MapReduce</li>
+            <li>Fontes editoriais geram mais volume; portais geram mais termos técnicos</li>
+            <li>15 FIIs analisados com MI Score individual</li>
+          </ul>
+        </div>
+        <div className="glass-panel" style={{ padding: '3vh 2vw' }}>
+          <h3 className="section-title">📈 Termos Relevantes</h3>
+          <ul className="bullets">
+            <li>TF-IDF e BM25 revelaram termos discriminantes por fonte e FII</li>
+            <li>Termos técnicos têm alto poder de diferenciação entre portais</li>
+            <li>Ranking híbrido TF-IDF + BM25 refinou a recuperação semântica</li>
+          </ul>
+        </div>
+        <div className="glass-panel" style={{ padding: '3vh 2vw' }}>
+          <h3 className="section-title">🧩 Padrões Encontrados</h3>
+          <ul className="bullets">
+            <li>Correlação entre volume de menções e sentimento por período</li>
+            <li>Ciclos de otimismo e cautela detectados via sentimento agregado</li>
+            <li>Contexto negativo se concentra em eventos macro (juros, crise)</li>
+          </ul>
+        </div>
+        <div className="glass-panel" style={{ padding: '3vh 2vw' }}>
+          <h3 className="section-title">🚀 Ganhos Analíticos</h3>
+          <ul className="bullets">
+            <li>Redução de ruído via filtragem estatística</li>
+            <li>Segmentação de fontes por poder de propagação de termos</li>
+            <li>Priorização de termos TOFU com base em 4 dimensões</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Slide24() {
+  return (
+    <div className="layout-standard">
+      <h2 className="slide-subtitle">Estratégia baseada em evidências</h2>
+      <h1 className="slide-title">Decisão de Marketing</h1>
+      <div className="layout-split">
+        <div className="glass-panel" style={{ padding: '3vh 2vw', borderColor: 'var(--green)' }}>
+          <h3 className="section-title" style={{ color: 'var(--green)' }}><Icons.Check /> Usar para Campanha</h3>
+          <ul className="bullets">
+            <li><strong>Fontes:</strong> InfoMoney, Exame, Funds Explorer (alto MI Score, baixo ruído)</li>
+            <li><strong>Termos:</strong> dividendos, renda passiva, previsibilidade, yield, longo prazo, patrimônio, carteira, diversificação</li>
+            <li><strong>Contexto:</strong> apenas quando sentimento contextual é positivo ou neutro</li>
+          </ul>
+        </div>
+        <div className="glass-panel" style={{ padding: '3vh 2vw', borderColor: 'var(--red)' }}>
+          <h3 className="section-title" style={{ color: 'var(--red)' }}><Icons.Alert /> Evitar</h3>
+          <ul className="bullets">
+            <li><strong>Contextos:</strong> vacância, inadimplência, corte de dividendos, alavancagem, queda, crise, juros altos</li>
+            <li><strong>Fontes de alto ruído:</strong> identificadas pelo pipeline de sentimento</li>
+            <li><strong>Termos em contexto negativo:</strong> mesmo que isolados sejam positivos</li>
+          </ul>
+        </div>
+      </div>
+      <div className="glass-panel" style={{ marginTop: '2vh', padding: '2vh 2vw', textAlign: 'center' }}>
+        <p style={{ fontSize: '1rem', fontWeight: 500, color: 'var(--text)' }}>
+          A decisão não é baseada em intuição, mas em <span style={{ color: 'var(--accent)' }}>evidências</span> de frequência, relevância, contexto e sentimento.
+        </p>
+        <div className="step-flow" style={{ marginTop: '1vh', justifyContent: 'center' }}>
+          <span className="tag">MapReduce</span>
+          <span className="tag">TF-IDF</span>
+          <span className="tag">BM25</span>
+          <span className="tag">Sentimento</span>
+          <span className="tag">Contexto Negativo</span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Slide25() {
+  return (
+    <div className="layout-standard">
+      <h2 className="slide-subtitle">From Academic Prototype → Market-Ready Platform</h2>
+      <h1 className="slide-title">Próximos Passos</h1>
+      <div className="layout-split">
+        <div className="glass-panel" style={{ padding: '3vh 2vw' }}>
+          <h3 className="section-title"><span className="phase-badge phase-done">✅ Fase 1 — Entregue</span></h3>
+          <ul className="bullets" style={{ marginTop: '1vh' }}>
+            <li>NB00–NB07 completos</li>
+            <li>Spark distribuído + MapReduce/RDD</li>
+            <li>Web scraping pipeline (21 fontes)</li>
+            <li>Word Count + TF-IDF + BM25</li>
+            <li>Sentimento FII PT-BR</li>
+            <li>Dashboard Streamlit + Plotly</li>
+            <li>FastAPI REST + chatbot Groq RAG</li>
+            <li>README + documentação técnica</li>
+          </ul>
+        </div>
+        <div className="glass-panel" style={{ padding: '3vh 2vw' }}>
+          <h3 className="section-title"><span className="phase-badge phase-todo">🔜 Fase 2 — Roadmap</span></h3>
+          <ul className="bullets" style={{ marginTop: '1vh' }}>
+            <li>API Deploy no Render</li>
+            <li>Dashboard Streamlit em produção</li>
+            <li>Dash/Plotly analytical views avançados</li>
+            <li>Groq Chatbot refinado com memória de contexto</li>
+            <li>Embeddings densos (SentenceTransformer PT-BR)</li>
+            <li>Banco vetorial FAISS / Chroma</li>
+            <li>Upgrade RAG: BM25 → dense retrieval</li>
+            <li>Observability, monitoramento e governança contínua</li>
+          </ul>
+        </div>
+      </div>
+      <div className="step-flow" style={{ marginTop: '2vh' }}>
+        <div className="step-box">Academic</div>
+        <span className="step-arrow">→</span>
+        <div className="step-box">Functional</div>
+        <span className="step-arrow">→</span>
+        <div className="step-box">Deployed</div>
+        <span className="step-arrow">→</span>
+        <div className="step-box">Enterprise</div>
+      </div>
+    </div>
+  );
+}
+
+function Slide26() {
+  return (
+    <div className="layout-standard">
+      <h2 className="slide-subtitle">Problema, solução, inteligência e visão estratégica</h2>
+      <h1 className="slide-title">Conclusão</h1>
+      <div className="layout-grid-2x2">
+        <div className="glass-panel" style={{ padding: '3vh 2vw', textAlign: 'center' }}>
+          <div className="big-number" style={{ fontSize: '2.5rem' }}>🎯</div>
+          <h4 style={{ marginTop: '1vh' }}>Problema</h4>
+          <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>Informação dispersa, ruído excessivo, ausência de ferramentas transparentes para FIIs.</p>
+        </div>
+        <div className="glass-panel" style={{ padding: '3vh 2vw', textAlign: 'center' }}>
+          <div className="big-number" style={{ fontSize: '2.5rem' }}>⚡</div>
+          <h4 style={{ marginTop: '1vh' }}>Solução</h4>
+          <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>Plataforma end-to-end de inteligência com 21 fontes, Big Data, NLP, RAG e governança.</p>
+        </div>
+        <div className="glass-panel" style={{ padding: '3vh 2vw', textAlign: 'center' }}>
+          <div className="big-number" style={{ fontSize: '2.5rem' }}>🧠</div>
+          <h4 style={{ marginTop: '1vh' }}>Inteligência</h4>
+          <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>MapReduce + TF-IDF + BM25 + Sentimento = decisões de marketing baseadas em evidências.</p>
+        </div>
+        <div className="glass-panel" style={{ padding: '3vh 2vw', textAlign: 'center' }}>
+          <div className="big-number" style={{ fontSize: '2.5rem' }}>🚀</div>
+          <h4 style={{ marginTop: '1vh' }}>Impacto</h4>
+          <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>Redução de ruído, precisão de campanhas, alinhamento ao investidor, compliance LGPD/EU AI Act.</p>
+        </div>
+      </div>
+      <div className="glass-panel" style={{ marginTop: '2vh', padding: '3vh 3vw', textAlign: 'center' }}>
+        <p style={{ fontSize: '1.2rem', fontWeight: 500, color: 'var(--text)', lineHeight: 1.6 }}>
+          Transformamos sinais não estruturados em inteligência analítica acionável,<br />
+          pronta para impactar decisões de marketing e comunicação no mercado de FIIs.
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function Slide27() {
+  return (
+    <div className="layout-cover">
+      <div className="subtle-glow" style={{ width: '50vw', height: '50vw', background: 'var(--accent)', top: '-15vw', right: '-10vw' }} />
+      <h1 className="slide-title" style={{ fontSize: 'clamp(2.5rem, 6vw, 5rem)' }}>Thanks for Watching</h1>
+      <p style={{ fontSize: 'clamp(1.5rem, 3vw, 2.5rem)', fontWeight: 300, color: 'var(--accent)', marginTop: '2vh', letterSpacing: '0.05em' }}>
+        NOW — MASTÊ ⚡️
+      </p>
+      <div className="author-line" style={{ marginTop: '6vh' }}>
+        <p><strong>Professor:</strong> Eduardo Savino Gomes</p>
+        <p><strong>Autores:</strong> Fabiana Campanari · Pedro Vyctor Almeida</p>
+        <p style={{ marginTop: '1vh' }}>PUC-SP — FACEI — Humanistic AI & Data Science — 2026</p>
+      </div>
+    </div>
+  );
+}
+
+function Slide28() {
+  return (
+    <div className="layout-cover">
+      <div className="github-card">
+        <div className="github-icon"><Icons.Github /></div>
+        <h1 className="slide-title" style={{ fontSize: 'clamp(1.5rem, 3vw, 2.2rem)' }}>
+          Repositório Oficial
+        </h1>
+        <p className="teaser" style={{ maxWidth: '600px' }}>
+          Explore a arquitetura completa, notebooks, pipeline, pesquisa e evolução futura da plataforma.
+        </p>
+        <a className="link-url" href="https://github.com/Quantum-Software-Development/5-cybersecurity-social-engineering-fii-marketing-intelligence-platform" target="_blank" rel="noopener noreferrer" style={{ fontSize: '1rem', marginTop: '2vh' }}>
+          github.com/Quantum-Software-Development/<br />
+          5-cybersecurity-social-engineering-fii-marketing-intelligence-platform
+        </a>
+        <div style={{ marginTop: '3vh', display: 'flex', gap: '8px', flexWrap: 'wrap', justifyContent: 'center' }}>
+          <Tag text="⭐ Star" /><Tag text="🍴 Fork" /><Tag text="📖 README" /><Tag text="🚀 Roadmap" />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+const SLIDE_COMPONENTS = [
+  Slide01, Slide02, Slide03, Slide04, Slide05, Slide06, Slide07, Slide08,
+  Slide09, Slide10, Slide11, Slide12, Slide13, Slide14, Slide15, Slide16,
+  Slide17, Slide18, Slide19, Slide20, Slide21, Slide22, Slide23, Slide24,
+  Slide25, Slide26, Slide27, Slide28
+];
+
+/* ==================== Main App ==================== */
+function PresentationApp() {
+  const [current, setCurrent] = useState(0);
+  const [dark, setDark] = useState(true);
+  const [help, setHelp] = useState(false);
+  const [exit, setExit] = useState(false);
+  const [dlMsg, setDlMsg] = useState(false);
+  const containerRef = useRef(null);
+  const touchStartX = useRef(null);
+
+  const goNext = useCallback(() => setCurrent(c => Math.min(c + 1, TOTAL_SLIDES - 1)), []);
+  const goPrev = useCallback(() => setCurrent(c => Math.max(c - 1, 0)), []);
+  const goStart = useCallback(() => setCurrent(0), []);
+
+  useEffect(() => {
+    const onKey = (e) => {
+      if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === ' ' || e.key === 'Enter') { e.preventDefault(); goNext(); }
+      else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp' || e.key === 'Backspace') { e.preventDefault(); goPrev(); }
+      else if (e.key === 'Home') { e.preventDefault(); goStart(); }
+      else if (e.key === 'Escape') { e.preventDefault(); setExit(true); }
+      else if (e.key === 'h' || e.key === 'H') { e.preventDefault(); setHelp(v => !v); }
+      else if (e.key === 'f' || e.key === 'F') { e.preventDefault(); toggleFullscreen(); }
+      else if (e.key === 'd' || e.key === 'D') { e.preventDefault(); setDark(v => !v); }
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [goNext, goPrev, goStart]);
+
+  useEffect(() => {
+    if (dark) document.body.classList.remove('light-mode');
+    else document.body.classList.add('light-mode');
+  }, [dark]);
+
+  const toggleFullscreen = () => {
+    if (!document.fullscreenElement) {
+      document.documentElement.requestFullscreen().catch(() => {});
+    } else {
+      document.exitFullscreen().catch(() => {});
+    }
+  };
+
+  const onTouchStart = (e) => { touchStartX.current = e.changedTouches[0].screenX; };
+  const onTouchEnd = (e) => {
+    const endX = e.changedTouches[0].screenX;
+    if (touchStartX.current == null) return;
+    const diff = touchStartX.current - endX;
+    if (Math.abs(diff) > 50) { diff > 0 ? goNext() : goPrev(); }
+    touchStartX.current = null;
+  };
+
+  const downloadPPT = () => {
+    setDlMsg(true);
+    setTimeout(() => setDlMsg(false), 3000);
+  };
+
+  const CurrentSlide = SLIDE_COMPONENTS[current];
+
+  return (
+    <div
+      className={`presentation ${dark ? '' : 'light-mode'}`}
+      ref={containerRef}
+      onTouchStart={onTouchStart}
+      onTouchEnd={onTouchEnd}
+    >
+      <div className="progress-bar" style={{ width: `${((current + 1) / TOTAL_SLIDES) * 100}%` }} />
+
+      <div className="controls-left">
+        <span className="slide-counter">{current + 1} / {TOTAL_SLIDES}</span>
+      </div>
+
+      <div className="controls">
+        <button className="btn" onClick={() => setDark(v => !v)} title="Toggle Dark/Light">
+          {dark ? <Icons.Sun /> : <Icons.Moon />}
+          <span>{dark ? 'Light' : 'Dark'}</span>
+        </button>
+        <button className="btn" onClick={toggleFullscreen} title="Fullscreen">
+          <Icons.Fullscreen />
+        </button>
+        <button className="btn" onClick={goStart} title="Return to Start">
+          <Icons.Home />
+        </button>
+        <button className="btn" onClick={downloadPPT} title="Download PPT">
+          <Icons.Download />
+        </button>
+        <button className="btn" onClick={() => setHelp(true)} title="Help">
+          <Icons.Help />
+        </button>
+        <button className="btn" onClick={() => setExit(true)} title="Exit">
+          <Icons.Exit />
+        </button>
+        <button className="btn" onClick={goPrev} title="Previous">
+          <Icons.ArrowLeft />
+        </button>
+        <button className="btn" onClick={goNext} title="Next">
+          <Icons.ArrowRight />
+        </button>
+      </div>
+
+      {SLIDE_COMPONENTS.map((Comp, i) => (
+        <div key={i} className={`slide ${i === current ? 'active' : ''}`}>
+          <Comp />
+        </div>
+      ))}
+
+      {/* Help Modal */}
+      <div className={`modal-overlay ${help ? 'open' : ''}`} onClick={() => setHelp(false)}>
+        <div className="modal-content" onClick={e => e.stopPropagation()}>
+          <h3>Keyboard Shortcuts</h3>
+          <ul>
+            <li><span className="kbd">→</span> <span className="kbd">↓</span> <span className="kbd">Space</span> <span className="kbd">Enter</span> — Next slide</li>
+            <li><span className="kbd">←</span> <span className="kbd">↑</span> <span className="kbd">Backspace</span> — Previous slide</li>
+            <li><span className="kbd">Home</span> — Return to start</li>
+            <li><span className="kbd">Esc</span> — Exit presentation</li>
+            <li><span className="kbd">F</span> — Fullscreen toggle</li>
+            <li><span className="kbd">D</span> — Dark/Light mode</li>
+            <li><span className="kbd">H</span> — Toggle this help</li>
+          </ul>
+          <div className="modal-buttons">
+            <button className="btn" onClick={() => setHelp(false)}>Close</button>
+          </div>
+        </div>
+      </div>
+
+      {/* Exit Modal */}
+      <div className={`modal-overlay ${exit ? 'open' : ''}`} onClick={() => setExit(false)}>
+        <div className="modal-content" onClick={e => e.stopPropagation()}>
+          <h3>Exit Presentation?</h3>
+          <p>Are you sure you want to leave the presentation?</p>
+          <div className="modal-buttons">
+            <button className="btn" onClick={() => setExit(false)}>Stay</button>
+            <button className="btn" onClick={() => window.close()} style={{ color: 'var(--red)', borderColor: 'var(--red)' }}>Exit</button>
+          </div>
+        </div>
+      </div>
+
+      {/* Download PPT toast */}
+      <div className={`modal-overlay ${dlMsg ? 'open' : ''}`} onClick={() => setDlMsg(false)}>
+        <div className="modal-content" onClick={e => e.stopPropagation()} style={{ textAlign: 'center' }}>
+          <h3>Download PowerPoint</h3>
+          <p>This React presentation is exportable as HTML.<br/>For a PPT version, export the structure document provided alongside this presentation.</p>
+          <div className="modal-buttons" style={{ justifyContent: 'center' }}>
+            <button className="btn" onClick={() => setDlMsg(false)}>Got it</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<PresentationApp />);
+</script>
+</body>
+</html>

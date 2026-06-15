@@ -1,0 +1,16 @@
+ticker,full_name,segment,mentions,sentiment_avg,relevance_avg,pct_positivo,pct_negativo,n_dividendo,n_oportunidade,n_risco,n_crise,n_vacancia,n_inadimplencia,risk_score,opportunity_score,mi_score,sentiment_trend
+HCRI11,HC Investimentos,hibrido,90,0.2719,0.3141,57.78,11.11,52,35,40,24,2,9,1.2222,0.9667,0.432,0.9322
+XPML11,XP Malls,shopping,75,0.2759,0.269,58.67,10.67,41,26,31,19,2,7,1.16,0.8933,0.3959,0.9699
+VGIP11,Valora CRI,papel,86,0.2596,0.2722,60.47,13.95,47,31,40,23,1,9,1.2326,0.907,0.3954,0.8164
+HSML11,HSI Malls,shopping,72,0.214,0.3101,54.17,16.67,37,24,28,22,2,8,1.2778,0.8472,0.3887,0.387
+MXRF11,Maxi Renda,papel,102,0.2657,0.2309,57.84,11.76,59,37,44,27,2,9,1.1765,0.9412,0.3834,0.8738
+KNRI11,Kinea Renda Imobiliária,diversificado,83,0.2791,0.1651,62.65,10.84,53,34,40,24,2,9,1.3253,1.0482,0.3759,1.0
+VISC11,Vinci Shopping Centers,shopping,68,0.2376,0.2207,55.88,14.71,37,25,29,20,2,7,1.2794,0.9118,0.364,0.6092
+ALZR11,Alianza Trust,logistica,85,0.2688,0.1831,58.82,12.94,50,31,40,25,2,8,1.2941,0.9529,0.3628,0.903
+BTLG11,BTG Pactual Logística,logistica,73,0.2529,0.1972,60.27,15.07,39,25,32,22,1,6,1.2329,0.8767,0.3498,0.7533
+BRCR11,FII BC Fund,laje,67,0.247,0.202,59.7,16.42,35,23,28,22,0,5,1.2239,0.8657,0.3482,0.6977
+HGLG11,CSHG Logística,logistica,73,0.2343,0.1909,56.16,15.07,40,26,34,25,1,6,1.3425,0.9041,0.3465,0.5782
+RBVA11,Rio Bravo Renda Varejo,varejo,91,0.1729,0.2309,49.45,18.68,44,36,41,32,2,10,1.4176,0.8791,0.3432,0.0
+BRCO11,Bresco Logística,logistica,71,0.2449,0.1627,57.75,14.08,39,25,32,22,1,6,1.2676,0.9014,0.3351,0.678
+CSHG11,CSHG Real Estate,laje,65,0.23,0.1422,58.46,15.38,35,27,31,22,2,8,1.4615,0.9538,0.3309,0.5377
+GGRC11,GGR Covepi Renda,logistica,66,0.2498,0.1393,57.58,13.64,35,23,27,20,1,6,1.2273,0.8788,0.3204,0.7241

@@ -1,0 +1,279 @@
+2026-06-13T23:42:10 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Menu mobile
+		toggle Fiis Fiis LISTA DE FIIs Lista de Fiagros Lista de Fiinfras 
+2026-06-13T23:42:10 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | PLANILHA GRATUITA Saiba quanto você precisa poupar para viver de FIIs Faça o seu
+2026-06-13T23:42:10 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | PLANILHA GRATUITA Saiba quanto você precisa poupar para viver de FIIs Faça o seu
+2026-06-13T23:42:10 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | FIIs Selecionados search Selecionar Todos AAGR11 AAZQ11 ABCP11 AFHI11 AGRX11 AIE
+2026-06-13T23:42:10 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Fundos Setor Preço Atual (R$) Liquidez Diária (R$) P/VP Último Dividendo Dividen
+2026-06-13T23:42:10 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Fundos Setor Preço Atual (R$) Liquidez Diária (R$) P/VP Último Dividendo Dividen
+2026-06-13T23:42:10 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Fundos Setor Preço Atual (R$) Liquidez Diária (R$) P/VP Último Dividendo Dividen
+2026-06-13T23:42:10 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | SNFF11 SUNO FUNDO DE FUNDOS 13,00 % 0,84 Fundo de Fundos SNCI11 SUNO RECEBÍVEIS 
+2026-06-13T23:42:12 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | -- GERAL -- IFIX SUNO 30 Índice XP de Fundos Imobiliários Índice XP de Fundos Im
+2026-06-13T23:42:14 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Nós utilizamos cookies para melhorar sua experiência de navegação e fornecer o m
+2026-06-13T23:42:16 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | menu mobile Notícias Artigos Fiis Fiis Atualizações Lista de Fiis Resumo Lupa de
+2026-06-13T23:42:16 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Papel: Papéis MXRF11 9,72 -0,31% 12,26% Papel Papel Fiagro: Fiagro SNAG11 10,65 
+2026-06-13T23:42:16 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Tijolo: Imóveis Industriais e Logísticos GGRC11 10,15 0,39% 11,90% Tijolo Tijolo
+2026-06-13T23:42:16 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | 12/06/2026 às 11:10 ALZR11 bate marca de 200 mil cotistas e entra para o rol dos
+2026-06-13T23:42:16 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | 12/06/2026 às 11:10 ALZR11 bate marca de 200 mil cotistas e entra para o rol dos
+2026-06-13T23:42:16 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | 12/06/2026 às 19:50 IFIX fecha sexta-feira em alta de 0,3%, mas encerra semana n
+2026-06-13T23:42:16 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | 12/06/2026 às 16:20 IRIM11 pagará maior dividendo em 17 meses e lucra R$ 29,48 m
+2026-06-13T23:42:17 | WARNING  | fii_pipeline.ingestion | SOURCE_FAIL | portaldofii.com.br | HTTPSConnectionPool(host='portaldofii.com.br', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='portaldofii.com.br', port=443): Failed to resolve 'portaldofii.com.br' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-13T23:42:17 | DEBUG    | fii_pipeline.ingestion | RETRY       | portaldofii.com.br | attempt 1/3
+2026-06-13T23:42:19 | WARNING  | fii_pipeline.ingestion | SOURCE_FAIL | portaldofii.com.br | HTTPSConnectionPool(host='portaldofii.com.br', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='portaldofii.com.br', port=443): Failed to resolve 'portaldofii.com.br' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-13T23:42:19 | DEBUG    | fii_pipeline.ingestion | RETRY       | portaldofii.com.br | attempt 2/3
+2026-06-13T23:42:24 | WARNING  | fii_pipeline.ingestion | SOURCE_FAIL | portaldofii.com.br | HTTPSConnectionPool(host='portaldofii.com.br', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='portaldofii.com.br', port=443): Failed to resolve 'portaldofii.com.br' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-13T23:42:26 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Mercado Ações FIIs Ferramentas Notícias IRPF Imposto de Renda 2026 Guia do IRPF 
+2026-06-13T23:42:26 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Mercado Ações FIIs Ferramentas Notícias IRPF Imposto de Renda 2026 Guia do IRPF 
+2026-06-13T23:42:26 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Ideias Ações Fundos Imobiliários Stocks ETFs BDRs Criptomoedas Índices Commoditi
+2026-06-13T23:42:26 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Dividendos Agenda de Dividendos Popular Radar de Dividendos Inteligente Ações qu
+2026-06-13T23:42:26 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Dividendos Agenda de Dividendos Popular Radar de Dividendos Inteligente Ações qu
+2026-06-13T23:42:26 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Mais buscados PETR4 R$ 41,18 0,34% ITUB4 R$ 40,60 0,05% VALE3 R$ 79,17 0,00% ABE
+2026-06-13T23:42:26 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Mais buscados KNCR11 R$ 107,04 0,54% ISNT11 R$ 1.118,00 0,06% KNIP11 R$ 92,00 0,
+2026-06-13T23:42:26 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Mais buscados NVDA US$ 205,19 0,16% AAPL US$ 291,13 1,52% GOOGL US$ 359,68 0,53%
+2026-06-13T23:42:26 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Mais buscados IVVB11 R$ 424,10 0,11% GOLD11 R$ 22,15 0,36% BOVA11 R$ 168,00 0,12
+2026-06-13T23:42:26 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Mais buscados NVDC34 R$ 21,64 0,46% AAPL34 R$ 73,40 0,00% GOGL34 R$ 152,18 0,17%
+2026-06-13T23:42:28 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Home Fundos Imobiliários Fundos Imobiliários Fundos Imobiliários Pátria aposta e
+2026-06-13T23:42:28 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Home Fundos Imobiliários Fundos Imobiliários Fundos Imobiliários Pátria aposta e
+2026-06-13T23:42:28 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Home Fundos Imobiliários Fundos Imobiliários Fundos Imobiliários Pátria aposta e
+2026-06-13T23:42:28 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Fundos Imobiliários Pátria aposta em consolidação dos FIIs e vê oportunidades em
+2026-06-13T23:42:28 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Fundos Imobiliários Ágora reforça posição em fundo de recebíveis e adota postura
+2026-06-13T23:42:28 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Últimas notícias Fundos Imobiliários FIIs enfrentam pressão dos juros, mas fundo
+2026-06-13T23:42:28 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Economia Número de cotistas cresce só 3%: os fundos imobiliários perderam força?
+2026-06-13T23:42:28 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | EQI Research Park Shopping São Caetano fortalece tese premium do HGBS11, avalia 
+2026-06-13T23:42:28 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Especiais EQI Research Investimentos para 2026: juros, eleições e o desafio de m
+2026-06-13T23:42:28 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | EQI Research Os melhores FIIs para investir em novembro: confira carteira da EQI
+2026-06-13T23:42:30 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Ir conteúdo Ir menu mobile Ir menu Ir rodapé Notícias Empresas ESG Mercado Impos
+2026-06-13T23:42:30 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Ir conteúdo Ir menu mobile Ir menu Ir rodapé Notícias Empresas ESG Mercado Impos
+2026-06-13T23:42:30 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Ir conteúdo Ir menu mobile Ir menu Ir rodapé Notícias Empresas ESG Mercado Impos
+2026-06-13T23:42:30 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Colunas em destaque Investir melhor Professor Mira: Como blindar seu patrimônio 
+2026-06-13T23:42:30 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Fundos de Investimento Clube FII: O que fazer quando um FII está caindo muito Cl
+2026-06-13T23:42:30 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Notícias agrupadas por categorias Últimas Imposto de renda Mercado Empresas ESG 
+2026-06-13T23:42:30 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Notícias agrupadas por categorias Últimas Imposto de renda Mercado Empresas ESG 
+2026-06-13T23:42:30 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Notícias agrupadas por categorias Últimas Imposto de renda Mercado Empresas ESG 
+2026-06-13T23:42:32 | WARNING  | fii_pipeline.ingestion | SOURCE_FAIL | conteudos.xpi.com.br | HTTP 403
+2026-06-13T23:42:33 | WARNING  | fii_pipeline.ingestion | SOURCE_FAIL | br.investing.com | HTTP 403
+2026-06-13T23:42:35 | WARNING  | fii_pipeline.ingestion | SOURCE_FAIL | portaldofii.com.br | RSS bozo: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+2026-06-13T23:42:45 | INFO     | fii_pipeline.ingestion | DATASET_FROZEN | /Users/fabicampanari/Desktop/project-fii-marketing-intelligence-platform/2-FIIIs_Final/notebooks/5-final-nbks/data/external/bronze_all_articles.parquet | 160 records | downstream reads only
+2026-06-14T00:18:23 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Menu mobile
+		toggle Fiis Fiis LISTA DE FIIs Lista de Fiagros Lista de Fiinfras 
+2026-06-14T00:18:23 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | PLANILHA GRATUITA Saiba quanto você precisa poupar para viver de FIIs Faça o seu
+2026-06-14T00:18:23 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | PLANILHA GRATUITA Saiba quanto você precisa poupar para viver de FIIs Faça o seu
+2026-06-14T00:18:23 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | FIIs Selecionados search Selecionar Todos AAGR11 AAZQ11 ABCP11 AFHI11 AGRX11 AIE
+2026-06-14T00:18:23 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Fundos Setor Preço Atual (R$) Liquidez Diária (R$) P/VP Último Dividendo Dividen
+2026-06-14T00:18:23 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Fundos Setor Preço Atual (R$) Liquidez Diária (R$) P/VP Último Dividendo Dividen
+2026-06-14T00:18:23 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Fundos Setor Preço Atual (R$) Liquidez Diária (R$) P/VP Último Dividendo Dividen
+2026-06-14T00:18:23 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | SNFF11 SUNO FUNDO DE FUNDOS 13,00 % 0,84 Fundo de Fundos SNCI11 SUNO RECEBÍVEIS 
+2026-06-14T00:18:25 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | -- GERAL -- IFIX SUNO 30 Índice XP de Fundos Imobiliários Índice XP de Fundos Im
+2026-06-14T00:18:27 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Nós utilizamos cookies para melhorar sua experiência de navegação e fornecer o m
+2026-06-14T00:18:29 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | menu mobile Notícias Artigos Fiis Fiis Atualizações Lista de Fiis Resumo Lupa de
+2026-06-14T00:18:29 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Papel: Papéis MXRF11 9,72 -0,31% 12,26% Papel Papel Fiagro: Fiagro SNAG11 10,65 
+2026-06-14T00:18:29 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Tijolo: Imóveis Industriais e Logísticos GGRC11 10,15 0,39% 11,90% Tijolo Tijolo
+2026-06-14T00:18:29 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | 12/06/2026 às 11:10 ALZR11 bate marca de 200 mil cotistas e entra para o rol dos
+2026-06-14T00:18:29 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | 12/06/2026 às 11:10 ALZR11 bate marca de 200 mil cotistas e entra para o rol dos
+2026-06-14T00:18:29 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | 12/06/2026 às 19:50 IFIX fecha sexta-feira em alta de 0,3%, mas encerra semana n
+2026-06-14T00:18:29 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | 12/06/2026 às 16:20 IRIM11 pagará maior dividendo em 17 meses e lucra R$ 29,48 m
+2026-06-14T00:18:31 | WARNING  | fii_pipeline.ingestion | SOURCE_FAIL | portaldofii.com.br | HTTPSConnectionPool(host='portaldofii.com.br', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='portaldofii.com.br', port=443): Failed to resolve 'portaldofii.com.br' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-14T00:18:31 | DEBUG    | fii_pipeline.ingestion | RETRY       | portaldofii.com.br | attempt 1/3
+2026-06-14T00:18:33 | WARNING  | fii_pipeline.ingestion | SOURCE_FAIL | portaldofii.com.br | HTTPSConnectionPool(host='portaldofii.com.br', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='portaldofii.com.br', port=443): Failed to resolve 'portaldofii.com.br' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-14T00:18:33 | DEBUG    | fii_pipeline.ingestion | RETRY       | portaldofii.com.br | attempt 2/3
+2026-06-14T00:18:37 | WARNING  | fii_pipeline.ingestion | SOURCE_FAIL | portaldofii.com.br | HTTPSConnectionPool(host='portaldofii.com.br', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='portaldofii.com.br', port=443): Failed to resolve 'portaldofii.com.br' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-14T00:18:39 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Mercado Ações FIIs Ferramentas Notícias IRPF Imposto de Renda 2026 Guia do IRPF 
+2026-06-14T00:18:39 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Mercado Ações FIIs Ferramentas Notícias IRPF Imposto de Renda 2026 Guia do IRPF 
+2026-06-14T00:18:39 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Ideias Ações Fundos Imobiliários Stocks ETFs BDRs Criptomoedas Índices Commoditi
+2026-06-14T00:18:39 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Dividendos Agenda de Dividendos Popular Radar de Dividendos Inteligente Ações qu
+2026-06-14T00:18:39 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Dividendos Agenda de Dividendos Popular Radar de Dividendos Inteligente Ações qu
+2026-06-14T00:18:39 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Mais buscados PETR4 R$ 41,18 0,34% ITUB4 R$ 40,60 0,05% VALE3 R$ 79,17 0,00% ABE
+2026-06-14T00:18:39 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Mais buscados KNCR11 R$ 107,04 0,54% ISNT11 R$ 1.118,00 0,06% KNIP11 R$ 92,00 0,
+2026-06-14T00:18:39 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Mais buscados NVDA US$ 205,19 0,16% AAPL US$ 291,13 1,52% GOOGL US$ 359,68 0,53%
+2026-06-14T00:18:39 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Mais buscados IVVB11 R$ 424,10 0,00% GOLD11 R$ 22,12 0,14% BOVA11 R$ 167,92 0,05
+2026-06-14T00:18:39 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Mais buscados NVDC34 R$ 21,64 0,46% AAPL34 R$ 73,40 0,00% GOGL34 R$ 152,18 0,17%
+2026-06-14T00:18:43 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Home Fundos Imobiliários Fundos Imobiliários Fundos Imobiliários Pátria aposta e
+2026-06-14T00:18:43 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Home Fundos Imobiliários Fundos Imobiliários Fundos Imobiliários Pátria aposta e
+2026-06-14T00:18:43 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Home Fundos Imobiliários Fundos Imobiliários Fundos Imobiliários Pátria aposta e
+2026-06-14T00:18:43 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Fundos Imobiliários Pátria aposta em consolidação dos FIIs e vê oportunidades em
+2026-06-14T00:18:43 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Fundos Imobiliários Ágora reforça posição em fundo de recebíveis e adota postura
+2026-06-14T00:18:43 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Últimas notícias Fundos Imobiliários FIIs enfrentam pressão dos juros, mas fundo
+2026-06-14T00:18:43 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Economia Número de cotistas cresce só 3%: os fundos imobiliários perderam força?
+2026-06-14T00:18:43 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | EQI Research Park Shopping São Caetano fortalece tese premium do HGBS11, avalia 
+2026-06-14T00:18:43 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Especiais EQI Research Investimentos para 2026: juros, eleições e o desafio de m
+2026-06-14T00:18:43 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | EQI Research Os melhores FIIs para investir em novembro: confira carteira da EQI
+2026-06-14T00:18:45 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Ir conteúdo Ir menu mobile Ir menu Ir rodapé Notícias Empresas ESG Mercado Impos
+2026-06-14T00:18:45 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Ir conteúdo Ir menu mobile Ir menu Ir rodapé Notícias Empresas ESG Mercado Impos
+2026-06-14T00:18:45 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Ir conteúdo Ir menu mobile Ir menu Ir rodapé Notícias Empresas ESG Mercado Impos
+2026-06-14T00:18:45 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Colunas em destaque Investir melhor Professor Mira: Como blindar seu patrimônio 
+2026-06-14T00:18:45 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Fundos de Investimento Clube FII: O que fazer quando um FII está caindo muito Cl
+2026-06-14T00:18:45 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Notícias agrupadas por categorias Últimas Imposto de renda Mercado Empresas ESG 
+2026-06-14T00:18:45 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Notícias agrupadas por categorias Últimas Imposto de renda Mercado Empresas ESG 
+2026-06-14T00:18:45 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Notícias agrupadas por categorias Últimas Imposto de renda Mercado Empresas ESG 
+2026-06-14T00:18:47 | WARNING  | fii_pipeline.ingestion | SOURCE_FAIL | conteudos.xpi.com.br | HTTP 403
+2026-06-14T00:18:48 | WARNING  | fii_pipeline.ingestion | SOURCE_FAIL | br.investing.com | HTTP 403
+2026-06-14T00:18:50 | WARNING  | fii_pipeline.ingestion | SOURCE_FAIL | portaldofii.com.br | RSS bozo: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+2026-06-14T00:18:52 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Mais de 170 fundos imobiliários (FIIs) divulgam dividendos (30); veja valores - 
+2026-06-14T00:18:52 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Mais de 150 fundos imobiliários divulgam dividendos; veja valores - Fiis
+2026-06-14T00:18:56 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Selic a 14,50%: quais FIIs seguem pagando mais do que os juros? - Riconnect
+2026-06-14T00:18:56 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | FIIs campeões: veja o top 5 de fundos imobiliários mais negociados no Brasil - I
+2026-06-14T00:18:56 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Investir em FIIs pensando em dividendos vale a pena? Entenda! - InfoMoney
+2026-06-14T00:18:56 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Dividendos de FIIs: Como funciona a distribuição de renda - Clube FII
+2026-06-14T00:18:56 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | ‘Crise dos dividendos’ liga alerta nos fundos imobiliários, mas analista recomen
+2026-06-14T00:18:58 | INFO     | fii_pipeline.ingestion | SOURCE_OK   | google_news_rss | 343 records
+2026-06-14T00:18:58 | INFO     | fii_pipeline.ingestion | DATASET_FROZEN | /Users/fabicampanari/Desktop/project-fii-marketing-intelligence-platform/2-FIIIs_Final/notebooks/5-final-nbks/data/external/bronze_all_articles.parquet | 503 records | downstream reads only
+2026-06-14T00:28:29 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Menu mobile
+		toggle Fiis Fiis LISTA DE FIIs Lista de Fiagros Lista de Fiinfras 
+2026-06-14T00:28:29 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | PLANILHA GRATUITA Saiba quanto você precisa poupar para viver de FIIs Faça o seu
+2026-06-14T00:28:29 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | PLANILHA GRATUITA Saiba quanto você precisa poupar para viver de FIIs Faça o seu
+2026-06-14T00:28:29 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | FIIs Selecionados search Selecionar Todos AAGR11 AAZQ11 ABCP11 AFHI11 AGRX11 AIE
+2026-06-14T00:28:29 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Fundos Setor Preço Atual (R$) Liquidez Diária (R$) P/VP Último Dividendo Dividen
+2026-06-14T00:28:29 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Fundos Setor Preço Atual (R$) Liquidez Diária (R$) P/VP Último Dividendo Dividen
+2026-06-14T00:28:29 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Fundos Setor Preço Atual (R$) Liquidez Diária (R$) P/VP Último Dividendo Dividen
+2026-06-14T00:28:29 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | SNFF11 SUNO FUNDO DE FUNDOS 13,00 % 0,84 Fundo de Fundos SNCI11 SUNO RECEBÍVEIS 
+2026-06-14T00:28:31 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | -- GERAL -- IFIX SUNO 30 Índice XP de Fundos Imobiliários Índice XP de Fundos Im
+2026-06-14T00:28:33 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Nós utilizamos cookies para melhorar sua experiência de navegação e fornecer o m
+2026-06-14T00:28:35 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | menu mobile Notícias Artigos Fiis Fiis Atualizações Lista de Fiis Resumo Lupa de
+2026-06-14T00:28:35 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Papel: Papéis MXRF11 9,72 -0,31% 12,26% Papel Papel Fiagro: Fiagro SNAG11 10,65 
+2026-06-14T00:28:35 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Tijolo: Imóveis Industriais e Logísticos GGRC11 10,15 0,39% 11,90% Tijolo Tijolo
+2026-06-14T00:28:35 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | 12/06/2026 às 11:10 ALZR11 bate marca de 200 mil cotistas e entra para o rol dos
+2026-06-14T00:28:35 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | 12/06/2026 às 11:10 ALZR11 bate marca de 200 mil cotistas e entra para o rol dos
+2026-06-14T00:28:35 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | 12/06/2026 às 19:50 IFIX fecha sexta-feira em alta de 0,3%, mas encerra semana n
+2026-06-14T00:28:35 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | 12/06/2026 às 16:20 IRIM11 pagará maior dividendo em 17 meses e lucra R$ 29,48 m
+2026-06-14T00:28:37 | WARNING  | fii_pipeline.ingestion | SOURCE_FAIL | portaldofii.com.br | HTTPSConnectionPool(host='portaldofii.com.br', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='portaldofii.com.br', port=443): Failed to resolve 'portaldofii.com.br' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-14T00:28:37 | DEBUG    | fii_pipeline.ingestion | RETRY       | portaldofii.com.br | attempt 1/3
+2026-06-14T00:28:39 | WARNING  | fii_pipeline.ingestion | SOURCE_FAIL | portaldofii.com.br | HTTPSConnectionPool(host='portaldofii.com.br', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='portaldofii.com.br', port=443): Failed to resolve 'portaldofii.com.br' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-14T00:28:39 | DEBUG    | fii_pipeline.ingestion | RETRY       | portaldofii.com.br | attempt 2/3
+2026-06-14T00:28:43 | WARNING  | fii_pipeline.ingestion | SOURCE_FAIL | portaldofii.com.br | HTTPSConnectionPool(host='portaldofii.com.br', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='portaldofii.com.br', port=443): Failed to resolve 'portaldofii.com.br' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-14T00:28:45 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Mercado Ações FIIs Ferramentas Notícias IRPF Imposto de Renda 2026 Guia do IRPF 
+2026-06-14T00:28:45 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Mercado Ações FIIs Ferramentas Notícias IRPF Imposto de Renda 2026 Guia do IRPF 
+2026-06-14T00:28:45 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Ideias Ações Fundos Imobiliários Stocks ETFs BDRs Criptomoedas Índices Commoditi
+2026-06-14T00:28:45 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Dividendos Agenda de Dividendos Popular Radar de Dividendos Inteligente Ações qu
+2026-06-14T00:28:45 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Dividendos Agenda de Dividendos Popular Radar de Dividendos Inteligente Ações qu
+2026-06-14T00:28:45 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Mais buscados PETR4 R$ 41,18 0,34% ITUB4 R$ 40,60 0,05% VALE3 R$ 79,17 0,00% ABE
+2026-06-14T00:28:45 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Mais buscados KNCR11 R$ 107,04 0,54% ISNT11 R$ 1.118,00 0,06% KNIP11 R$ 92,00 0,
+2026-06-14T00:28:45 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Mais buscados NVDA US$ 205,19 0,16% AAPL US$ 291,13 1,52% GOOGL US$ 359,68 0,53%
+2026-06-14T00:28:45 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Mais buscados IVVB11 R$ 424,10 0,00% GOLD11 R$ 22,12 0,14% BOVA11 R$ 167,92 0,05
+2026-06-14T00:28:45 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Mais buscados NVDC34 R$ 21,64 0,46% AAPL34 R$ 73,40 0,00% GOGL34 R$ 152,18 0,17%
+2026-06-14T00:28:47 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Home Fundos Imobiliários Fundos Imobiliários Fundos Imobiliários Pátria aposta e
+2026-06-14T00:28:47 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Home Fundos Imobiliários Fundos Imobiliários Fundos Imobiliários Pátria aposta e
+2026-06-14T00:28:47 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Home Fundos Imobiliários Fundos Imobiliários Fundos Imobiliários Pátria aposta e
+2026-06-14T00:28:47 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Fundos Imobiliários Pátria aposta em consolidação dos FIIs e vê oportunidades em
+2026-06-14T00:28:47 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Fundos Imobiliários Ágora reforça posição em fundo de recebíveis e adota postura
+2026-06-14T00:28:47 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Últimas notícias Fundos Imobiliários FIIs enfrentam pressão dos juros, mas fundo
+2026-06-14T00:28:47 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Economia Número de cotistas cresce só 3%: os fundos imobiliários perderam força?
+2026-06-14T00:28:47 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | EQI Research Park Shopping São Caetano fortalece tese premium do HGBS11, avalia 
+2026-06-14T00:28:47 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Especiais EQI Research Investimentos para 2026: juros, eleições e o desafio de m
+2026-06-14T00:28:47 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | EQI Research Os melhores FIIs para investir em novembro: confira carteira da EQI
+2026-06-14T00:28:49 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Ir conteúdo Ir menu mobile Ir menu Ir rodapé Notícias Empresas ESG Mercado Impos
+2026-06-14T00:28:49 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Ir conteúdo Ir menu mobile Ir menu Ir rodapé Notícias Empresas ESG Mercado Impos
+2026-06-14T00:28:49 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Ir conteúdo Ir menu mobile Ir menu Ir rodapé Notícias Empresas ESG Mercado Impos
+2026-06-14T00:28:49 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Colunas em destaque Investir melhor Professor Mira: Como blindar seu patrimônio 
+2026-06-14T00:28:49 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Fundos de Investimento Clube FII: O que fazer quando um FII está caindo muito Cl
+2026-06-14T00:28:49 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Notícias agrupadas por categorias Últimas Imposto de renda Mercado Empresas ESG 
+2026-06-14T00:28:49 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Notícias agrupadas por categorias Últimas Imposto de renda Mercado Empresas ESG 
+2026-06-14T00:28:49 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Notícias agrupadas por categorias Últimas Imposto de renda Mercado Empresas ESG 
+2026-06-14T00:28:51 | WARNING  | fii_pipeline.ingestion | SOURCE_FAIL | conteudos.xpi.com.br | HTTP 403
+2026-06-14T00:28:52 | WARNING  | fii_pipeline.ingestion | SOURCE_FAIL | br.investing.com | HTTP 403
+2026-06-14T00:28:54 | WARNING  | fii_pipeline.ingestion | SOURCE_FAIL | portaldofii.com.br | RSS bozo: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+2026-06-14T00:28:57 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Mais de 170 fundos imobiliários (FIIs) divulgam dividendos (30); veja valores - 
+2026-06-14T00:29:00 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Dividendos dos FIIs: confira os fundos imobiliários que pagam na semana de 18 ma
+2026-06-14T00:29:00 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Selic a 14,50%: quais FIIs seguem pagando mais do que os juros? - Riconnect
+2026-06-14T00:29:00 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | FIIs campeões: veja o top 5 de fundos imobiliários mais negociados no Brasil - I
+2026-06-14T00:29:00 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Dividendos de FIIs: veja os fundos imobiliários que anunciam hoje (29) - Fiis
+2026-06-14T00:29:00 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Investir em FIIs pensando em dividendos vale a pena? Entenda! - InfoMoney
+2026-06-14T00:29:00 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Dividendos de FIIs: Como funciona a distribuição de renda - Clube FII
+2026-06-14T00:29:00 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | ‘Crise dos dividendos’ liga alerta nos fundos imobiliários, mas analista recomen
+2026-06-14T00:29:02 | INFO     | fii_pipeline.ingestion | SOURCE_OK   | google_news_rss | 351 records
+2026-06-14T00:29:03 | INFO     | fii_pipeline.ingestion | DATASET_FROZEN | /Users/fabicampanari/Desktop/project-fii-marketing-intelligence-platform/2-FIIIs_Final/notebooks/5-final-nbks/data/external/bronze_all_articles.parquet | 512 records | downstream reads only
+2026-06-14T00:31:55 | INFO     | fii_pipeline.ingestion | SPARK_START | app=FIIIntelligencePlatform_silver | spark=4.1.2
+2026-06-14T00:32:02 | INFO     | fii_pipeline.ingestion | QUALITY_CHECK | gate=G1_null_ids | passed=512 | dropped=0
+2026-06-14T00:32:03 | INFO     | fii_pipeline.ingestion | QUALITY_CHECK | gate=G2_word_count | passed=129 | min_words=30
+2026-06-14T00:32:04 | INFO     | fii_pipeline.ingestion | QUALITY_CHECK | gate=G3_dedup | passed=129 | dropped=0
+2026-06-14T00:33:54 | INFO     | fii_pipeline.ingestion | SPARK_START | app=FIIIntelligencePlatform_wc | spark=4.1.2
+2026-06-14T00:36:53 | INFO     | fii_pipeline.ingestion | SPARK_START | app=FIIIntelligencePlatform_wc | spark=4.1.2
+2026-06-14T00:43:50 | INFO     | fii_pipeline.ingestion | SPARK_START | app=fii_platform_index | spark=4.1.2
+2026-06-14T00:46:13 | INFO     | fii_pipeline.ingestion | SPARK_START | app=fii_platform_index | spark=4.1.2
+2026-06-14T00:48:23 | INFO     | fii_pipeline.ingestion | SPARK_START | app=fii_platform_index | spark=4.1.2
+2026-06-14T00:49:50 | INFO     | fii_pipeline.ingestion | SPARK_START | app=fii_platform_index | spark=4.1.2
+2026-06-14T00:49:51 | INFO     | fii_pipeline.ingestion | QUALITY_CHECK | nb=NB04 | tfidf_docs=129 | vocab=9329 | bm25_avgdl=360.41
+2026-06-14T00:51:21 | INFO     | fii_pipeline.ingestion | SPARK_START | app=FIIIntelligencePlatform_sentiment | spark=4.1.2
+2026-06-14T00:56:23 | INFO     | fii_pipeline.ingestion | QUALITY_CHECK | nb=NB05 | total_docs=129 | positivo=73 | negativo=9 | neutro=47
+2026-06-14T00:58:34 | INFO     | fii_pipeline.ingestion | SPARK_START | app=FIIIntelligencePlatform_mi | spark=4.1.2
+2026-06-14T00:58:38 | INFO     | fii_pipeline.ingestion | QUALITY_CHECK | nb=NB06 | fii_entities=15 | mi_signals_rows=15 | top_articles_rows=150 | funil_rows=300
+2026-06-14T00:59:25 | INFO     | fii_pipeline.ingestion | SPARK_START | app=FIIIntelligencePlatform_dashboard | spark=4.1.2
+2026-06-14T01:21:41 | INFO     | fii_pipeline.ingestion | SPARK_START | app=FIIIntelligencePlatform_dashboard | spark=4.1.2
+2026-06-14T01:21:43 | INFO     | fii_pipeline.ingestion | QUALITY_CHECK | nb=NB07 | pipeline_checks_passed=20 | pipeline_checks_total=20 | dashboard_articles=129 | fii_entities=15
+2026-06-14T15:38:03 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Menu mobile
+		toggle Fiis Fiis LISTA DE FIIs Lista de Fiagros Lista de Fiinfras 
+2026-06-14T15:38:03 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | PLANILHA GRATUITA Saiba quanto você precisa poupar para viver de FIIs Faça o seu
+2026-06-14T15:38:03 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | PLANILHA GRATUITA Saiba quanto você precisa poupar para viver de FIIs Faça o seu
+2026-06-14T15:38:03 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | FIIs Selecionados search Selecionar Todos AAGR11 AAZQ11 ABCP11 AFHI11 AGRX11 AIE
+2026-06-14T15:38:03 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Fundos Setor Preço Atual (R$) Liquidez Diária (R$) P/VP Último Dividendo Dividen
+2026-06-14T15:38:03 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Fundos Setor Preço Atual (R$) Liquidez Diária (R$) P/VP Último Dividendo Dividen
+2026-06-14T15:38:03 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Fundos Setor Preço Atual (R$) Liquidez Diária (R$) P/VP Último Dividendo Dividen
+2026-06-14T15:38:03 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | SNFF11 SUNO FUNDO DE FUNDOS 12,00 % 0,84 Fundo de Fundos SNCI11 SUNO RECEBÍVEIS 
+2026-06-14T15:38:05 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | -- GERAL -- IFIX SUNO 30 Índice XP de Fundos Imobiliários Índice XP de Fundos Im
+2026-06-14T15:38:07 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Nós utilizamos cookies para melhorar sua experiência de navegação e fornecer o m
+2026-06-14T15:38:09 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | menu mobile Notícias Artigos Fiis Fiis Atualizações Lista de Fiis Resumo Lupa de
+2026-06-14T15:38:09 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Papel: Papéis MXRF11 9,72 -0,31% 12,26% Papel Papel Fiagro: Fiagro SNAG11 10,65 
+2026-06-14T15:38:09 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Tijolo: Imóveis Industriais e Logísticos GGRC11 10,15 0,39% 11,90% Tijolo Tijolo
+2026-06-14T15:38:09 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | 12/06/2026 às 11:10 ALZR11 bate marca de 200 mil cotistas e entra para o rol dos
+2026-06-14T15:38:09 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | 12/06/2026 às 11:10 ALZR11 bate marca de 200 mil cotistas e entra para o rol dos
+2026-06-14T15:38:09 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | 12/06/2026 às 19:50 IFIX fecha sexta-feira em alta de 0,3%, mas encerra semana n
+2026-06-14T15:38:09 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | 12/06/2026 às 16:20 IRIM11 pagará maior dividendo em 17 meses e lucra R$ 29,48 m
+2026-06-14T15:38:10 | WARNING  | fii_pipeline.ingestion | SOURCE_FAIL | portaldofii.com.br | HTTPSConnectionPool(host='portaldofii.com.br', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='portaldofii.com.br', port=443): Failed to resolve 'portaldofii.com.br' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-14T15:38:10 | DEBUG    | fii_pipeline.ingestion | RETRY       | portaldofii.com.br | attempt 1/3
+2026-06-14T15:38:12 | WARNING  | fii_pipeline.ingestion | SOURCE_FAIL | portaldofii.com.br | HTTPSConnectionPool(host='portaldofii.com.br', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='portaldofii.com.br', port=443): Failed to resolve 'portaldofii.com.br' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-14T15:38:12 | DEBUG    | fii_pipeline.ingestion | RETRY       | portaldofii.com.br | attempt 2/3
+2026-06-14T15:38:16 | WARNING  | fii_pipeline.ingestion | SOURCE_FAIL | portaldofii.com.br | HTTPSConnectionPool(host='portaldofii.com.br', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='portaldofii.com.br', port=443): Failed to resolve 'portaldofii.com.br' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-14T15:38:19 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Mercado Ações FIIs Ferramentas Notícias IRPF Imposto de Renda 2026 Guia do IRPF 
+2026-06-14T15:38:19 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Mercado Ações FIIs Ferramentas Notícias IRPF Imposto de Renda 2026 Guia do IRPF 
+2026-06-14T15:38:19 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Ideias Ações Fundos Imobiliários Stocks ETFs BDRs Criptomoedas Índices Commoditi
+2026-06-14T15:38:19 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Dividendos Agenda de Dividendos Popular Radar de Dividendos Inteligente Ações qu
+2026-06-14T15:38:19 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Dividendos Agenda de Dividendos Popular Radar de Dividendos Inteligente Ações qu
+2026-06-14T15:38:19 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Mais buscados PETR4 R$ 41,18 0,00% ITUB4 R$ 40,60 0,00% VALE3 R$ 79,17 0,00% ABE
+2026-06-14T15:38:19 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Mais buscados KNCR11 R$ 107,04 0,54% ISNT11 R$ 1.118,00 0,06% KNIP11 R$ 92,00 0,
+2026-06-14T15:38:19 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Mais buscados NVDA US$ 205,19 0,11% AAPL US$ 291,13 0,00% GOOGL US$ 359,68 0,06%
+2026-06-14T15:38:19 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Mais buscados IVVB11 R$ 424,10 0,00% GOLD11 R$ 22,12 0,14% BOVA11 R$ 167,92 0,05
+2026-06-14T15:38:19 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Mais buscados NVDC34 R$ 21,64 0,00% AAPL34 R$ 73,40 0,00% GOGL34 R$ 152,18 0,00%
+2026-06-14T15:38:21 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Home Fundos Imobiliários Fundos Imobiliários Fundos Imobiliários Pátria aposta e
+2026-06-14T15:38:21 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Home Fundos Imobiliários Fundos Imobiliários Fundos Imobiliários Pátria aposta e
+2026-06-14T15:38:21 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Home Fundos Imobiliários Fundos Imobiliários Fundos Imobiliários Pátria aposta e
+2026-06-14T15:38:21 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Fundos Imobiliários Pátria aposta em consolidação dos FIIs e vê oportunidades em
+2026-06-14T15:38:21 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Fundos Imobiliários Ágora reforça posição em fundo de recebíveis e adota postura
+2026-06-14T15:38:21 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Últimas notícias Fundos Imobiliários FIIs enfrentam pressão dos juros, mas fundo
+2026-06-14T15:38:21 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Economia Número de cotistas cresce só 3%: os fundos imobiliários perderam força?
+2026-06-14T15:38:21 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | EQI Research Park Shopping São Caetano fortalece tese premium do HGBS11, avalia 
+2026-06-14T15:38:21 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Especiais EQI Research Investimentos para 2026: juros, eleições e o desafio de m
+2026-06-14T15:38:21 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | EQI Research Os melhores FIIs para investir em novembro: confira carteira da EQI
+2026-06-14T15:38:23 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Ir conteúdo Ir menu mobile Ir menu Ir rodapé Notícias Empresas ESG Mercado Impos
+2026-06-14T15:38:23 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Ir conteúdo Ir menu mobile Ir menu Ir rodapé Notícias Empresas ESG Mercado Impos
+2026-06-14T15:38:23 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Ir conteúdo Ir menu mobile Ir menu Ir rodapé Notícias Empresas ESG Mercado Impos
+2026-06-14T15:38:23 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Colunas em destaque Investir melhor Professor Mira: Como blindar seu patrimônio 
+2026-06-14T15:38:23 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Fundos de Investimento Clube FII: O que fazer quando um FII está caindo muito Cl
+2026-06-14T15:38:23 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Notícias agrupadas por categorias Últimas Imposto de renda Mercado Empresas ESG 
+2026-06-14T15:38:23 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Notícias agrupadas por categorias Últimas Imposto de renda Mercado Empresas ESG 
+2026-06-14T15:38:23 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Notícias agrupadas por categorias Últimas Imposto de renda Mercado Empresas ESG 
+2026-06-14T15:38:25 | WARNING  | fii_pipeline.ingestion | SOURCE_FAIL | conteudos.xpi.com.br | HTTP 403
+2026-06-14T15:38:27 | WARNING  | fii_pipeline.ingestion | SOURCE_FAIL | br.investing.com | HTTP 403
+2026-06-14T15:38:28 | WARNING  | fii_pipeline.ingestion | SOURCE_FAIL | portaldofii.com.br | RSS bozo: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+2026-06-14T15:38:31 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Mais de 170 fundos imobiliários (FIIs) divulgam dividendos (30); veja valores - 
+2026-06-14T15:38:35 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Dividendos dos FIIs: confira os fundos imobiliários que pagam na semana de 18 ma
+2026-06-14T15:38:35 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Selic a 14,50%: quais FIIs seguem pagando mais do que os juros? - Riconnect
+2026-06-14T15:38:35 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | FIIs para viver de renda: dividendos valem o risco ou não? - InvestNews
+2026-06-14T15:38:35 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Fundos Imobiliários Podem Ganhar 400 Mil Novos Investidores Em 2026, Diz Santand
+2026-06-14T15:38:35 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | FIIs campeões: veja o top 5 de fundos imobiliários mais negociados no Brasil - I
+2026-06-14T15:38:35 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Dividendos de FIIs: veja os fundos imobiliários que anunciam hoje (29) - Fiis
+2026-06-14T15:38:35 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Dividendos de FIIs: 52 fundos imobiliários pagam proventos nesta segunda - Estad
+2026-06-14T15:38:35 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | ‘Crise dos dividendos’ liga alerta nos fundos imobiliários, mas analista recomen
+2026-06-14T15:38:35 | DEBUG    | fii_pipeline.ingestion | DUPLICATE   | Dividendos de FIIs: Como funciona a distribuição de renda - Clube FII
+2026-06-14T15:38:37 | INFO     | fii_pipeline.ingestion | SOURCE_OK   | google_news_rss | 345 records
+2026-06-14T15:38:38 | INFO     | fii_pipeline.ingestion | DATASET_FROZEN | /Users/fabicampanari/Desktop/project-fii-marketing-intelligence-platform/data/external/bronze_all_articles.parquet | 503 records | downstream reads only
+2026-06-14T15:44:52 | INFO     | fii_pipeline.ingestion | SPARK_START | app=FIIIntelligencePlatform_silver | spark=4.1.2
+2026-06-14T15:44:56 | INFO     | fii_pipeline.ingestion | QUALITY_CHECK | gate=G1_null_ids | passed=503 | dropped=0
+2026-06-14T15:44:58 | INFO     | fii_pipeline.ingestion | QUALITY_CHECK | gate=G2_word_count | passed=126 | min_words=30
+2026-06-14T15:44:59 | INFO     | fii_pipeline.ingestion | QUALITY_CHECK | gate=G3_dedup | passed=126 | dropped=0
+2026-06-14T15:46:05 | INFO     | fii_pipeline.ingestion | SPARK_START | app=FIIIntelligencePlatform_wc | spark=4.1.2
+2026-06-14T15:48:15 | INFO     | fii_pipeline.ingestion | SPARK_START | app=fii_platform_index | spark=4.1.2
+2026-06-14T15:48:16 | INFO     | fii_pipeline.ingestion | QUALITY_CHECK | nb=NB04 | tfidf_docs=126 | vocab=9449 | bm25_avgdl=360.84
+2026-06-14T15:49:25 | INFO     | fii_pipeline.ingestion | SPARK_START | app=FIIIntelligencePlatform_sentiment | spark=4.1.2
+2026-06-14T15:49:32 | INFO     | fii_pipeline.ingestion | QUALITY_CHECK | nb=NB05 | total_docs=126 | positivo=70 | negativo=17 | neutro=39
+2026-06-14T15:52:03 | INFO     | fii_pipeline.ingestion | SPARK_START | app=FIIIntelligencePlatform_mi | spark=4.1.2
+2026-06-14T15:52:08 | INFO     | fii_pipeline.ingestion | QUALITY_CHECK | nb=NB06 | fii_entities=15 | mi_signals_rows=15 | top_articles_rows=150 | funil_rows=300
+2026-06-14T15:55:11 | INFO     | fii_pipeline.ingestion | SPARK_START | app=FIIIntelligencePlatform_dashboard | spark=4.1.2
+2026-06-14T15:55:16 | INFO     | fii_pipeline.ingestion | QUALITY_CHECK | nb=NB07 | pipeline_checks_passed=20 | pipeline_checks_total=20 | dashboard_articles=126 | fii_entities=15
