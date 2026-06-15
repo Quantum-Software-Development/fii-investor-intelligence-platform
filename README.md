@@ -298,7 +298,7 @@ The platform monitors a curated set of editorial and behavioral sources relevant
 
 <br>
 
-> Detailed documentation per source: [`docs/data_sources.md`](docs/data_sources.md)
+> Detailed documentation per source: [`docs/data_sources.md`](https://github.com/Quantum-Software-Development/5-cybersecurity-social-engineering-fii-marketing-intelligence-platform/blob/2b697bb54a78f4d31424ecd334466f9fc4a8d6e0/docs/data_sources.md)
 
 <br><br>
 
