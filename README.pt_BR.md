@@ -87,7 +87,7 @@ $$\Huge {\textbf{\color{green} CRISP-DM} \space \textbf{\color{white} •} \spac
 <!-- ========= START REACT APP ========= -->
 <p align="center">
 
-  <a href="" target="_blank" rel="noopener noreferrer">
+  <a href="https://euphonious-churros-b68a51.netlify.app/" target="_blank" rel="noopener noreferrer">
     <img 
       src="https://img.shields.io/badge/React-Interactive%20FIIs%20Analytics%20Slides-14532d?style=for-the-badge&logo=react&logoColor=white" 
       alt="React Interactive FIIs Analytics Slides"
