@@ -1,0 +1,64 @@
+# ==========================================================
+# FII Intelligence Platform
+# Investor Intelligence Platform — FIIs Brasil
+# API Production Requirements
+#
+# WHAT THIS FILE IS
+# This is a lightweight dependency file for API-only production
+# deployments. It contains just the minimum packages required
+# to serve the FastAPI application and its retrieval pipeline.
+#
+# WHEN TO USE
+# Use this file in production environments such as Render,
+# especially when you want a smaller build, faster cold start,
+# and lower memory usage.
+#
+# HOW TO USE
+# 1) Install only the API production stack:
+#    pip install -r requirements-api.txt
+#
+# 2) Use this file for API-only deployment targets.
+#
+# 3) Do not use this file if you also need notebooks, tests,
+#    PySpark pipelines, or full local development tooling.
+# ==========================================================
+
+# ==========================================================
+# FASTAPI BACKEND
+# ==========================================================
+fastapi>=0.111.0
+uvicorn[standard]>=0.30.1
+pydantic>=2.7.4
+python-dotenv>=1.0.1
+
+# ==========================================================
+# CORE DATA
+# ==========================================================
+pandas>=2.2.2
+numpy>=1.26.4
+pyarrow>=16.1.0
+scipy>=1.13.1
+
+# ==========================================================
+# LEXICAL RETRIEVAL
+# ==========================================================
+scikit-learn>=1.5.1
+rank-bm25>=0.2.2
+
+# ==========================================================
+# LLM / RAG
+# ==========================================================
+groq>=0.9.0
+
+# ==========================================================
+# OPTIONAL SEMANTIC SEARCH
+# ==========================================================
+# Uncomment the lines below only when:
+# - ENABLE_SEMANTIC_SEARCH=true
+# - the deployment environment has enough memory available
+#
+# In low-memory environments, torch and embedding models may
+# cause out-of-memory failures during startup or health checks.
+#
+# sentence-transformers>=3.0.1
+# faiss-cpu>=1.8.0
