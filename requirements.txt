@@ -1,23 +1,32 @@
 # ==========================================================
 # FII Intelligence Platform
-# Investor Intelligence Platform — FIIs Brasil
-# Runtime Requirements
+# Investor Intelligence Platform — Brazilian REITs (FIIs)
+# Runtime Requirements — Complete Local Environment (Notebooks)
 #
-# WHAT THIS FILE IS
-# This is the main dependency file for the repository runtime.
-# It contains the packages required to run the core application
-# stack locally, including ingestion, analytics, dashboard, API,
-# lexical retrieval, and semantic retrieval.
+# WHICH FILE TO USE — see the complete table in:
+#   docs/architecture/REQUIREMENTS_GUIDE.md
+#   FULL_MANUAL.md, section 6.0
 #
-# WHEN TO USE
-# Use this file when you want to run the project locally with
-# its main runtime capabilities.
+# requirements.txt        ← this file. Complete local environment:
+#                            notebooks (NB00-NB07), API and dashboard
+#                            running locally, with all three retrieval
+#                            layers (TF-IDF + BM25 + FAISS).
+#
+# requirements-dev.txt    ← ADDS to this file, only for developers:
+#                            Jupyter, pytest, lint, great-expectations.
+#
+# requirements-api.txt    ← REPLACES this file, exclusively for API
+#                            deployment on Render (lighter, no PySpark).
+#
+# dashboard/requirements.txt ← REPLACES this file, exclusively for
+#                               Streamlit Community Cloud deployment
+#                               (lighter, without PySpark/Torch/Selenium).
 #
 # HOW TO USE
-# 1) Install the main runtime dependencies:
+# 1) Install the main runtime:
 #    pip install -r requirements.txt
 #
-# 2) For full local development with notebooks and tests:
+# 2) For complete local development (notebooks + tests):
 #    pip install -r requirements.txt -r requirements-dev.txt
 # ==========================================================
 
@@ -37,6 +46,16 @@ pyspark==3.5.2
 
 # ==========================================================
 # STORAGE / DATA LAKE (MINIO / S3)
+# ----------------------------------------------------------
+# ⚠️ NOT used by the code implemented in NB00-NB07/API/dashboard.
+# The pipeline reads/writes local Parquet files
+# (data/gold/, data/silver/, data/external/) — there is no
+# actual MinIO/S3 integration in these notebook versions.
+# They are kept as a reference for anyone wishing to evolve
+# the project into a real Data Lake (see "Big Data
+# Infrastructure" section in the README, where MinIO is
+# mentioned as a learning concept). Remove this block if a
+# lighter installation is desired.
 # ==========================================================
 minio==7.2.7
 boto3>=1.34.131,<1.35
@@ -46,32 +65,49 @@ s3fs>=2024.6.1,<2025.0
 # WEB SCRAPING / INGESTION
 # ==========================================================
 requests==2.34.2
-httpx==0.27.0
+feedparser==6.0.11
 beautifulsoup4==4.15.0
+praw==7.7.1
 lxml>=6.1.1,<7
 html5lib==1.1
+
+# ----------------------------------------------------------
+# ⚠️ NOT used by the implemented NB01, which performs scraping
+# using requests + BeautifulSoup4 (static HTML, no browser
+# required). They are kept as alternatives if some future
+# source requires JavaScript rendering (selenium) or more
+# sophisticated article extraction
+# (newspaper3k/trafilatura).
+# ----------------------------------------------------------
+httpx==0.27.0
 fake-useragent==1.5.1
 newspaper3k==0.2.8
 trafilatura==2.1.0
-feedparser==6.0.11
-praw==7.7.1
 selenium>=4.0.0,<5.0.0
 
 # ==========================================================
 # NLP / BM25 / TEXT ANALYTICS
 # ==========================================================
 nltk==3.9.4
-spacy==3.8.14
 textblob==0.18.0.post0
 scikit-learn==1.5.1
 rank-bm25==0.2.2
+
+# ----------------------------------------------------------
+# ⚠️ NOT used by the implemented NLP pipeline
+# (NB03/NB05 use NLTK + regex/unicodedata instead of
+# spaCy/gensim). wordcloud/rapidfuzz/Unidecode are also not
+# called by the current code.
+# They are kept for future evolution.
+# ----------------------------------------------------------
+spacy==3.8.14
 gensim==4.3.2
 wordcloud==1.9.3
 rapidfuzz==3.9.4
 Unidecode==1.3.8
 
 # ==========================================================
-# SEMANTIC SEARCH / EMBEDDINGS / VECTOR RETRIEVAL
+# SEMANTIC SEARCH / EMBEDDINGS / VECTOR RETRIEVAL (Layer 3)
 # ==========================================================
 sentence-transformers==3.0.1
 transformers>=4.34.0,<5.0.0
@@ -83,8 +119,11 @@ faiss-cpu>=1.8.0
 # ==========================================================
 plotly==5.22.0
 matplotlib==3.9.0
-altair==4.2.2
 altair<5
+
+# ⚠️ Fixed: the previous version had both
+# "altair==4.2.2" and "altair<5", causing pip install to
+# fail due to duplicate requirements.
 
 # ==========================================================
 # FASTAPI BACKEND
@@ -96,7 +135,7 @@ pydantic-settings==2.3.3
 python-multipart==0.0.31
 
 # ==========================================================
-# STREAMLIT DASHBOARD
+# STREAMLIT DASHBOARD (local development)
 # ==========================================================
 streamlit==1.54.0
 streamlit-option-menu==0.3.13
@@ -109,6 +148,10 @@ groq==1.4.0
 
 # ==========================================================
 # DATABASE / PERSISTENCE
+# ----------------------------------------------------------
+# ⚠️ NOT used — the project uses only Parquet
+# (Bronze/Silver/Gold layers). Kept as reference for a
+# possible migration.
 # ==========================================================
 sqlalchemy==2.0.31
 
@@ -121,19 +164,28 @@ PyYAML==6.0.1
 # ==========================================================
 # LOGGING / UTILITIES
 # ==========================================================
-loguru==0.7.2
 tqdm==4.66.4
 joblib==1.4.2
 rich==13.7.1
+loguru==0.7.2
+
+# ⚠️ loguru is not used — src/utils/logger.py uses the
+# standard logging module.
 
 # ==========================================================
 # SECURITY
+# ----------------------------------------------------------
+# ⚠️ NOT used — api/app.py currently does not implement
+# authentication/JWT. Kept as a reference for a future phase.
 # ==========================================================
 python-jose[cryptography]==3.5.0
 passlib[bcrypt]==1.7.4
 
 # ==========================================================
 # EXPORTS / REPORTS
+# ----------------------------------------------------------
+# ⚠️ NOT used — exports are CSV files via pandas.to_csv.
+# Kept for possible future Excel export support.
 # ==========================================================
 openpyxl==3.1.5
 XlsxWriter==3.2.0
