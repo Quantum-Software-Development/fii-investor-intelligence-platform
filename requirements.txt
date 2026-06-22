@@ -5,7 +5,7 @@
 #
 # WHICH FILE TO USE — see the complete table in:
 #   docs/architecture/REQUIREMENTS_GUIDE.md
-#   FULL_MANUAL.md, section 6.0
+#   COMPLETE_ MANUAL.md, section 6.0
 #
 # requirements.txt        ← this file. Complete local environment:
 #                            notebooks (NB00-NB07), API and dashboard
