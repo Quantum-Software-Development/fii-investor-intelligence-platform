@@ -244,6 +244,45 @@ Instead of being a simple dashboard, the system operates as an end-to-end analyt
 [-]() enriches them with hybrid retrieval (TF-IDF + BM25 + FAISS semantic search with multilingual PT-BR embeddings), FII PT-BR sentiment and explainable marketing intelligence signals   <br>
 [-]() exposes results via [**FastAPI + RAG + Groq chatbot + Streamlit**]()
 
+<br>
+
+```mermaid
+%%{init:{
+'theme':'dark',
+'themeVariables':{
+'background':'#090d13',
+'primaryTextColor':'#F5F7FA',
+'lineColor':'#2dd4bf'
+}}}%%
+
+graph LR
+
+SRC["21 SOURCES<br/>RSS • Scraping • Social"]:::setup
+
+PIPE["NLP PIPELINE<br/>PySpark • MapReduce<br/>TF-IDF • BM25 • FAISS"]:::gold
+
+GOLD["GOLD LAYER<br/>Parquet artifacts"]:::bronze
+
+API["FASTAPI<br/>REST + RAG"]:::dash
+
+DASH["STREAMLIT<br/>Analytics Dashboard"]:::dash
+
+LLM["LLM LAYER<br/>Groq + Gemini"]:::llm
+
+SRC --> PIPE --> GOLD
+GOLD --> API
+GOLD --> DASH
+API --> LLM
+DASH --> LLM
+
+classDef setup fill:#0d2137,stroke:#00d2ff,color:#F5F7FA,stroke-width:2.5px;
+classDef bronze fill:#2a1512,stroke:#a85a4a,color:#F5F7FA,stroke-width:2.5px;
+classDef silver fill:#1b2430,stroke:#b0b7c3,color:#F5F7FA,stroke-width:2.5px;
+classDef gold fill:#2a2208,stroke:#e6c35a,color:#F5F7FA,stroke-width:2.5px;
+classDef dash fill:#06363d,stroke:#2dd4bf,color:#F5F7FA,stroke-width:2.5px;
+classDef llm fill:#231433,stroke:#b56cff,color:#F5F7FA,stroke-width:2.5px;
+```
+
 <br><br>
 
 
