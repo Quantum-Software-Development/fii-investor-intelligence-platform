@@ -53,15 +53,13 @@ $$\Huge {\textbf{\color{green} CRISP-DM} \space \textbf{\color{white} •} \spac
 
 <br>
 
-[**Institution:**]() Pontifical Catholic University of São Paulo (PUC-SP) 
-[**School**:]() FACEI — Faculty of Exact Sciences and Informatics
-[**Bachelor’s Program:**]() Human-Centerd AI & Data Science • 5th Semester • 2026  
-[**Course:**]() AI Security, Cybersecurity & Social Engineering  
-[**Methodology**  CRISP-DM (Cross-Industry Standard Process for Data Mining) 
+[**Institution:**]() Pontifical Catholic University of São Paulo (PUC-SP)  <br>
+[**School**:]() FACEI — Faculty of Exact Sciences and Informatics <br>
+[**Bachelor’s Program:**]() Human-Centerd AI & Data Science • 5th Semester • 2026   <br>
+[**Course:**]() AI Security, Cybersecurity & Social Engineering   <br>
+[**Methodology:**]()  CRISP-DM (Cross-Industry Standard Process for Data Mining)  <br>
 **Professors** [✨ Carlos Eduardo Paes](https://www.linkedin.com/in/carlos-eduardo-de-barros-paes-ph-d-7b137a4/)  and  [✨ Eduardo Savino Gomes]() <br>
 **Project Author:** [Fabiana ⚡️ Campanari](https://linktr.ee/fabianacampanari) 
-na ⚡️ Campanari 
-
 
 <br><br>
 
