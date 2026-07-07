@@ -53,8 +53,9 @@ $$\Huge {\textbf{\color{green} CRISP-DM} \space \textbf{\color{white} •} \spac
 
 <br>
 
-**Institution:** Pontifical Catholic University of São Paulo (PUC-SP) — FACEI  
-[**Bachelor’s Program:**]() Humanistic AI & Data Science • 5th Semester • 2026  
+[**Institution:**]() Pontifical Catholic University of São Paulo (PUC-SP) 
+[**School**:]() FACEI — Faculty of Exact Sciences and Informatics
+[**Bachelor’s Program:**]() Human-Centerd AI & Data Science • 5th Semester • 2026  
 [**Course:**]() AI Security, Cybersecurity & Social Engineering  
 [**Methodology**  CRISP-DM (Cross-Industry Standard Process for Data Mining) 
 **Professors** [✨ Carlos Eduardo Paes](https://www.linkedin.com/in/carlos-eduardo-de-barros-paes-ph-d-7b137a4/)  and  [✨ Eduardo Savino Gomes]() <br>
@@ -127,14 +128,17 @@ na ⚡️ Campanari
 
 <!-- ========= START NOTE ========= -->
 > [!TIP]
-> 🔗 **[Cybersecurity, Social Engineering & AI Security — Hub Repository](https://github.com/Quantum-Software-Development/1-Cybersecurity-SocialEngineering_Hub)**  <br>
+> 🔗 **[Cybersecurity, Social Engineering & AI Security — Hub Repository](https://github.com/Quantum-Software-Development/1-Cybersecurity-SocialEngineering_Hub)**  <br><br>
 >
-> ###  Real Estate Investment Funds (FIIs) 🇧🇷 Market Intelligence & Behavioral Analytics
+> ###  Real Estate Investment Funds (FIIs) 🇧🇷 Market Intelligence & Behavioral Analytics <br><br>
 > 
-> A scalable platform combining **Big Data, PySpark, MapReduce, Word Count, NLP, TF-IDF, BM25, FAISS, multilingual embeddings, Web Scraping, Hybrid RAG** and AI-assisted analytics to
-> transform large-scale financial discussions into actionable insights for FIIs.<br>
-> 
+> A scalable platform combining [**Big Data**](), [**PySpark**](), [**MapReduce**](), [**Word Count**](), [**NLP**](), [**TF-IDF**](), [**BM25**](), [**FAISS**](), [p**Multilingual Embeddings**](), [**Web Scraping**](), [**Hybrid RAG**]() and [**AI-Assisted Analytics**]()to transform large-scale financial discussions into actionable insights for FIIs.
+>
 > <br>
+>
+>  #
+>
+> <br><br>
 >
 > $$\Huge {\textbf{\color{green} Where market discussions become investment narratives…}}$$
 >
@@ -215,14 +219,15 @@ From this starting point, the repository was extended to incorporate more advanc
 | :-- | :-- |
 | [Distributed Computing]() | PySpark · RDD MapReduce · SparkSession |
 | [Big Data Architecture]() | Medallion (Bronze → Silver → Gold) |
-| [Machine Learning]() | TF-IDF · BM25 · FAISS Semantic Embeddings · Sentiment Analysis |
+| [Machine Learning]() | TF-IDF · BM25 · Semantic Embeddings · Sentiment Analysis |
 | [Vector Search]() | FAISS · Dense Index · Multilingual PT-BR Embeddings |
 | [NLP]() | PT-BR Tokenization · FII Lexicon · Signal Flags |
 | [Data Governance]() | LGPD · EU AI Act · Responsible AI · XAI |
 | [REST API]() | FastAPI · Uvicorn |
-| [RAG]() | Hybrid Retrieval · Groq LLM · Context-Aware Answering |
+| [RAG / LLM]() | Groq (openai/gpt-oss-20b, primary) + Gemini 2.5 Flash (automatic fallback) |
 | [Visualization]() | Streamlit · Plotly |
 | [Cybersecurity]() | Narrative surface analysis · Social Engineering awareness |
+
 
 <br><br>
 
