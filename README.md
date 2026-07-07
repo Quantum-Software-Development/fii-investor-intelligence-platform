@@ -126,11 +126,12 @@ $$\Huge {\textbf{\color{green} CRISP-DM} \space \textbf{\color{white} •} \spac
 
 <!-- ========= START NOTE ========= -->
 > [!TIP]
-> 🔗 **[Cybersecurity, Social Engineering & AI Security — Hub Repository](https://github.com/Quantum-Software-Development/1-Cybersecurity-SocialEngineering_Hub)**  <br><br>
+> 
+> ↗ **[Explore the Full Course Repository](https://github.com/Quantum-Software-Development/1-Cybersecurity-SocialEngineering_Hub))**
 >
 > ###  Real Estate Investment Funds (FIIs) 🇧🇷 Market Intelligence & Behavioral Analytics <br><br>
 > 
-> A scalable platform combining [**Big Data**](), [**PySpark**](), [**MapReduce**](), [**Word Count**](), [**NLP**](), [**TF-IDF**](), [**BM25**](), [**FAISS**](), [p**Multilingual Embeddings**](), [**Web Scraping**](), [**Hybrid RAG**]() and [**AI-Assisted Analytics**]()to transform large-scale financial discussions into actionable insights for FIIs.
+> A scalable platform combining [**Big Data**](), [**PySpark**](), [**MapReduce**](), [**Word Count**](), [**NLP**](), [**TF-IDF**](), [**BM25**](), [**FAISS**](), [p**Multilingual Embeddings**](), [**Web Scraping**](), [**Hybrid RAG**]() and [**AI-Assisted Analytics**]() to transform large-scale financial discussions into actionable insights for FIIs.
 >
 > <br>
 >
