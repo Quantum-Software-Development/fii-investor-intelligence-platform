@@ -215,7 +215,7 @@ From this starting point, the repository was extended to incorporate more advanc
 | :-- | :-- |
 | [Distributed Computing]() | PySpark · RDD MapReduce · SparkSession |
 | [Big Data Architecture]() | Medallion (Bronze → Silver → Gold) |
-| [Machine Learning]() | TF-IDF · BM25 · Semantic Embeddings · Sentiment Analysis |
+| [Machine Learning]() | TF-IDF · BM25 · FAISS Semantic Embeddings · Sentiment Analysis |
 | [Vector Search]() | FAISS · Dense Index · Multilingual PT-BR Embeddings |
 | [NLP]() | PT-BR Tokenization · FII Lexicon · Signal Flags |
 | [Data Governance]() | LGPD · EU AI Act · Responsible AI · XAI |
