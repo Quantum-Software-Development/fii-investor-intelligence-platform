@@ -119,10 +119,10 @@ faiss-cpu>=1.8.0
 # ==========================================================
 plotly==5.22.0
 matplotlib==3.11.0
-altair<5
+altair<7
 
 # ⚠️ Fixed: the previous version had both
-# "altair==4.2.2" and "altair<5", causing pip install to
+# "altair==4.2.2" and "altair<7", causing pip install to
 # fail due to duplicate requirements.
 
 # ==========================================================
