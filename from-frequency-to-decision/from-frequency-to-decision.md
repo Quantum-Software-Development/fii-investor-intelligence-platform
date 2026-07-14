@@ -69,16 +69,16 @@ The platform applies multiple layers of intelligence, each contributing a distin
 
 <br>
 
-| Layer | Objective |
+| [Layer]() | [Objective]()  |
 | ------ | --------- |
-| Big Data | Process large volumes of financial information |
-| Information Retrieval | Identify the most relevant content |
-| Semantic AI | Understand meaning beyond exact words |
-| Decision Intelligence | Transform insights into strategic actions |
+| [Big Data]()  | Process large volumes of financial information |
+| [Information Retrieval]()  | Identify the most relevant content |
+| [Semantic AI]() | Understand meaning beyond exact words |
+| [Decision Intelligence]()  | Transform insights into strategic actions |
 
 <br><br>
 
-# Methodology
+## [Methodology]() 
 
 <br>
 
