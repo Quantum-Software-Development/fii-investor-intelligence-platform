@@ -196,19 +196,21 @@ $$\Huge {\textbf{\color{green} CRISP-DM} \space \textbf{\color{white} •} \spac
 23. [Technical Glossary](#-technical-glossary)
 24. [Repository and Project Links](#-repository-and-project-links)
 25. [References](#-references)
+26. [Authors](#-authors)
+
 
 
 <br><br>
 
 ## [🎓 Academic and Institutional Context]()
 
-<br>
 
-This project was developed at PUC-SP in the courses of cybersecurity, social engineering, data engineering and Big Data analytics applied to financial markets. The original requirement focused on demonstrating a distributed word count solution using PySpark and the MapReduce paradigm.
+This project was developed at **PUC-SP** as part of the courses **Cybersecurity**, **Social Engineering**, **Data Engineering**, **Distributed Systems**, and **Big Data Analytics Applied to Financial Markets**. The original assignment focused on demonstrating a distributed **Word Count** solution using **PySpark** and the **MapReduce** paradigm.
 
-From this starting point, the repository was extended to incorporate more advanced analytical techniques (TF-IDF, BM25, contextual sentiment), a serving architecture with FastAPI + RAG and a structured pipeline oriented towards FII marketing intelligence.
+Building upon this foundation, the project evolved into a comprehensive financial intelligence platform by incorporating advanced information retrieval and natural language processing techniques, including **TF-IDF**, **BM25**, and **contextual sentiment analysis**. It also integrates a modern serving architecture based on **FastAPI** and **Retrieval-Augmented Generation (RAG)**, supported by a structured data engineering pipeline designed for **FII (Real Estate Investment Funds) market intelligence** and decision support.
 
 <br><br>
+
 
 ## [Academic Requirements Met]()
 
@@ -232,7 +234,6 @@ From this starting point, the repository was extended to incorporate more advanc
 
 ## [Product Overview and Definition]()
 
-<br>
 
 The [**Investor Intelligence Platform 🇧🇷 FIIs Brazil**]() is not just an academic Big Data exercise. It is an investor intelligence platform for Brazilian Real Estate Investment Funds (FIIs), designed to transform fragmented public financial discussions into structured, searchable, explainable and decision-oriented market intelligence.
 
