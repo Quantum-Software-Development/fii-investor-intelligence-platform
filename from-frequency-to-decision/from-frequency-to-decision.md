@@ -516,20 +516,20 @@ Each technique contributes a distinct layer of intelligence:
 
 <br>
 
-| Technique | Question Answered | Intelligence Layer |
+| [Technique]() | [Question Answered]() | [Intelligence Layer]() |
 | ---------- | ----------------- | ------------------ |
-| MapReduce | Is this topic frequently discussed? | Collective attention |
-| TF-IDF | Does this term distinguish this document? | Information specificity |
-| BM25 | Which document best satisfies the user's query? | Contextual relevance |
-| FAISS + Embeddings | Can different words represent the same concept? | Semantic understanding |
-| RAG | How can retrieved evidence become a reliable answer? | Knowledge generation |
-| Contextual Sentiment Analysis | Does the surrounding context indicate opportunity or risk? | Risk interpretation |
+| [MapReduce]() | Is this topic frequently discussed? | Collective attention |
+| [TF-IDF]() | Does this term distinguish this document? | Information specificity |
+| [BM25]() | Which document best satisfies the user's query? | Contextual relevance |
+| [FAISS + Embeddings]() | Can different words represent the same concept? | Semantic understanding |
+| [RAG]() | How can retrieved evidence become a reliable answer? | Knowledge generation |
+| [Contextual Sentiment Analysis]() | Does the surrounding context indicate opportunity or risk? | Risk interpretation |
 
 <br><br>
 
 ## 8. [Final Synthesis]()
 
-The analytical evolution of the platform can be summarized as:
+### [The analytical evolution of the platform can be summarized as:]()
 
 <br>
 
@@ -551,7 +551,7 @@ Strategic Decision
 
 <br>
 
-Or, more succinctly:
+### [Or, more succinctly:]()
 
 <br>
 
