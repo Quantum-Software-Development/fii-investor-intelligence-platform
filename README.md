@@ -244,33 +244,33 @@ Rather than serving as a traditional dashboard, the platform continuously collec
 
 [***The platform:***]()
 
-[*]() collects data from [**21 public sources**]() (RSS feeds, financial portals, web scraping, and Reddit);
-[*]() organizes the information using a **Bronze → Silver → Gold Medallion Architecture**;
-[*]() enriches documents through hybrid information retrieval combining **TF-IDF**, **BM25**, and **FAISS semantic search** with multilingual Portuguese embeddings;
-[*]() performs contextual **Portuguese (PT-BR) sentiment analysis** specialized for the Brazilian FII market;
-[*]() generates explainable marketing intelligence indicators for investor behavior analysis;
+[*]() collects data from [**21 public sources**]() (RSS feeds, financial portals, web scraping, and Reddit); <br>
+[*]() organizes the information using a **Bronze → Silver → Gold Medallion Architecture** v<br>
+[*]() enriches documents through hybrid information retrieval combining **TF-IDF**, **BM25**, and **FAISS semantic search** with multilingual Portuguese embeddings; <br>
+[*]() performs contextual **Portuguese (PT-BR) sentiment analysis** specialized for the Brazilian FII market; <br>
+[*]() generates explainable marketing intelligence indicators for investor behavior analysis; <br>
 [*]() exposes all processed information through **FastAPI**, **RAG**, **Groq LLM**, and an interactive **Streamlit** dashboard.
 
 <br>
 
 [***The platform is capable of:***]()
 
-[*]() Monitoring investor sentiment across digital financial communities;
-[*]() Identifying emerging themes and market trends;
-[*]() Ranking document relevance using hybrid retrieval (**TF-IDF + BM25 + semantic search**);
-[*]() Detecting behavioral patterns in investor discussions;
-[*]() Supporting marketing, communication, and investment research strategies;
-[*]() Mapping investor engagement across the Brazilian financial information ecosystem;
+[*]() Monitoring investor sentiment across digital financial communities; <br>
+[*]() Identifying emerging themes and market trends; <br>
+[*]() Ranking document relevance using hybrid retrieval (**TF-IDF + BM25 + semantic search**); <br>
+[*]() Detecting behavioral patterns in investor discussions; <br>
+[*]() Supporting marketing, communication, and investment research strategies; <br>
+[*]() Mapping investor engagement across the Brazilian financial information ecosystem; <br>
 [*]() Providing AI-assisted question answering through a Retrieval-Augmented Generation (RAG) architecture.
 
-<br>
+<br><br>
+
+> [!TIP]
+>
+> More than a Big Data demonstration, [**Investor Intelligence Platform — FIIs Brazil**]() showcases how modern data engineering, NLP, semantic retrieval, and Large Language Models can be integrated into a scalable decision-support system for financial market intelligence.
 
 
-More than a Big Data demonstration, [**Investor Intelligence Platform — FIIs Brazil**]() showcases how modern data engineering, NLP, semantic retrieval, and Large Language Models can be integrated into a scalable decision-support system for financial market intelligence.
-
-
-
-<br>
+<br><br>
 
 ```mermaid
 %%{init:{
@@ -308,6 +308,9 @@ classDef gold fill:#2a2208,stroke:#e6c35a,color:#F5F7FA,stroke-width:2.5px;
 classDef dash fill:#06363d,stroke:#2dd4bf,color:#F5F7FA,stroke-width:2.5px;
 classDef llm fill:#231433,stroke:#b56cff,color:#F5F7FA,stroke-width:2.5px;
 ```
+
+
+
 
 <br><br>
 
