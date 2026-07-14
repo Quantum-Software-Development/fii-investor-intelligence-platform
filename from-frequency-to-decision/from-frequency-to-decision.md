@@ -334,21 +334,25 @@ The next analytical layer closes this gap by integrating retrieval with generati
 
 ## 5. [Retrieval-Augmented Generation (RAG) — From Retrieval to Intelligence]()
 
-Once the platform is capable of retrieving the most relevant documents—both lexically and semantically—the next challenge is transforming that information into clear, reliable, and explainable answers.
+Once the platform is capable of retrieving the most relevant documents—both lexically and semantically, the next challenge is transforming that information into clear, reliable, and explainable answers.
 
 Retrieval-Augmented Generation (RAG) bridges this gap by combining information retrieval with the reasoning capabilities of Large Language Models (LLMs).
 
 Instead of generating responses exclusively from a model's internal knowledge, RAG first retrieves the most relevant evidence from the indexed corpus and injects that context into the generation process.
 
-This approach significantly reduces hallucinations while improving factual accuracy, transparency, and explainability.
+<br>
+
+> This approach significantly reduces hallucinations while improving factual accuracy, transparency, and explainability.
+
+<br>
 
 ### [Retrieved evidence:]()
 
 <br>
 
-* "XPTO11 distributed R$0.85 per share during the last dividend cycle..."
-* "Investors continue to prioritize funds with stable recurring income..."
-* "Logistics FIIs maintained lower vacancy rates than the market average..."
+[*]() "XPTO11 distributed R$0.85 per share during the last dividend cycle..." <br>
+[*]() "Investors continue to prioritize funds with stable recurring income..." <br>
+[*]() "Logistics FIIs maintained lower vacancy rates than the market average..."
 
 <br>
 
