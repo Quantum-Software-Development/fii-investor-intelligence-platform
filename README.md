@@ -240,32 +240,33 @@ Originally conceived as an academic **Big Data** project at **PUC-SP**, the plat
 
 Rather than serving as a traditional dashboard, the platform continuously collects, processes, enriches, and exposes financial information through a scalable analytics pipeline.
 
-### Core Capabilities
+### [Core Capabilities]()
 
-The platform:
+[***The platform:***]()
 
-* collects data from **21 public sources** (RSS feeds, financial portals, web scraping, and Reddit);
-* organizes the information using a **Bronze → Silver → Gold Medallion Architecture**;
-* enriches documents through hybrid information retrieval combining **TF-IDF**, **BM25**, and **FAISS semantic search** with multilingual Portuguese embeddings;
-* performs contextual **Portuguese (PT-BR) sentiment analysis** specialized for the Brazilian FII market;
-* generates explainable marketing intelligence indicators for investor behavior analysis;
-* exposes all processed information through **FastAPI**, **RAG**, **Groq LLM**, and an interactive **Streamlit** dashboard.
-
-<br>
-
-The platform is capable of:
-
-* Monitoring investor sentiment across digital financial communities;
-* Identifying emerging themes and market trends;
-* Ranking document relevance using hybrid retrieval (**TF-IDF + BM25 + semantic search**);
-* Detecting behavioral patterns in investor discussions;
-* Supporting marketing, communication, and investment research strategies;
-* Mapping investor engagement across the Brazilian financial information ecosystem;
-* Providing AI-assisted question answering through a Retrieval-Augmented Generation (RAG) architecture.
+[*]() collects data from [**21 public sources**]() (RSS feeds, financial portals, web scraping, and Reddit);
+[*]() organizes the information using a **Bronze → Silver → Gold Medallion Architecture**;
+[*]() enriches documents through hybrid information retrieval combining **TF-IDF**, **BM25**, and **FAISS semantic search** with multilingual Portuguese embeddings;
+[*]() performs contextual **Portuguese (PT-BR) sentiment analysis** specialized for the Brazilian FII market;
+[*]() generates explainable marketing intelligence indicators for investor behavior analysis;
+[*]() exposes all processed information through **FastAPI**, **RAG**, **Groq LLM**, and an interactive **Streamlit** dashboard.
 
 <br>
 
-More than a Big Data demonstration, **Investor Intelligence Platform — FIIs Brazil** showcases how modern data engineering, NLP, semantic retrieval, and Large Language Models can be integrated into a scalable decision-support system for financial market intelligence.
+[***The platform is capable of:***]()
+
+[*]() Monitoring investor sentiment across digital financial communities;
+[*]() Identifying emerging themes and market trends;
+[*]() Ranking document relevance using hybrid retrieval (**TF-IDF + BM25 + semantic search**);
+[*]() Detecting behavioral patterns in investor discussions;
+[*]() Supporting marketing, communication, and investment research strategies;
+[*]() Mapping investor engagement across the Brazilian financial information ecosystem;
+[*]() Providing AI-assisted question answering through a Retrieval-Augmented Generation (RAG) architecture.
+
+<br>
+
+
+More than a Big Data demonstration, [**Investor Intelligence Platform — FIIs Brazil**]() showcases how modern data engineering, NLP, semantic retrieval, and Large Language Models can be integrated into a scalable decision-support system for financial market intelligence.
 
 
 
