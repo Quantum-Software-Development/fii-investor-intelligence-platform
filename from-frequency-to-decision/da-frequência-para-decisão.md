@@ -427,3 +427,127 @@ Essa camada analítica final completa a transição da recuperação de informa�
 <br><br>
 
 ## 7. [Framework Analítico — Dos Dados à Decisão]()
+
+The analytical workflow can be viewed as a progressive intelligence pipeline.
+
+Each stage enriches the output of the previous one, gradually increasing the informational value extracted from the data.
+
+
+```mermaid
+%%{init:{
+'theme':'dark',
+'themeVariables':{
+'background':'#090d13',
+'primaryTextColor':'#F5F7FA',
+'lineColor':'#2dd4bf'
+}
+}}%%
+
+graph LR
+
+A["MAPREDUCE<br/>Frequency<br/>Pattern Discovery"]:::silver
+
+B["TF-IDF<br/>Term Importance<br/>Noise Reduction"]:::silver
+
+C["BM25<br/>Contextual Ranking<br/>Search Relevance"]:::gold
+
+D["FAISS + EMBEDDINGS<br/>Semantic Retrieval<br/>Meaning Understanding"]:::gold
+
+E["RAG<br/>Evidence-Based Generation<br/>Context Injection"]:::dash
+
+F["CONTEXTUAL SENTIMENT<br/>Risk Detection<br/>Behavior Analysis"]:::dash
+
+G["DECISION INTELLIGENCE<br/>Strategic Insights"]:::llm
+
+A --> B
+B --> C
+C --> D
+D --> E
+E --> F
+F --> G
+
+classDef silver fill:#111827,stroke:#94a3b8,color:#F5F7FA,stroke-width:2px;
+classDef gold fill:#1f2937,stroke:#e6c35a,color:#F5F7FA,stroke-width:2px;
+classDef dash fill:#06363d,stroke:#2dd4bf,color:#F5F7FA,stroke-width:2px;
+classDef llm fill:#231433,stroke:#b56cff,color:#F5F7FA,stroke-width:2px;
+```
+
+<br>
+
+
+Rather than representing isolated algorithms, this framework illustrates the progressive evolution of analytical capabilities.
+
+
+<br>
+
+Each technique contributes a distinct layer of intelligence:
+
+- [**MapReduce**]() identifies collective attention and large-scale patterns.
+- [**TF-IDF**]() measures informational specificity.
+- [**BM25**]() ranks documents according to contextual relevance.
+- [**FAISS + Embeddings**]() enables semantic understanding.
+- [**RAG**]() transforms retrieved evidence into explainable answers.
+- [**Contextual Sentiment Analysis**]() interprets behavioral signals and market risk.
+- [**Decision Intelligence**]() integrates all previous layers into actionable strategic insights.
+
+<br>
+
+> The result is a complete analytical pipeline that progressively transforms raw information into contextual knowledge and, ultimately, into decision support.
+
+<br>
+
+### [Analytical Comparison Table]()
+
+<br>
+
+| [Technique]() | [Question Answered]() | [Intelligence Layer]() |
+| ---------- | ----------------- | ------------------ |
+| [MapReduce]() | Is this topic frequently discussed? | Collective attention |
+| [TF-IDF]() | Does this term distinguish this document? | Information specificity |
+| [BM25]() | Which document best satisfies the user's query? | Contextual relevance |
+| [FAISS + Embeddings]() | Can different words represent the same concept? | Semantic understanding |
+| [RAG]() | How can retrieved evidence become a reliable answer? | Knowledge generation |
+| [Contextual Sentiment Analysis]() | Does the surrounding context indicate opportunity or risk? | Risk interpretation |
+
+<br><br>
+
+## 8. [Final Synthesis]()
+
+### [The analytical evolution of the platform can be summarized as:]()
+
+<br>
+
+```text
+Word Frequency
+      ↓
+Information Relevance
+      ↓
+Contextual Ranking
+      ↓
+Semantic Understanding
+      ↓
+Evidence-Based Generation
+      ↓
+Risk Interpretation
+      ↓
+Strategic Decision
+```
+
+<br>
+
+### [Or, more succinctly:]()
+
+<br>
+
+```text
+word count → relevance → meaning → evidence → context → strategic decision
+```
+
+<br>
+
+The platform does far more than analyze financial data.
+
+It progressively transforms fragmented information into contextual knowledge, contextual knowledge into explainable intelligence, and explainable intelligence into evidence-based strategic decision support.
+
+By integrating statistical analysis, information retrieval, semantic search, generative AI, and contextual interpretation within a unified analytical framework, the system reduces uncertainty, improves explainability, and enables more informed investment decisions.
+
