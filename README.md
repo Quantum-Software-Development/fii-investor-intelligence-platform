@@ -129,11 +129,9 @@ $$\Huge {\textbf{\color{green} CRISP-DM} \space \textbf{\color{white} •} \spac
 <!-- ========= START NOTE ========= -->
 > [!TIP]
 > 
-> ↗ **[Explore the Full Course Repository](https://github.com/Quantum-Software-Development/1-Cybersecurity-SocialEngineering_Hub)**
+> ###  🇧🇷 Real Estate Investment Funds (FIIs)  Market Intelligence & Behavioral Analytics <br>
 >
-> ###  🇧🇷 Real Estate Investment Funds (FIIs)  Market Intelligence & Behavioral Analytics <br><br>
-> 
-> Uma plataforma escalável que combina [**Big Data**](), [**PySpark**](), [**MapReduce**](), [**Word Count**](), [**PLN (Processamento de Linguagem Natural)**](), [**TF-IDF**](), [**BM25**](), [**FAISS**](), [**Embeddings Multilíngues**](), [**Web Scraping**](), [**RAG Híbrido**]() e [**Análises Assistidas por IA**]() para transformar discussões financeiras em larga escala em inteligência acionável para Fundos de Investimento Imobiliário (FIIs).
+> **[↗](https://github.com/Quantum-Software-Development/1-Cybersecurity-SocialEngineering_Hub)** Explore the Full Course Repository
 >
 > <br>
 >
