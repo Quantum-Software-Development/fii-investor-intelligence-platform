@@ -153,15 +153,16 @@ $$\Huge {\textbf{\color{green} CRISP-DM} \space \textbf{\color{white} •} \spac
 <!-- ========= END NOTE ========= -->
 
 <!-- ========= START !WARNING] ========= -->
-> [!WARNING]
+> [!WARNING] <br>
+> ⚠️ Os projetos podem ser compartilhados publicamente quando permitido.
+> O foco está no aprendizado aplicado, prático, utilizando conjuntos de dados do mundo real em Inteligência Artificial, Ciência de Dados, Governança de IA e Cibersegurança.
+> Qualquer conteúdo sensível, confidencial ou proprietário permanece protegido em repositórios privados sempre que necessário. <br> <br>
 >
-> <br>
-> ⚠️ Projects may be publicly shared when permitted.  
-> The focus is on applied, hands-on learning with real datasets in AI governance and security contexts.  
-> All sensitive content remains protected in private repositories when required.  <br><br> 
-> 
-> ⚠️ Disclaimer
-> Plataforma exclusivamente educacional e analítica. Não constitui recomendação de investimento.
+> ⚠️ **Aviso Legal (Disclaimer)**
+> Esta plataforma destina-se exclusivamente a fins educacionais, de pesquisa e análise.
+> Não constitui aconselhamento financeiro, de investimento, jurídico ou profissional.
+> Quaisquer análises, insights ou resultados apresentados têm caráter apenas acadêmico e informativo.
+
 
 <br><br><br><br>
 <!-- ========= END!WARNING]========= -->
