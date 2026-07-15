@@ -150,12 +150,14 @@ $$\Huge {\textbf{\color{green} CRISP-DM} \space \textbf{\color{white} •} \spac
 <!-- ========= END NOTE ========= -->
 
 <!-- ========= START !WARNING] ========= -->
-> [!WARNING] <br>
+> [!WARNING]
+>
+> <br>
 > ⚠️ Os projetos podem ser compartilhados publicamente quando permitido.
 > O foco está no aprendizado aplicado, prático, utilizando conjuntos de dados do mundo real em Inteligência Artificial, Ciência de Dados, Governança de IA e Cibersegurança.
 > Qualquer conteúdo sensível, confidencial ou proprietário permanece protegido em repositórios privados sempre que necessário. <br> <br>
 >
-> ⚠️ **Aviso Legal (Disclaimer)**
+> ⚠️  $\large \textbf{\color{green}{Aviso Legal (Disclaimer}}$ <br>
 > Esta plataforma destina-se exclusivamente a fins educacionais, de pesquisa e análise.
 > Não constitui aconselhamento financeiro, de investimento, jurídico ou profissional.
 > Quaisquer análises, insights ou resultados apresentados têm caráter apenas acadêmico e informativo.
