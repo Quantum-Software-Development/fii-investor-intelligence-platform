@@ -1,6 +1,4 @@
 
-<!-- ======================================= ⚡️ Start DEFAULT HEADER ===========================================  -->
-
 <!-- ========= START LANGUAGE BUTTON ========= -->
 **[[🇧🇷 Português](README.pt_BR.md)] [**[🇬🇧 English](README.md)**]**
 
@@ -13,21 +11,20 @@
 
 <!-- ========= START REPO TITLE ========= -->
 # <p align="center"> [Investor Intelligence Platform  -  Brazilian FIIs]() 🇧🇷
-
 ### <p align="center"> Real Estate Investment Funds (FIIs) - Market Intelligence & Behavioral Analytics
 
-<br>
+<br><br>
 
 $$\Huge {\textbf{\color{green} CRISP-DM} \space \textbf{\color{white} •} \space \textbf{\color{yellow}  Data Lakehouse} \space \textbf{\color{white} •} \space \textbf{\color{green} NLP} \space \textbf{\color{white} •} \space \textbf{\color{yellow} Responsible AI} \space \textbf{\color{white} •} \space \textbf{\color{green} Regulatory Alignment}}$$
 
 <br>
 
-### <p align="center"> ***Uma plataforma de inteligência de nível institucional projetada para monitorar, estruturar, ranquear e interpretar sinais relacionados aos Fundos de Investimento Imobiliário (FIIs) brasileiros em mídias financeiras, portais de pesquisa e comunidades de investidores.***
+#### <p align="center"> ***Uma plataforma de inteligência de nível institucional projetada para monitorar, estruturar, ranquear e interpretar sinais relacionados aos Fundos de Investimento Imobiliário (FIIs) brasileiros em mídias financeiras, portais de pesquisa e comunidades de investidores.***
 
 
 <br>
 
-#### <p align="center"> [Big Data]() • [PySpark]() • [MapReduce Word Count]() • [NLP]() • [TF-IDF]() • [BM25 Ranking]() • [Web Scraping]() • [TOFU Strategy]() • [CRISP-DM]() • [FastAPI]() • [Streamlit]() • [Docker]() • [AI Governance]() • [LGPD Compliance]() • [Brazilian General Data Protection Law No. 13.709/2018]() • [EU AI Act Alignment]()
+##### <p align="center"> [Big Data]() • [PySpark]() • [MapReduce Word Count]() • [NLP]() • [TF-IDF]() • [BM25 Ranking]() • [Web Scraping]() • [TOFU Strategy]() • [CRISP-DM]() • [FastAPI]() • [Streamlit]() • [Docker]() • [AI Governance]() • [LGPD Compliance]() • [Brazilian General Data Protection Law No. 13.709/2018]() • [EU AI Act Alignment]()
 
 <br><br>
 <!-- ========= END REPO TITLE ========= -->
@@ -138,9 +135,9 @@ $$\Huge {\textbf{\color{green} CRISP-DM} \space \textbf{\color{white} •} \spac
 >
 > $$\Huge {\textbf{\color{green} Where market discussions become investment narratives…}}$$
 >
-> $$\Huge {\textbf{\color{yellow} because markets talk a lot...}}$$
+> $$\Huge {\textbf{\color{yellow} ecause markets talk a lot...}}$$
 > 
-> $$\Huge {\textbf{\color{green} intelligent systems just listen better}}$$
+> $$\Huge {\textbf{\color{green} Intelligent systems just listen better}}$$
 >
 > ### <p align="center"> ⚡
 
