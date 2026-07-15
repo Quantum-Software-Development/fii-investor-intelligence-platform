@@ -197,8 +197,6 @@ $$\Huge {\textbf{\color{green} CRISP-DM} \space \textbf{\color{white} •} \spac
 23. [Technical Glossary](#-technical-glossary)
 24. [Repository and Project Links](#-repository-and-project-links)
 25. [References](#-references)
-26. [Authors](#-authors)
-
 
 
 <br><br>
