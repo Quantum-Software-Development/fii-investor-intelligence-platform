@@ -252,7 +252,7 @@ $\Huge {\textbf{\color{green} Core Capabilities}}$
 
 $\large {\textbf{\color{yellow} The platform:}}$
 
-[*]() collects data from [**21 public sources**]() (RSS feeds, financial portals, web scraping, and Reddit); <br>
+[*]() collects data from $\large {\textbf{\color{green} 21 public sources}}$ (RSS feeds, financial portals, web scraping, and Reddit); <br>
 [*]() organizes the information using a **Bronze → Silver → Gold Medallion Architecture** v<br>
 [*]() enriches documents through hybrid information retrieval combining **TF-IDF**, **BM25**, and **FAISS semantic search** with multilingual Portuguese embeddings; <br>
 [*]() performs contextual **Portuguese (PT-BR) sentiment analysis** specialized for the Brazilian FII market; <br>
