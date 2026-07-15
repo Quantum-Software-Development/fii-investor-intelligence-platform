@@ -320,8 +320,8 @@ classDef llm fill:#231433,stroke:#b56cff,color:#F5F7FA,stroke-width:2.5px;
 
 <br><br>
 
-
-## [🎯 Objectives]()
+$\Huge {\textbf{\color{green} 🎯 Objectives}}$
+#
 
 <br>
 
@@ -332,7 +332,8 @@ classDef llm fill:#231433,stroke:#b56cff,color:#F5F7FA,stroke-width:2.5px;
 
 <br><br>
 
-## [👥 Target Audience]()
+$\Huge {\textbf{\color{green} 👥 Target Audience}}$
+#
 
 <br>
 
@@ -343,8 +344,8 @@ classDef llm fill:#231433,stroke:#b56cff,color:#F5F7FA,stroke-width:2.5px;
 [-]() Recruiters and technical portfolio reviewers
 
 <br><br>
-
-## [ Why This Matters ❓]()
+$\Huge {\textbf{\color{green}  Why This Matters ❓}}$
+#
 
 <br>
 
