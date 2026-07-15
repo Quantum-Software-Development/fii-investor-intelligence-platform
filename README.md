@@ -10,9 +10,8 @@
 
 <br>
 
-
 <p align="center">
-End-to-end AI infrastructure transforming unstructured financial data into actionable intelligence for Brazilian Real Estate Investment Funds (FIIs).
+End-to-end AI infrastructure transforming unstructured financial data into actionable intelligence for Brazilian FIIs.
 </p>
 
 <br>
@@ -21,7 +20,7 @@ $$\Huge {\textbf{\color{green} CRISP-DM} \space \textbf{\color{white} •} \spac
 
 <br>
 
-##### <p align="center">Institutional-grade intelligence engine designed to monitor, structure, rank, and interpret signals from Brazilian Real Estate Investment Funds (FIIs), leveraging financial media, research portals, and investor communities.</p>
+##### <p align="center">An institutional-grade solution designed to monitor, structure, rank, and interpret signals from Brazilian Real Estate Investment Funds (FIIs), leveraging financial media, research portals, and investor communities.</p>
 
 <br>
 
