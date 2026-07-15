@@ -249,7 +249,7 @@ $\Huge {\textbf{\color{green} Core Capabilities}}$
 
 <br>
 
-$\Large {\textbf{\color{yellow} The platform:}}$
+$\large {\textbf{\color{yellow} The platform:}}$
 
 [*]() collects data from [**21 public sources**]() (RSS feeds, financial portals, web scraping, and Reddit); <br>
 [*]() organizes the information using a **Bronze → Silver → Gold Medallion Architecture** v<br>
@@ -260,7 +260,7 @@ $\Large {\textbf{\color{yellow} The platform:}}$
 
 <br>
 
-$\Large {\textbf{\color{yellow} The platform is capable of:}}$
+$\large {\textbf{\color{yellow} The platform is capable of:}}$
 
 
 [*]() Monitoring investor sentiment across digital financial communities; <br>
