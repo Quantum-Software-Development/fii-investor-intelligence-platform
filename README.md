@@ -9,7 +9,6 @@
 
 <!-- ========= START REPO TITLE ========= -->
 # <p align="center"> [Investor Intelligence Platform  - Brazilian FIIs]() 🇧🇷  
-
 ### <p align="center"> Real Estate Investment Funds (FIIs) - Market Intelligence & Behavioral Analytics
 
 <br><br>
@@ -132,7 +131,7 @@ $$\Huge {\textbf{\color{green} CRISP-DM} \space \textbf{\color{white} •} \spac
 >
 > ###  Real Estate Investment Funds (FIIs) 🇧🇷 Market Intelligence & Behavioral Analytics <br><br>
 > 
-> A scalable platform combining [**Big Data**](), [**PySpark**](), [**MapReduce**](), [**Word Count**](), [**NLP**](), [**TF-IDF**](), [**BM25**](), [**FAISS**](), [p**Multilingual Embeddings**](), [**Web Scraping**](), [**Hybrid RAG**]() and [**AI-Assisted Analytics**]() to transform large-scale financial discussions into actionable insights for FIIs.
+> Uma plataforma escalável que combina [**Big Data**](), [**PySpark**](), [**MapReduce**](), [**Word Count**](), [**PLN (Processamento de Linguagem Natural)**](), [**TF-IDF**](), [**BM25**](), [**FAISS**](), [**Embeddings Multilíngues**](), [**Web Scraping**](), [**RAG Híbrido**]() e [**Análises Assistidas por IA**]() para transformar discussões financeiras em larga escala em inteligência acionável para Fundos de Investimento Imobiliário (FIIs).
 >
 > <br>
 >
