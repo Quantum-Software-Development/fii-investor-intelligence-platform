@@ -5,13 +5,13 @@
 <!-- ========= END LANGUAGE BUTTON ========= -->
 
 <!-- ========= START REPO TITLE ========= -->
-# <p align="center"> 🇧🇷 Investor Intelligence Platform for Brazilian Real Estate Investment Funds (FIIs) </p>
-### <p align="center"> [AI-Powered Market Intelligence, Behavioral Analytics & Sentiment Analysis]() </p>
+# <p align="center"> 🇧🇷 Investor Intelligence Platform for Brazilian REITs (FIIs) </p>
+### <p align="center"> AI-Powered Market Intelligence · Behavioral Analytics · Sentiment Analysis </p>
 
 <br>
 
 <p align="center">
-End-to-end AI infrastructure transforming unstructured financial data into actionable intelligence for Brazilian FIIs.
+End-to-end AI infrastructure transforming unstructured financial data into actionable intelligence for Brazilian REITs (FIIs).
 </p>
 
 <br>
@@ -20,7 +20,8 @@ $$\Huge {\textbf{\color{green} CRISP-DM} \space \textbf{\color{white} •} \spac
 
 <br>
 
-##### <p align="center">An institutional-grade solution designed to monitor, structure, rank, and interpret signals from Brazilian Real Estate Investment Funds (FIIs), leveraging financial media, research portals, and investor communities.</p>
+#### <p align="center">An institutional-grade solution designed to monitor, structure, rank, and interpret signals from Brazilian REITs (FIIs), leveraging financial media, research portals, and investor communities.
+</p>
 
 <br>
 
