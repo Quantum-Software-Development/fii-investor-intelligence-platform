@@ -310,8 +310,6 @@ classDef llm fill:#231433,stroke:#b56cff,color:#F5F7FA,stroke-width:2.5px;
 ```
 
 
-
-
 <br><br>
 
 
@@ -476,9 +474,9 @@ In the documented reference execution, the [Google News RSS fallback]() generate
 <br><br>
 
 
-## [🏗️ High-Level Architecture]()
+## [End-to-End AI/ML Data Pipeline]()
 
-<br>
+<br><br>
 
 ```mermaid
 %%{init:{
@@ -491,51 +489,42 @@ In the documented reference execution, the [Google News RSS fallback]() generate
 
 graph TD
 
-NB00["NB00<br/>21 DATA SOURCES<br/>RSS • Scraping • Reddit"]:::bronze
+A1["20 Financial Portals<br/>RSS Feeds"]:::setup
+A2["Reddit (Source #21)<br/>r/investimentos · r/farialimabets<br/>Behavioral Layer"]:::setup
 
-NB01["BRONZE LAYER<br/>Ingestion<br/>feedparser • BS4 • PRAW"]:::bronze
+BZ["Bronze Layer<br/>data/external/<br/>Raw Parquet, 17 fields<br/>article_id already assigned (SHA-256)"]:::bronze
 
-NB02["SILVER LAYER<br/>Cleaning & Normalization<br/>Quality Gates"]:::silver
+S1["NB02 — HTML Cleaning<br/>Deduplication · Schema Validation"]:::silver
+SV["Silver Layer<br/>data/silver/<br/>Clean Parquet, 20 fields"]:::silver
 
-NB03["SILVER LAYER<br/>MapReduce Word Count"]:::silver
+N1["NB03 — Word Count<br/>+ NB04 TF-IDF"]:::gold
+N2["NB04 — BM25<br/>(source-level ranking)"]:::gold
+N3["NB05 — Sentiment<br/>PT-BR Lexicon"]:::gold
+N4["NB03 — Negative Context<br/>Detection"]:::gold
+T1["NB04 — FAISS<br/>Semantic Embeddings"]:::gold
 
-NB04["GOLD LAYER<br/>TF-IDF + BM25<br/>Retrieval Index"]:::gold
+GL["Gold Layer<br/>data/gold/<br/>Analytics Parquet"]:::gold
 
-NB05["GOLD LAYER<br/>Sentiment Analysis<br/>PT-BR Lexicon"]:::gold
+API["FastAPI<br/>Render · NB07"]:::dash
+DASH["Streamlit Dashboard<br/>Streamlit Cloud · NB07"]:::dash
+BOT["RAG Chatbot<br/>Groq (primary) → Gemini (fallback)"]:::llm
 
-NB06["GOLD LAYER<br/>Marketing Intelligence<br/>Signals • Funnel • Insights"]:::gold
+A1 --> BZ
+A2 --> BZ
+BZ --> S1 --> SV
+SV --> N1 & N2 & N3 & N4 & T1
+N1 & N2 & N3 & N4 & T1 --> GL
+GL --> API --> DASH --> BOT
+GL -.->|local fallback| DASH
 
-NB07["SERVING LAYER<br/>Dashboard Dataset"]:::dash
-
-API["FASTAPI<br/>Serving Layer<br/>REST API"]:::dash
-
-ST["STREAMLIT<br/>Serving Layer<br/>Dashboard"]:::dash
-
-BOT["GROQ CHATBOT<br/>LLM Layer<br/>GPT-OSS-20B"]:::llm
-
-NB00 --> NB01 --> NB02
-
-NB02 --> NB03
-NB02 --> NB04
-NB02 --> NB05
-
-NB03 --> NB06
-NB04 --> NB06
-NB05 --> NB06
-
-NB06 --> NB07
-NB07 --> API
-NB07 --> ST
-
-API --> BOT
-ST --> BOT
-
+classDef setup fill:#0d2137,stroke:#00d2ff,color:#F5F7FA,stroke-width:2.5px;
 classDef bronze fill:#2a1512,stroke:#a85a4a,color:#F5F7FA,stroke-width:2.5px;
 classDef silver fill:#1b2430,stroke:#b0b7c3,color:#F5F7FA,stroke-width:2.5px;
 classDef gold fill:#2a2208,stroke:#e6c35a,color:#F5F7FA,stroke-width:2.5px;
 classDef dash fill:#06363d,stroke:#2dd4bf,color:#F5F7FA,stroke-width:2.5px;
 classDef llm fill:#231433,stroke:#b56cff,color:#F5F7FA,stroke-width:2.5px;
 ```
+
 
 <br>
 
