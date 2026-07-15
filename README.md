@@ -17,11 +17,11 @@
 
 $$\Huge {\textbf{\color{green} CRISP-DM} \space \textbf{\color{white} •} \space \textbf{\color{yellow}  Data Lakehouse} \space \textbf{\color{white} •} \space \textbf{\color{green} NLP} \space \textbf{\color{white} •} \space \textbf{\color{yellow} Responsible AI} \space \textbf{\color{white} •} \space \textbf{\color{green} Regulatory Alignment}}$$
 
-<br><br>
+<br>
 
 #### <p align="center"> ***An institutional-grade intelligence platform for monitoring, structuring, ranking, and interpreting Brazilian Real Estate Investment Fund (FII) signals from financial media, research portals, and investor communities.***
 
-<br><br>
+<br>
 
 ##### <p align="center"> [Big Data]() • [PySpark]() • [MapReduce Word Count]() • [NLP]() • [TF-IDF]() • [BM25 Ranking]() • [Hybrid Retrieval]() • [FAISS + Multilingual Embeddings]() • [Web Scraping]() • [TOFU/MOFU/BOFU]() • [CRISP-DM]() • [FastAPI]() • [Streamlit]() • [Docker]() • [Responsible AI]() • [LGPD]() • [EU AI Act Alignment]()
 
