@@ -129,7 +129,7 @@ $$\Huge {\textbf{\color{green} CRISP-DM} \space \textbf{\color{white} •} \spac
 <!-- ========= START NOTE ========= -->
 > [!TIP]
 > 
-> ###  🇧🇷 Real Estate Investment Funds (FIIs)  Market Intelligence & Behavioral Analytics <br>
+> ###  🇧🇷 Real Estate Investment Funds (FIIs)  Market Intelligence & Behavioral Analytics <br><br>
 >
 > **[↗](https://github.com/Quantum-Software-Development/1-Cybersecurity-SocialEngineering_Hub)** Explore the Full Course Repository
 >
