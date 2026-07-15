@@ -1,11 +1,8 @@
-
-<!-- ======================================= ⚡️ Start DEFAULT HEADER ===========================================  -->
 <!-- ========= START LANGUAGE BUTTON ========= -->
 **\[[🇧🇷 Português](README.pt_BR.md)\] \[**[🇬🇧 English](README.md)**\]**
 
 <br><br>
 <!-- ========= END LANGUAGE BUTTON ========= -->
-
 
 <!-- ========= START REPO TITLE ========= -->
 # <p align="center">  🇧🇷 Investor Intelligence Platform for Brazilian FIIs </p>
@@ -22,7 +19,7 @@ $$\Huge {\textbf{\color{green} CRISP-DM} \space \textbf{\color{white} •} \spac
 
 <br>
 
-#### <p align="center">An institutional-grade AI intelligence platform for monitoring, structuring, ranking, and interpreting signals from Brazilian Real Estate Investment Funds (FIIs) across financial media, research portals, and investor communities.</p>
+##### <p align="center">An institutional-grade AI intelligence platform for monitoring, structuring, ranking, and interpreting signals from Brazilian Real Estate Investment Funds (FIIs) across financial media, research portals, and investor communities.</p>
 
 <br>
 
@@ -34,7 +31,7 @@ $$\Huge {\textbf{\color{green} CRISP-DM} \space \textbf{\color{white} •} \spac
 <!-- ========= START SPONSOR BADGES ========= -->
 ### <p align="center"> [![Sponsor Quantum Software Development](https://img.shields.io/badge/Sponsor-Quantum%20Software%20Development-brightgreen?logo=GitHub)](https://github.com/sponsors/Quantum-Software-Development)
 
-<br><br>
+<br>
 <!-- ========= END SPONSOR BADGES ========= -->
 
 <!-- ========= START DEMO VIDEO ========= -->
