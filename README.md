@@ -8,21 +8,25 @@
 
 
 <!-- ========= START REPO TITLE ========= -->
-# <p align="center">[Investor Intelligence Platform for Brazilian FIIs]() 🇧🇷</p>
-### <p align="center">AI-Powered Market Intelligence, Behavioral Analytics & Sentiment Analysis for Brazilian Real Estate Investment Funds (FIIs)</p>
+# <p align="center">  🇧🇷 Investor Intelligence Platform for Brazilian FIIs </p>
 
-<br><br>
+### <p align="center"> [AI-Powered Market Intelligence, Behavioral Analytics & Sentiment Analysis]() </p>
 
-
-$$\Huge {\textbf{\color{green} CRISP-DM} \space \textbf{\color{white} •} \space \textbf{\color{yellow}  Data Lakehouse} \space \textbf{\color{white} •} \space \textbf{\color{green} NLP} \space \textbf{\color{white} •} \space \textbf{\color{yellow} Responsible AI} \space \textbf{\color{white} •} \space \textbf{\color{green} Regulatory Alignment}}$$
-
-<br>
-
-#### <p align="center"> ***An institutional-grade intelligence platform for monitoring, structuring, ranking, and interpreting Brazilian Real Estate Investment Fund (FII) signals from financial media, research portals, and investor communities.***
+<p align="center">
+An end-to-end AI platform that transforms unstructured financial data into actionable intelligence for Brazilian Real Estate Investment Funds (FIIs).
+</p>
 
 <br>
 
-##### <p align="center"> [Big Data]() • [PySpark]() • [MapReduce Word Count]() • [NLP]() • [TF-IDF]() • [BM25 Ranking]() • [Hybrid Retrieval]() • [FAISS + Multilingual Embeddings]() • [Web Scraping]() • [TOFU/MOFU/BOFU]() • [CRISP-DM]() • [FastAPI]() • [Streamlit]() • [Docker]() • [Responsible AI]() • [LGPD]() • [EU AI Act Alignment]()
+$$\Huge {\textbf{\color{green} CRISP-DM} \space \textbf{\color{white} •} \space \textbf{\color{yellow} Data Lakehouse} \space \textbf{\color{white} •} \space \textbf{\color{green} NLP} \space \textbf{\color{white} •} \space \textbf{\color{yellow} Responsible AI} \space \textbf{\color{white} •} \space \textbf{\color{green} Regulatory Alignment}}$$
+
+<br>
+
+#### <p align="center">An institutional-grade AI intelligence platform for monitoring, structuring, ranking, and interpreting signals from Brazilian Real Estate Investment Funds (FIIs) across financial media, research portals, and investor communities.</p>
+
+<br>
+
+###### <p align="center">Big Data [•]() PySpark [•]() MapReduce [•]() NLP[•]() TF-IDF [•]() BM25 [•]() Hybrid Retrieval [•]() FAISS + Multilingual Embeddings [•]() Web Scraping [•]() TOFU/MOFU/BOFU [•]() CRISP-DM [•]() FastAPI [•]() Streamlit [•]() Responsible AI [•]() LGPD [•]() EU AI Act Alignment</p>
 
 <br><br>
 <!-- ========= END REPO TITLE ========= -->
