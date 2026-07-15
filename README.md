@@ -164,7 +164,7 @@ $$\Huge {\textbf{\color{green} CRISP-DM} \space \textbf{\color{white} •} \spac
 > The focus is on applied, hands-on learning using real-world datasets in Artificial Intelligence, Data Science, AI Governance, and Cybersecurity.  
 > Any sensitive, confidential, or proprietary content remains protected in private repositories whenever required. <br><br>
 >
-> ⚠️  $\large \textbf{\color{green}{Disclaimer}}$ 
+> ⚠️  $\large \textbf{\color{green}{Disclaimer}}$ <br>
 > This platform is intended exclusively for educational, research, and analytical purposes. It does **not** constitute financial, investment, legal, or professional advice. Any analyses, insights, or results presented are for academic and informational purposes only.
 
 <br><br><br><br>
