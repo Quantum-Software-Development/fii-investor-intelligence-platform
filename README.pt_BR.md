@@ -5,10 +5,6 @@
 <br><br>
 <!-- ========= END LANGUAGE BUTTON ========= -->
 
-<br><br>
-<!-- ========= END LANGUAGE BUTTON ========= -->
-
-
 <!-- ========= START REPO TITLE ========= -->
 # <p align="center"> [Investor Intelligence Platform  -  Brazilian FIIs]() 🇧🇷
 ### <p align="center"> Real Estate Investment Funds (FIIs) - Market Intelligence & Behavioral Analytics
@@ -59,7 +55,7 @@ $$\Huge {\textbf{\color{green} CRISP-DM} \space \textbf{\color{white} •} \spac
 [**Bachelor’s Program:**]() Humanistic AI & Data Science • 5th Semester • 2026  
 [**Course:**]() AI Security, Cybersecurity & Social Engineering  
 **Professors** [✨ Eduardo Savino Gomes]() and [✨ Carlos Eduardo Paes](https://www.linkedin.com/in/carlos-eduardo-de-barros-paes-ph-d-7b137a4/)  
-**Project Authors:** [Fabiana ⚡️ Campanari](https://linktr.ee/fabianacampanari) and [Pedro Vyctor  Almeida](https://www.linkedin.com/in/pedro-vyctor-almeida-285b89273/)
+**Project Author:** [Fabiana ⚡️ Campanari](https://linktr.ee/fabianacampanari) 
 
 <br><br>
 
@@ -126,18 +122,24 @@ $$\Huge {\textbf{\color{green} CRISP-DM} \space \textbf{\color{white} •} \spac
 
 <!-- ========= START NOTE ========= -->
 > [!TIP]
-> 🔗 **[Cybersecurity, Social Engineering & AI Security — Hub Repository](https://github.com/Quantum-Software-Development/1-Cybersecurity-SocialEngineering_Hub)**  <br>
 >
+> ↗ **[Explore o repositório completo do curso](https://github.com/Quantum-Software-Development/1-Cybersecurity-SocialEngineering_Hub))**
 >
-> Uma plataforma escalável que combina **Big Data, PySpark, MapReduce, Word Count, NLP, TF-IDF, BM25, Web Scraping, RAG** e análises assistidas por IA para transformar discussões financeiras > em larga escala em insights acionáveis para Fundos de Investimento Imobiliário (FIIs).
+> ###  Real Estate Investment Funds (FIIs) - Market Intelligence & Behavioral Analytics 🇧🇷 <br><br>
+>
+> Uma plataforma escalável que combina [**Big Data**](), [**PySpark**](), [**MapReduce**](), [**Word Count**](), [**NLP**](), [**TF-IDF**](), [**BM25**](), [**FAISS**](), [p**Multilingual Embeddings**](), [**Web Scraping**](), [**Hybrid RAG**]() and [**AI-Assisted Analytics**]() e análises assistidas por IA para transformar discussões financeiras > em larga escala em insights acionáveis para Fundos de Investimento Imobiliário (FIIs).
 >
 > <br>
 >
-> $$\Huge {\textbf{\color{green} Where market discussions become investment narratives…}}$$
+>  #
 >
-> $$\Huge {\textbf{\color{yellow} ecause markets talk a lot...}}$$
+> <br><br>
+
+> $$\Huge {\textbf{\color{green} Onde as discussões de mercado se transformam em narrativas de investimento…}}$$
+>
+> $$\Huge {\textbf{\color{yellow} Porque os mercados falam muito...}}$$
 > 
-> $$\Huge {\textbf{\color{green} Intelligent systems just listen better}}$$
+> $$\Huge {\textbf{\color{green} Sistemas inteligentes simplesmente ouvem melhor}}$$
 >
 > ### <p align="center"> ⚡
 
