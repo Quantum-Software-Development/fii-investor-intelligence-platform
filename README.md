@@ -130,7 +130,7 @@ $$\Huge {\textbf{\color{green} CRISP-DM} \space \textbf{\color{white} •} \spac
 <!-- ========= START NOTE ========= -->
 > [!TIP]
 > 
-> ###  🇧🇷  Investor Intelligence Platform for Brazilian FIIs. <br><br>
+> ###  🇧🇷 Investor Intelligence Platform for Brazilian REITs (FIIs) <br><br>
 >
 > **[↗](https://github.com/Quantum-Software-Development/1-Cybersecurity-SocialEngineering_Hub)** Explore the Full Course Repository
 >
