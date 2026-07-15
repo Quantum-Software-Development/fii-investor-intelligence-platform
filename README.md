@@ -5,7 +5,7 @@
 <!-- ========= END LANGUAGE BUTTON ========= -->
 
 <!-- ========= START REPO TITLE ========= -->
-# <p align="center">  🇧🇷 Investor Intelligence Platform for Brazilian FIIs </p>
+# <p align="center"> 🇧🇷 Investor Intelligence Platform for Brazilian Real Estate Investment Funds (FIIs) </p>
 ### <p align="center"> [AI-Powered Market Intelligence, Behavioral Analytics & Sentiment Analysis]() </p>
 
 <br>
