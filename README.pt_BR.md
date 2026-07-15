@@ -205,6 +205,61 @@ $$\Huge {\textbf{\color{green} CRISP-DM} \space \textbf{\color{white} •} \spac
 34. [Autores](#-autores)
 
 <br><br>
+## [End-to-End AI/ML Data Pipeline]()
+
+<br><br>
+
+
+```mermaid
+%%{init:{
+'theme':'dark',
+'themeVariables':{
+'background':'#090d13',
+'primaryTextColor':'#F5F7FA',
+'lineColor':'#2dd4bf'
+}}}%%
+
+graph TD
+
+A1["20 Portais Financeiros<br/>RSS Feeds"]:::setup
+A2["Reddit (Fonte #21)<br/>r/investimentos · r/farialimabets<br/>Camada Comportamental"]:::setup
+
+BZ["Bronze Layer<br/>data/external/<br/>Parquet bruto, 17 campos<br/>article_id já atribuído (SHA-256)"]:::bronze
+
+S1["NB02 — Limpeza HTML<br/>Deduplicação · Validação de Schema"]:::silver
+SV["Silver Layer<br/>data/silver/<br/>Parquet limpo, 20 campos"]:::silver
+
+N1["NB03 — Word Count<br/>+ NB04 TF-IDF"]:::gold
+N2["NB04 — BM25<br/>(ranking por fonte)"]:::gold
+N3["NB05 — Sentimento<br/>Léxico PT-BR"]:::gold
+N4["NB03 — Negative Context<br/>Detection"]:::gold
+T1["NB04 — FAISS<br/>Embeddings semânticos"]:::gold
+
+GL["Gold Layer<br/>data/gold/<br/>Parquet analítico"]:::gold
+
+API["FastAPI<br/>Render · NB07"]:::dash
+DASH["Streamlit Dashboard<br/>Streamlit Cloud · NB07"]:::dash
+BOT["Chatbot RAG<br/>Groq (primário) → Gemini (fallback)"]:::llm
+
+A1 --> BZ
+A2 --> BZ
+BZ --> S1 --> SV
+SV --> N1 & N2 & N3 & N4 & T1
+N1 & N2 & N3 & N4 & T1 --> GL
+GL --> API --> DASH --> BOT
+GL -.->|fallback local| DASH
+
+classDef setup fill:#0d2137,stroke:#00d2ff,color:#F5F7FA,stroke-width:2.5px;
+classDef bronze fill:#2a1512,stroke:#a85a4a,color:#F5F7FA,stroke-width:2.5px;
+classDef silver fill:#1b2430,stroke:#b0b7c3,color:#F5F7FA,stroke-width:2.5px;
+classDef gold fill:#2a2208,stroke:#e6c35a,color:#F5F7FA,stroke-width:2.5px;
+classDef dash fill:#06363d,stroke:#2dd4bf,color:#F5F7FA,stroke-width:2.5px;
+classDef llm fill:#231433,stroke:#b56cff,color:#F5F7FA,stroke-width:2.5px;
+```
+
+
+
+<!--
 
 
  TERMOS TOFU 
@@ -251,10 +306,6 @@ Detectar:
 - risco de crédito
 
 <br><br>
-
-
-<!--
-
 
 ## 1. Por que usar MapReduce?.
 
