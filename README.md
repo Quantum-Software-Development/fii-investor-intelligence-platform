@@ -170,9 +170,6 @@ $$\Huge {\textbf{\color{green} CRISP-DM} \space \textbf{\color{white} •} \spac
 <br><br><br><br>
 <!-- ========= END!WARNING]========= -->
 
-$\tiny \textbf{\color{green}{CRISP-DM}}$
-
-
 ## Table of Contents
 
 1. [Academic Context](#-academic-context)
