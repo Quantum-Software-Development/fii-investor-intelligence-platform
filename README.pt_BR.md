@@ -5,28 +5,28 @@
 <!-- ========= END LANGUAGE BUTTON ========= -->
 
 <!-- ========= START REPO TITLE ========= -->
-# <p align="center"> 🇧🇷 Plataforma de Inteligência para Investidores em Fundos Imobiliarios no Brasil (FIIs)</p>
-### <p align="center"> [Inteligência de Mercado com IA, Análise Comportamental & Análise de Sentimento]() </p>
-
+<!-- ========= START REPO TITLE ========= -->
+# <p align="center"> 🇧🇷 Plataforma de Inteligência para Investidores em REITs Brasileiros (FIIs) </p>
+### <p align="center"> Inteligência de Mercado com IA · Análise Comportamental · Análise de Sentimento </p>
 
 <br>
 
-<p align="center"> 
-Infraestrutura end-to-end de IA que transforma dados financeiros não estruturados em inteligência acionável para FIIs no Brasil.
+<p align="center">
+Infraestrutura de IA ponta a ponta que transforma dados financeiros não estruturados em inteligência acionável para REITs brasileiros (FIIs).
 </p>
 
 <br>
 
-$$\Huge {\textbf{\color{green} CRISP-DM} \space \textbf{\color{white} •} \space \textbf{\color{yellow} Data Lakehouse} \space \textbf{\color{white} •} \space \textbf{\color{green} NLP} \space \textbf{\color{white} •} \space \textbf{\color{yellow} Responsible AI} \space \textbf{\color{white} •} \space \textbf{\color{green} Regulatory Alignment}}$$
+$$\Huge {\textbf{\color{green} CRISP-DM} \space \textbf{\color{white} •} \space \textbf{\color{yellow} Data Lakehouse} \space \textbf{\color{white} •} \space \textbf{\color{green} NLP} \space \textbf{\color{white} •} \space \textbf{\color{yellow} IA Responsável} \space \textbf{\color{white} •} \space \textbf{\color{green} Conformidade Regulatória}}$$
 
 <br>
 
-##### <p align="center">Uma solução de nível institucional projetado para monitorar, estruturar, classificar e interpretar sinais de Fundos de Investimento Imobiliário (FIIs) no Brasil, a partir de mídias financeiras, portais de research e comunidades de investidores.</p>
-
+#### <p align="center">Solução de nível institucional projetada para monitorar, estruturar, ranquear e interpretar sinais de REITs brasileiros (FIIs), utilizando mídias financeiras, portais de pesquisa e comunidades de investidores.
+</p>
 
 <br>
 
-###### <p align="center">Big Data [•]() PySpark [•]() MapReduce [•]() NLP[•]() TF-IDF [•]() BM25 [•]() Hybrid Retrieval [•]() FAISS + Multilingual Embeddings [•]() Web Scraping [•]() TOFU/MOFU/BOFU [•]() CRISP-DM [•]() FastAPI [•]() Streamlit [•]() Responsible AI [•]() LGPD [•]() EU AI Act Alignment</p>
+###### <p align="center">Big Data [•]() PySpark [•]() MapReduce [•]() NLP [•]() TF-IDF [•]() BM25 [•]() Recuperação Híbrida [•]() FAISS + Embeddings Multilíngues [•]() Web Scraping [•]() TOFU/MOFU/BOFU [•]() CRISP-DM [•]() FastAPI [•]() Streamlit [•]() IA Responsável [•]() LGPD [•]() Alinhamento com o EU AI Act</p>
 
 <br><br>
 <!-- ========= END REPO TITLE ========= -->
@@ -128,19 +128,17 @@ $$\Huge {\textbf{\color{green} CRISP-DM} \space \textbf{\color{white} •} \spac
 
 <!-- ========= START NOTE ========= -->
 > [!TIP]
+> 
+> ###  🇧🇷 Real Estate Investment Funds (FIIs)  Market Intelligence & Behavioral Analytics <br><br>
 >
-> ↗ **[Explore o repositório completo do curso](https://github.com/Quantum-Software-Development/1-Cybersecurity-SocialEngineering_Hub))**
->
-> ###  Real Estate Investment Funds (FIIs) - Market Intelligence & Behavioral Analytics 🇧🇷 <br><br>
->
-> Uma plataforma escalável que combina [**Big Data**](), [**PySpark**](), [**MapReduce**](), [**Word Count**](), [**NLP**](), [**TF-IDF**](), [**BM25**](), [**FAISS**](), [p**Multilingual Embeddings**](), [**Web Scraping**](), [**Hybrid RAG**]() and [**AI-Assisted Analytics**]() e análises assistidas por IA para transformar discussões financeiras > em larga escala em insights acionáveis para Fundos de Investimento Imobiliário (FIIs).
+> **[↗](https://github.com/Quantum-Software-Development/1-Cybersecurity-SocialEngineering_Hub)** Explore o repositório completo do curso
 >
 > <br>
 >
 >  #
 >
 > <br><br>
-
+>
 > $$\Huge {\textbf{\color{green} Onde as discussões de mercado se transformam em narrativas de investimento…}}$$
 >
 > $$\Huge {\textbf{\color{yellow} Porque os mercados falam muito...}}$$
