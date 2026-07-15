@@ -236,7 +236,7 @@ $\Huge {\textbf{\color{green} Product Overview and Definitiond Institutional Con
 
 <br>
 
-The [**Investor Intelligence Platform 🇧🇷 FIIs Brazil**]() is an AI-powered market intelligence platform designed to transform fragmented public discussions about Brazilian **Real Estate Investment Funds (FIIs)** into structured, searchable, explainable, and actionable insights.
+The 🇧🇷  $\large {\textbf{\color{yellow} Investor Intelligence Platform FIIs Brazil}}$  is an AI-powered market intelligence platform designed to transform fragmented public discussions about Brazilian **Real Estate Investment Funds (FIIs)** into structured, searchable, explainable, and actionable insights.
 
 Originally conceived as an academic **Big Data** project at **PUC-SP**, the platform has evolved into a complete end-to-end intelligence ecosystem that combines distributed data engineering, information retrieval, natural language processing, and generative AI to support investor analysis and marketing intelligence.
 
@@ -258,7 +258,7 @@ $\large {\textbf{\color{yellow} The platform:}}$
 [*]() generates explainable marketing intelligence indicators for investor behavior analysis; <br>
 [*]() exposes all processed information through **FastAPI**, **RAG**, **Groq LLM**, and an interactive **Streamlit** dashboard.
 
-<br>
+<br> 
 
 $\large {\textbf{\color{yellow} The platform is capable of:}}$
 
@@ -344,6 +344,7 @@ $\Huge {\textbf{\color{green} 👥 Target Audience}}$
 [-]() Recruiters and technical portfolio reviewers
 
 <br><br>
+
 $\Huge {\textbf{\color{green}  Why This Matters ❓}}$
 #
 
@@ -363,8 +364,10 @@ Analysts, managers and financial communication teams face:
 
 <br><br>
 
+$\Huge {\textbf{\color{green}  Source Coverage}}$
+#
 
-## [ Source Coverage]()
+<br>
 
 The platform monitors a curated set of editorial and behavioral sources relevant to the Brazilian FII ecosystem. Instead of treating all inputs as an undifferentiated corpus, the project distinguishes:
 
@@ -376,37 +379,36 @@ The platform monitors a curated set of editorial and behavioral sources relevant
 
 <br>
 
-> [!IMPORTANT]
+> [!TIP]
 > Detailed documentation per source: [`docs/data_sources.md`](https://github.com/Quantum-Software-Development/5-cybersecurity-social-engineering-fii-marketing-intelligence-platform/blob/2b697bb54a78f4d31424ecd334466f9fc4a8d6e0/docs/data_sources.md)
 
 <br><br>
 
-
-## [Collection Strategy by Source Type]()
+$\Huge {\textbf{\color{green}  Collection Strategy by Source Type}}$
+#
 
 <br>
 
-### [***RSS-First***]()
-
+$\large {\textbf{\color{yellow} RSS-First}}$
 
 When available, [**RSS**]() is preferred: lower extraction cost, native structured metadata, no risk of breakage due to HTML layout changes, reliable scheduling.
 
 <br>
 
-### [***Scraping as Controlled Fallback***]()
+$\large {\textbf{\color{yellow} Scraping as Controlled Fallback}}$
 
 When RSS is unavailable or unstable, controlled HTML extraction of public pages. It does not simulate human navigation — it collects observable metadata (titles, links, timestamps, categories, excerpts).
 
+<br>
 
-### [***Collection of Social Sources***]()
+$\large {\textbf{\color{yellow} Collection of Social Sources}}$
 
 Reddit follows a separate logical path because it represents conversational and community-based data.
 It is treated as a behavioral and discursive input layer that complements editorial coverage with public sentiment and emerging narratives.
 
-
-### [***3-level strategy:***](docs/data_collection.md)
-
 <br>
+
+$\large {\textbf{\color{yellow} 3-level strategy:}}$
 
 | [Level]() | [Method]() | [Requires]() |
 |---|---|---|
