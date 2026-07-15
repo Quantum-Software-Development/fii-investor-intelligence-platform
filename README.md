@@ -236,7 +236,7 @@ $\Huge {\textbf{\color{green} Product Overview and Definitiond Institutional Con
 
 <br>
 
-The 🇧🇷  $\large {\textbf{\color{yellow} Investor Intelligence Platform FIIs Brazil}}$  is an AI-powered market intelligence platform designed to transform fragmented public discussions about Brazilian **Real Estate Investment Funds (FIIs)** into structured, searchable, explainable, and actionable insights.
+The  $\large {\textbf{\color{yellow} Investor Intelligence Platform FIIs Brazil}}$  is an AI-powered market intelligence platform designed to transform fragmented public discussions about Brazilian **Real Estate Investment Funds (FIIs)** into structured, searchable, explainable, and actionable insights.
 
 Originally conceived as an academic **Big Data** project at **PUC-SP**, the platform has evolved into a complete end-to-end intelligence ecosystem that combines distributed data engineering, information retrieval, natural language processing, and generative AI to support investor analysis and marketing intelligence.
 
