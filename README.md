@@ -199,8 +199,10 @@ $$\Huge {\textbf{\color{green} CRISP-DM} \space \textbf{\color{white} •} \spac
 
 <br><br>
 
-## [🎓 Academic and Institutional Context]()
+$\Huge {\textbf{\color{green} 🎓 Academic and Institutional Context}}$
+#
 
+<br>
 
 This project was developed at **PUC-SP** as part of the courses **Cybersecurity**, **Social Engineering**, **Data Engineering**, **Distributed Systems**, and **Big Data Analytics Applied to Financial Markets**. The original assignment focused on demonstrating a distributed **Word Count** solution using **PySpark** and the **MapReduce** paradigm.
 
@@ -208,8 +210,8 @@ Building upon this foundation, the project evolved into a comprehensive financia
 
 <br><br>
 
-
-## [Academic Requirements Met]()
+$\Huge {\textbf{\color{green} Academic Requirements Met}}$
+#
 
 <br>
 
@@ -229,7 +231,10 @@ Building upon this foundation, the project evolved into a comprehensive financia
 
 <br><br>
 
-## [Product Overview and Definition]()
+$\Huge {\textbf{\color{green} Product Overview and Definitiond Institutional Context}}$
+#
+
+<br>
 
 The [**Investor Intelligence Platform 🇧🇷 FIIs Brazil**]() is an AI-powered market intelligence platform designed to transform fragmented public discussions about Brazilian **Real Estate Investment Funds (FIIs)** into structured, searchable, explainable, and actionable insights.
 
@@ -237,9 +242,14 @@ Originally conceived as an academic **Big Data** project at **PUC-SP**, the plat
 
 Rather than serving as a traditional dashboard, the platform continuously collects, processes, enriches, and exposes financial information through a scalable analytics pipeline.
 
-### [Core Capabilities]()
+<br><br>
 
-[***The platform:***]()
+$\Huge {\textbf{\color{green} Core Capabilities}}$
+#
+
+<br>
+
+$\Large {\textbf{\color{yellow} The platform:}}$
 
 [*]() collects data from [**21 public sources**]() (RSS feeds, financial portals, web scraping, and Reddit); <br>
 [*]() organizes the information using a **Bronze → Silver → Gold Medallion Architecture** v<br>
@@ -250,7 +260,8 @@ Rather than serving as a traditional dashboard, the platform continuously collec
 
 <br>
 
-[***The platform is capable of:***]()
+$\Large {\textbf{\color{yellow} The platform is capable of:}}$
+
 
 [*]() Monitoring investor sentiment across digital financial communities; <br>
 [*]() Identifying emerging themes and market trends; <br>
