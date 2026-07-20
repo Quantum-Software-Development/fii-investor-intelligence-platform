@@ -154,7 +154,7 @@ groq==1.4.0
 # (Bronze/Silver/Gold layers). Kept as reference for a
 # possible migration.
 # ==========================================================
-sqlalchemy==2.0.31
+sqlalchemy==2.0.51
 
 # ==========================================================
 # CONFIGURATION
