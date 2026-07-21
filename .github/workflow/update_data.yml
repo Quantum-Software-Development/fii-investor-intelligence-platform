@@ -1,0 +1,133 @@
+name: Update FII Data (Manual)
+
+# ──────────────────────────────────────────────────────────────────────────────
+# MANUAL trigger only — workflow_dispatch.
+# Deliberate decision: NB01 performs live scraping across 20+ sources; a
+# silent source failure during an unsupervised automatic run (cron, overnight)
+# would leave the dashboard silently serving broken data. We prefer human
+# control: you click "Run workflow" on GitHub whenever you want to refresh.
+#
+# To evolve into scheduled updates in the future (once the pipeline has been
+# validated to run stably without supervision), add below:
+#
+#   schedule:
+#     - cron: "0 6 * * *"   # every day at 06:00 UTC
+#
+# ──────────────────────────────────────────────────────────────────────────────
+on:
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: "Reason for the update (shown in the run log)"
+        required: false
+        default: "Manual data refresh"
+
+jobs:
+  refresh-pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Set up Java 11 (required for PySpark)
+        uses: actions/setup-java@v4
+        with:
+          distribution: "temurin"
+          java-version: "11"
+
+      - name: Cache pip dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install nbconvert jupyter ipykernel
+
+      - name: Run NB00 — Setup
+        run: |
+          jupyter nbconvert --to notebook --execute --inplace \
+            --ExecutePreprocessor.timeout=300 \
+            notebooks/NB00_setup.ipynb
+
+      - name: Run NB01 — Bronze Ingestion (live scraping)
+        env:
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+        run: |
+          jupyter nbconvert --to notebook --execute --inplace \
+            --ExecutePreprocessor.timeout=900 \
+            notebooks/NB01_bronze_ingestion.ipynb
+
+      - name: Run NB02 — Bronze to Silver
+        run: |
+          jupyter nbconvert --to notebook --execute --inplace \
+            --ExecutePreprocessor.timeout=300 \
+            notebooks/NB02_bronze_to_silver.ipynb
+
+      - name: Run NB03 — MapReduce Word Count
+        run: |
+          jupyter nbconvert --to notebook --execute --inplace \
+            --ExecutePreprocessor.timeout=300 \
+            notebooks/NB03_word_count_mapreduce.ipynb
+
+      - name: Run NB04 — TF-IDF + BM25 + FAISS
+        run: |
+          jupyter nbconvert --to notebook --execute --inplace \
+            --ExecutePreprocessor.timeout=600 \
+            notebooks/NB04_tfidf_bm25.ipynb
+
+      - name: Run NB05 — Contextual Sentiment
+        run: |
+          jupyter nbconvert --to notebook --execute --inplace \
+            --ExecutePreprocessor.timeout=300 \
+            notebooks/NB05_contextual_sentiment.ipynb
+
+      - name: Run NB06 — Marketing Intelligence
+        run: |
+          jupyter nbconvert --to notebook --execute --inplace \
+            --ExecutePreprocessor.timeout=600 \
+            notebooks/NB06_marketing_intelligence.ipynb
+
+      - name: Run NB07 — Dashboard Dataset
+        run: |
+          jupyter nbconvert --to notebook --execute --inplace \
+            --ExecutePreprocessor.timeout=300 \
+            notebooks/NB07_dashboard_dataset.ipynb
+
+      - name: Preflight check before commit
+        run: python scripts/preflight_check.py || true
+        # "|| true" so we don't block the commit on non-critical warnings;
+        # real errors (missing files) would already have failed the steps above.
+
+      - name: Commit new Gold artifacts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -f data/gold/ data/silver/ data/external/ notebooks/*.ipynb
+          if git diff --staged --quiet; then
+            echo "No data changes — nothing to commit."
+          else
+            git commit -m "chore: automatic FII data refresh ($(date -u +%Y-%m-%dT%H:%M:%SZ)) — ${{ github.event.inputs.reason }}"
+            git push
+          fi
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "## FII Pipeline Run" >> $GITHUB_STEP_SUMMARY
+          echo "- Reason: ${{ github.event.inputs.reason }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Triggered by: ${{ github.actor }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Render and Streamlit Cloud will auto-redeploy after the push (if configured)." >> $GITHUB_STEP_SUMMARY
