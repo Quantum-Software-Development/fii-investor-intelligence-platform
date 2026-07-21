@@ -1,27 +1,41 @@
-# Investor Intelligence Platform - FIIs Brasil
+# ============================================================
+# Investor Intelligence Platform - Brazilian FIIs
+# ============================================================
+
+# Secrets
 .env
 .streamlit/secrets.toml
 
-# Medallion layers — local only, NOT committed
+# Medallion Architecture (local only)
 data/bronze/
 data/silver/
 data/gold/
 
-# data/external/ IS committed (frozen reproducible dataset)
-# No global parquet files rule — it would silently block data/external/
+# data/external/ is intentionally tracked.
+# Do NOT ignore *.parquet globally.
 
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
 .ipynb_checkpoints/
+
+# Apache Spark
 spark-warehouse/
 metastore_db/
 derby.log
-logs/*.log
-.DS_Store
-Thumbs.db
 
-# Virtual environments (local only)
+# Logs
+logs/
+*.log
+
+# Virtual environments
 venv/
 .venv/
 env/
-.env/
+
+# Local private files
+private/
+
+# Operating system
+.DS_Store
+Thumbs.db
