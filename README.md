@@ -171,7 +171,7 @@ $$\Huge {\textbf{\color{green} CRISP-DM} \space \textbf{\color{white} •} \spac
 
 ## Table of Contents
 
-1. [Academic Context](#-academic-context)
+1. [Academic Context](#academic-context)
 2. [Overview](#overview)
 3. [System Overview](#system-overview)
 4. [🧭 From Frequency to Decision](#-from-frequency-to-decision)
