@@ -174,7 +174,7 @@ $$\Huge {\textbf{\color{green} CRISP-DM} \space \textbf{\color{white} •} \spac
 1. [Academic Context](#1-academic-context)
 2. [Overview](#2-overview)
 3. [System Overview](#3-system-overview)
-4. [🧭 From Frequency to Decision](#4--from-frequency-to-decision)
+4. [From Frequency to Decision](#4-from-frequency-to-decision)
 5. [What This Platform Delivers](#5-what-this-platform-delivers)
 6. [Why This Matters](#6-why-this-matters)
 7. [Architecture and Pipeline](#7-architecture-and-pipeline)
@@ -213,8 +213,7 @@ Building upon this foundation, the project evolved into a comprehensive financia
 
 <br><br>
 
-$\Huge {\textbf{\color{green} Academic Requirements Met}}$
-#
+## 2. [Academic Requirements Met]()
 
 <br>
 
