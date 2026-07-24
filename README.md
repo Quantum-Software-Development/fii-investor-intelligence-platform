@@ -319,26 +319,24 @@ classDef llm fill:#231433,stroke:#b56cff,color:#F5F7FA,stroke-width:2.5px;
 
 ## 4. [From Frequency to Decision]()
 
+<br>
 
-## [From Frequency to Decision]()
-
-
-> Frequency → Relevance → Meaning → Decision
+$\large {\textbf{\color{green} Frequency } \space \textbf{\color{white} →} \space \textbf{\color{yellow} Relevance} \space \textbf{\color{white} →} \space \textbf{\color{green} NLP} \space \textbf{\color{white} →} \space \textbf{\color{yellow} Responsible AI}}$
 
 <br>
 
-An NLP + Information Retrieval pipeline that transforms unstructured information from the FII market into actionable intelligence — combining **MapReduce, TF-IDF, BM25, FAISS + Embeddings, RAG, and Contextual Sentiment Analysis** into progressive intelligence layers, each solving a specific structural limitation of the one before it.
+An NLP + Information Retrieval pipeline that transforms unstructured information from the FII market into actionable intelligence — combining [**MapReduce, TF-IDF, BM25, FAISS + Embeddings, RAG, and Contextual Sentiment Analysis**]() into progressive intelligence layers, each solving a specific structural limitation of the one before it.
 
 <br>
 
-| Layer | Question It Answers |
+| [Layer]() | [Question It Answers]() |
 |---|---|
-| MapReduce | Is this topic frequently discussed? |
-| TF-IDF | Does this term distinguish this document? |
-| BM25 | Which document best satisfies the user's query? |
-| FAISS + Embeddings | Can different words represent the same concept? |
-| RAG | How can retrieved evidence become a reliable answer? |
-| Contextual Sentiment | Does the surrounding context indicate opportunity or risk? |
+| [MapReduce ]() | Is this topic frequently discussed? |
+| [TF-IDF]() | Does this term distinguish this document? |
+| [BM25]() | Which document best satisfies the user's query? |
+| [FAISS + Embeddings]() | Can different words represent the same concept? |
+| [RAG]() | How can retrieved evidence become a reliable answer? |
+| [Contextual Sentiment]() | Does the surrounding context indicate opportunity or risk? |
 
 <br>
 
