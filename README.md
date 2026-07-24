@@ -273,7 +273,7 @@ By ingesting data from **21 public sources** (RSS feeds, financial portals, web 
 
 <br><br>
 
-## [System Overview]()
+## 3. [System Overview]()
 
 <br>
 
@@ -317,15 +317,8 @@ classDef llm fill:#231433,stroke:#b56cff,color:#F5F7FA,stroke-width:2.5px;
 
 <br><br>
 
-## 3. [From Frequency to Decision]()
+## 4. [From Frequency to Decision]()
 
-
-> Frequency → Relevance → Meaning → Decision
-
-An NLP + Information Retrieval pipeline that transforms unstructured information from the FII market into actionable intelligence — combining **MapReduce, TF-IDF, BM25, FAISS + Embeddings, RAG, and Contextual Sentiment Analysis** into progressive intelligence layers, each solving a specific structural limitation of the one before it.
-
-
-<br>
 
 ## [From Frequency to Decision]()
 
