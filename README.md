@@ -237,7 +237,7 @@ Building upon this foundation, the project evolved into a comprehensive financia
 
 <br>
 
-The **[Investor Intelligence Platform for Brazilian REITs (FIIs)**]() is an end-to-end **Big Data and AI solution** designed to transform financial content into actionable **market intelligence, behavioral analytics, and investor insights**. 
+The [**Investor Intelligence Platform for Brazilian REITs (FIIs)**]() is an end-to-end **Big Data and AI solution** designed to transform financial content into actionable **market intelligence, behavioral analytics, and investor insights**. 
 
 By ingesting data from **21 public sources** (RSS feeds, financial portals, web scraping channels, and Reddit), the platform applies **Brazilian Portuguese (PT-BR) NLP**, performs relevance ranking through **hybrid information retrieval (TF-IDF + BM25)**, conducts contextual **FII sentiment analysis**, and consolidates intelligence metrics into interactive dashboards powered by **FastAPI** and **Streamlit**.
 
@@ -245,30 +245,24 @@ By ingesting data from **21 public sources** (RSS feeds, financial portals, web 
 
 ### 2.1 [*Core Capabilities*]()
 
-### ➠ [Technical Capabilities]()
+#### ➠ [*Technical Capabilities*]()
 
 [*]() Collects and processes data from $\large {\textbf{\color{green}21 public sources}}$ across financial news portals, RSS feeds, web scraping channels, and investor communities; <br>
-
 [*]() Organizes information through a scalable **Bronze → Silver → Gold Medallion Architecture**; <br>
-
 [*]() Enriches financial documents using hybrid retrieval combining **TF-IDF**, **BM25**, and **FAISS semantic search** with multilingual Portuguese embeddings; <br>
-
 [*]() Performs contextual **Brazilian Portuguese (PT-BR) sentiment analysis** specialized in the Brazilian FII ecosystem; <br>
-
 [*]() Generates explainable **marketing intelligence and behavioral indicators** to identify trends, investor interests, and engagement signals; <br>
-
 [*]() Provides AI-assisted analysis through **FastAPI**, **Retrieval-Augmented Generation (RAG)**, **Groq LLM**, and an interactive **Streamlit** dashboard.
 
-<br>
 
-### ➠ [Intelligence & Decision Support]()
+#### ➠ [*Intelligence & Decision Support*]()
 
-- Monitoring investor sentiment and market perception across digital financial communities;
-- Identifying emerging topics, trends, and relevant discussions within the FII ecosystem;
-- Ranking financial content using hybrid retrieval (**TF-IDF + BM25 + FAISS semantic search**);
-- Detecting behavioral patterns and investor engagement signals;
-- Supporting data-driven marketing, communication, and investment research strategies;
-- Delivering AI-powered question answering through a **Retrieval-Augmented Generation (RAG)** architecture.
+[-]() Monitoring investor sentiment and market perception across digital financial communities; <br>
+[-]() Identifying emerging topics, trends, and relevant discussions within the FII ecosystem; <br>
+[-]() Ranking financial content using hybrid retrieval (**TF-IDF + BM25 + FAISS semantic search**); <br>
+[-]() Detecting behavioral patterns and investor engagement signals; <br>
+[-]() Supporting data-driven marketing, communication, and investment research strategies; <br>
+[-]() Delivering AI-powered question answering through a **Retrieval-Augmented Generation (RAG)** architecture.
 
 <br>
 
