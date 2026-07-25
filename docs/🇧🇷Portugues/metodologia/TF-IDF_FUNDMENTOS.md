@@ -83,9 +83,12 @@ TfidfVectorizer(
 
 <br><br>
 
-$$
-\Huge \text{score\_hybrid\_v2} = 0.20 \times \text{TF-IDF\_norm} + 0.30 \times \text{BM25\_norm} + 0.50 \times \text{Semantic\_norm}
-$$
+
+
+<h2 align="center">
+  $\text{score\_hybrid\_v2} = 0.20 \times \text{TF-IDF}_{\text{norm}} + 0.30 \times \text{BM25}_{\text{norm}} + 0.50 \times \text{Semantic}_{\text{norm}}$
+</h2>
+
 
 
 <br><br><br>
