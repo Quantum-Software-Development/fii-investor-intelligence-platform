@@ -20,11 +20,16 @@ BM25 (Best Matching 25) é o algoritmo de ranking de relevância principal usado
 
 <br><br>
 
-```
-BM25(D,Q) = Σ IDF(qi) · [f(qi,D)·(k1+1)] / [f(qi,D) + k1·(1−b+b·|D|/avgdl)]
-```
 
-<br><br>
+
+$$
+\huge \text{BM25}(D,Q) = \sum \text{IDF}(q_i) \cdot \frac{f(q_i,D) \cdot (k_1 + 1)}{f(q_i,D) + k_1 \cdot \left(1 - b + b \cdot \frac{|D|}{\text{avgdl}}\right)}
+$$
+
+
+
+
+<br><br><br><br>
 
 | Parâmetro | Padrão | Efeito |
 |---|---|---|
