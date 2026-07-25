@@ -20,11 +20,13 @@ TF-IDF (Term Frequency–Inverse Document Frequency) é a Camada 1 do motor de r
 
 <br><br>
 
-```
-TF-IDF(t,d) = TF(t,d) × log((N+1)/(df(t)+1)) + 1
-```
+$$
+\Huge \text{TF-IDF}(t,d) = \text{TF}(t,d) \times \log\left(\frac{N+1}{df(t)+1}\right) + 1
+$$
 
-<br><br>
+
+<br><br><br>
+
 
 | Variável | Significado |
 |---|---|
