@@ -83,11 +83,12 @@ TfidfVectorizer(
 
 <br><br>
 
-```
-score_hybrid_v2 = 0.20 × TF-IDF_norm + 0.30 × BM25_norm + 0.50 × Semantic_norm
-```
+$$
+\Huge \text{score\_hybrid\_v2} = 0.20 \times \text{TF-IDF\_norm} + 0.30 \times \text{BM25\_norm} + 0.50 \times \text{Semantic\_norm}
+$$
 
-<br><br>
+
+<br><br><br>
 
 ## [TF-IDF vs. BM25 — Por Que Não Parar no TF-IDF]()
 
