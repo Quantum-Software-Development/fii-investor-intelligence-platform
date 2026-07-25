@@ -139,4 +139,4 @@ Manning, C. D., Raghavan, P., & Schütze, H. (2008). *Introduction to Informatio
 
 <br><br>
 
-*TF-IDF Foundation v1.0.0 · Investor Intelligence Platform FIIs Brasil*
+*TF-IDF FUNDAMENTOS v1.0.0 · Investor Intelligence Platform FIIs Brasil*
