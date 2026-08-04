@@ -10,7 +10,6 @@
 
 ## [Visão Geral]()
 
-<br><br>
 
 BM25 (Best Matching 25) é o algoritmo de ranking de relevância principal usado para pontuar as 21 fontes monitoradas pela relevância do conteúdo FII.
 
@@ -40,7 +39,7 @@ $$
 
 ## [Papel Neste Projeto]()
 
-<br><br>
+<br>
 
 ```mermaid
 %%{init:{
@@ -67,7 +66,7 @@ classDef silver fill:#1b2430,stroke:#b0b7c3,color:#F5F7FA,stroke-width:2.5px;
 classDef gold fill:#2a2208,stroke:#e6c35a,color:#F5F7FA,stroke-width:2.5px;
 ```
 
-<br><br>
+<br>
 
 - **BM25** = Camada 2 — ranking probabilístico de relevância por fonte
 - **TF-IDF** = Camada 1 — ponderação estatística de termos (ver [`TFIDF_FOUNDATION.md`](TFIDF_FOUNDATION.md))
@@ -77,15 +76,13 @@ classDef gold fill:#2a2208,stroke:#e6c35a,color:#F5F7FA,stroke-width:2.5px;
 
 ## [Justificativa de Negócio]()
 
-<br><br>
 
 O objetivo central da plataforma é identificar **quais fontes digitais têm maior concentração de conteúdo relevante sobre FIIs** — um problema clássico de Recuperação de Informação, para o qual o BM25 é o padrão de fato da indústria (motores de busca, sistemas documentais, pipelines de IR).
 
-<br><br>
+<br>
 
 [***Por Que BM25 em Vez de Apenas TF-IDF***]()
 
-<br><br>
 
 | Critério | TF-IDF | BM25 | Embeddings (FAISS) |
 |---|---|---|---|
@@ -97,15 +94,14 @@ O objetivo central da plataforma é identificar **quais fontes digitais têm mai
 | Custo computacional | Baixo | Baixo | Mais alto (~10-50ms/query) |
 | Robustez multi-fonte (estilos editoriais distintos) | Média | Alta | Alta |
 
-<br><br>
+<br>
 
 Nenhuma das três camadas substitui as outras — por isso a plataforma combina as três em `score_hybrid_v2` (ver [`FUNDAMENTOS_CONCEITUAIS_RECUPERACAO_HIBRIDA.md`](FUNDAMENTOS_CONCEITUAIS_RECUPERACAO_HIBRIDA.md)), em vez de escolher uma única técnica.
 
-<br><br>
+<br>
 
 [***Exemplo Interpretável (XAI)***]()
 
-<br><br>
 
 Diferente de modelos *black-box*, o BM25 permite justificar tecnicamente por que uma fonte foi ranqueada acima de outra:
 
@@ -121,7 +117,6 @@ Essa capacidade de justificar cada score decompondo-o por termo é o que torna o
 
 ## [Alinhamento com XAI]()
 
-<br><br>
 
 Todo score BM25 se decompõe em contribuições por termo (NB05).
 
@@ -129,7 +124,6 @@ Todo score BM25 se decompõe em contribuições por termo (NB05).
 
 ## [Referência]()
 
-<br><br>
 
 Robertson & Zaragoza (2009). The Probabilistic Relevance Framework: BM25 and Beyond. *Foundations and Trends in IR*, 3(4), 333–389.
 
@@ -138,14 +132,11 @@ Robertson & Zaragoza (2009). The Probabilistic Relevance Framework: BM25 and Bey
 ## [Ver Também]()
 
 <br><br>
-
 - **[`FAISS.md`](FAISS.md)** — camada semântica que complementa BM25/TF-IDF na Camada 3
 - **[`FUNDAMENTOS_CONCEITUAIS_RECUPERACAO_HIBRIDA.md`](FUNDAMENTOS_CONCEITUAIS_RECUPERACAO_HIBRIDA.md)** — enquadramento conceitual da recuperação híbrida
 
 <br><br>
 
----
-
-<br><br>
+#
 
 *BM25 Foundation v1.0.0 · Investor Intelligence Platform FIIs Brasil*
