@@ -30,6 +30,23 @@ $$\Huge {\textbf{\color{green} CRISP-DM} \space \textbf{\color{white} •} \spac
 <br><br>
 <!-- ========= END REPO TITLE ========= -->
 
+<!-- ========= START TEASER ========= -->
+ $$\Huge {\textbf{\color{green} Where market discussions become investment narratives…}}$$
+
+ $$\Huge {\textbf{\color{yellow} Because markets talk a lot...}}$$
+ 
+ $$\Huge {\textbf{\color{green} Intelligent systems just listen better}}$$
+
+ ### <p align="center"> ⚡
+
+ <br>
+
+#
+
+<br><br>
+<!-- ========= END TEASER ========= -->
+
+
  <!-- START ♡ Sponsor BADGE ····· 🇶 Quantum Software Development -->
 <p align="center">
   <a href="https://github.com/sponsors/Quantum-Software-Development">
@@ -50,41 +67,53 @@ $$\Huge {\textbf{\color{green} CRISP-DM} \space \textbf{\color{white} •} \spac
 <br><br>
  <!--END♡ Sponsor BADGE ····· 🇶 Quantum Software Development -->
 
-<!-- ========= START DEMO VIDEO ========= -->
+ <!-- ========= START PUC GIF ========= -->
 <p align="center">
-   <img src="https://github.com/user-attachments/assets/791a69e2-d09a-429f-9257-f6667fff5c04 " />
-
+   <img src="https://github.com/user-attachments/assets/791a69e2-d09a-429f-9257-f6667fff5c04 ">
  </p>
 
-<!--
-#### 🖤 Creative Direction, Music Curation & Editing by Fab⚡️  
-##### 🎶 [Soundtrack:]() "Canon in D" — Johann Pachelbel
--->
+ <br>
+<!-- ========= END PUC GIF ========= -->
 
-<br><br>
-<!-- ========= END DEMO VIDEO ========= -->
 
+<!-- ========= START 🇧🇷 Top CommtributorsE ========= -->
+<p align="center">
+  <a href="https://user-badge.committers.top/brazil/FabianaCampanari">
+    <img
+      src="https://img.shields.io/badge/%F0%9F%87%A7%F0%9F%87%B7%20TOP%20CONTRIBUTORS-07111F?style=for-the-badge&labelColor=07111F&logoColor=white"
+      alt="🇧🇷 TOP CONTRIBUTORS"
+      height="36"
+    >
+    <img
+      src="https://img.shields.io/badge/·····%20BRAZIL-3A424C?style=for-the-badge&labelColor=3A424C&logoColor=white"
+      alt="Brazil"
+      height="36"
+    >
+  </a>
+</p>
+
+</p>
+
+<br><br><br>
+<!-- ========= END 🇧🇷 Top CommtributorsE  ========= -->
 
 <!-- ========= START Institutional INFO ========= -->
-## 🎓 Academic 
-
-<br>
-
 [**Institution:**]() Pontifical Catholic University of São Paulo (PUC-SP)  <br>
 [**School**:]() FACEI — Faculty of Exact Sciences and Informatics <br>
 [**Bachelor’s Program:**]() Human-Centerd AI & Data Science • 5th Semester • 2026   <br>
 [**Course:**]() AI Security, Cybersecurity & Social Engineering   <br>
 [**Methodology:**]()  CRISP-DM (Cross-Industry Standard Process for Data Mining)  <br>
 **Professors** [✨ Carlos Eduardo Paes](https://www.linkedin.com/in/carlos-eduardo-de-barros-paes-ph-d-7b137a4/)  and  [✨ Eduardo Savino Gomes]() <br>
-**Project Author:** [Fabiana ⚡️ Campanari](https://linktr.ee/fabianacampanari) 
+**Author:** [Fabiana ⚡️ Campanari](https://linktr.ee/fabianacampanari) 
 
-<br><br>
+<br>
 
 #
 
-<br><br>
+<br><br><br>
 <!-- ========= END Institutional INFO ========= -->
 
+ 
 
 <!-- ========= START Dashboard Streamlit ========= -->
 <p align="center">
@@ -138,7 +167,24 @@ $$\Huge {\textbf{\color{green} CRISP-DM} \space \textbf{\color{white} •} \spac
 
 <br><br>
 <!-- ========= END DATA ANALYSING REPORT ========= -->
-<!-- ===================== END BADGE GROUP 1 ===================== -->
+
+
+
+<!-- 🚧<!-- ========= START 🎥 **DEMO** ========= 
+### 🎥 **DEMO: RESTful API & Dashboard Deployment** ✧ ` * Geocoding: Nominatim (OpenStreetMap)` ✧ ` MapLibre GL JS` ✧ `Streamlit`
+
+## Dashboard Preview
+
+###### <p align="center"> 🎬 **Creative Direction, Music Curation & Editing by Fab⚡️**
+###### <p align="center"> 🎶 **Soundtrack:** *"Canon in D"* — Johann Pachelbel
+
+<br>
+
+#
+
+<br><br>
+=========🚧 END 🎥 **DEMO** =========  -->
+
 
 
 <!-- ========= START NOTE ========= -->
@@ -146,21 +192,11 @@ $$\Huge {\textbf{\color{green} CRISP-DM} \space \textbf{\color{white} •} \spac
 > 
 > ###  🇧🇷 Investor Intelligence Platform for Brazilian REITs (FIIs) <br><br>
 >
-> **[↗](https://github.com/Quantum-Software-Development/1-Cybersecurity-SocialEngineering_Hub)** Explore the Full Course Repository
+> **[↗](https://github.com/Quantum-Software-Development/1-Cybersecurity-SocialEngineering_Hub)** Explore the Full Course Repository <br>
 >
-> <br>
->
->  #
->
-> <br><br>
->
-> $$\Huge {\textbf{\color{green} Where market discussions become investment narratives…}}$$
->
-> $$\Huge {\textbf{\color{yellow} Because markets talk a lot...}}$$
-> 
-> $$\Huge {\textbf{\color{green} Intelligent systems just listen better}}$$
->
-> ### <p align="center"> ⚡
+> > **[↗]()** Explore Project AI Incidents in Banking, Financial Services and Fintec
+
+
 
 <br><br>
 
