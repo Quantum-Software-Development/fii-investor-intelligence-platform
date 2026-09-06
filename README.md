@@ -27,7 +27,7 @@ $$\Huge {\textbf{\color{green} CRISP-DM} \space \textbf{\color{white} •} \spac
 
 ###### <p align="center">Big Data [•]() PySpark [•]() MapReduce [•]() NLP[•]() TF-IDF [•]() BM25 [•]() Hybrid Retrieval [•]() FAISS + Multilingual Embeddings [•]() Web Scraping [•]() TOFU/MOFU/BOFU [•]() CRISP-DM [•]() FastAPI [•]() Streamlit [•]() Responsible AI [•]() LGPD [•]() EU AI Act Alignment</p>
 
-<br><br>
+<br><br><br><br>
 <!-- ========= END REPO TITLE ========= -->
 
 <!-- ========= START TEASER ========= -->
