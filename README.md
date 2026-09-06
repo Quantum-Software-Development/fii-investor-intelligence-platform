@@ -435,7 +435,7 @@ In the documented reference execution, the [Google News RSS fallback]() generate
 <br><br>
 
 
-## [End-to-End AI/ML Data Pipeline]()
+## [End-to-End AI Platform Architecture]()
 
 <br><br>
 
