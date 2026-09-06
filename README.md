@@ -30,11 +30,25 @@ $$\Huge {\textbf{\color{green} CRISP-DM} \space \textbf{\color{white} •} \spac
 <br><br>
 <!-- ========= END REPO TITLE ========= -->
 
-<!-- ========= START SPONSOR BADGES ========= -->
-### <p align="center"> [![Sponsor Quantum Software Development](https://img.shields.io/badge/Sponsor-Quantum%20Software%20Development-brightgreen?logo=GitHub)](https://github.com/sponsors/Quantum-Software-Development)
+ <!-- START ♡ Sponsor BADGE ····· 🇶 Quantum Software Development -->
+<p align="center">
+  <a href="https://github.com/sponsors/Quantum-Software-Development">
+    <img
+      src="https://img.shields.io/badge/♡%20SPONSOR-07111F?style=for-the-badge&labelColor=07111F&logoColor=white"
+      alt="Sponsor"
+      height="36"
+    >
+    <img
+      src="https://img.shields.io/badge/%F0%9F%87%B6%20Quantum%20Software%20Development-3A424C?style=for-the-badge&labelColor=3A424C&logoColor=white"
+      alt="🇶 Quantum Software Development"
+      height="36"
+    >
+  </a>
+</p>
 
-<br>
-<!-- ========= END SPONSOR BADGES ========= -->
+  
+<br><br>
+ <!--END♡ Sponsor BADGE ····· 🇶 Quantum Software Development -->
 
 <!-- ========= START DEMO VIDEO ========= -->
 <p align="center">
