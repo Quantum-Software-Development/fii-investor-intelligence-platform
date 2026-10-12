@@ -68,7 +68,7 @@ s3fs>=2026.9.0,<2027.0
 requests==2.34.2
 feedparser==6.0.12
 beautifulsoup4==4.15.0
-praw==7.7.1
+praw==8.0.3
 lxml>=6.1.1,<7
 html5lib==1.1
 
