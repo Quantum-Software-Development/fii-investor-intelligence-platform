@@ -39,7 +39,7 @@
 # high-performance alternative for users interested in
 # experimenting with local replacements.
 # ==========================================================
-polars==1.1.0
+polars==2.0.0
 
 # ==========================================================
 # JUPYTER / NOTEBOOKS
