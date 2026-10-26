@@ -45,7 +45,7 @@
 fastapi>=0.142.2
 uvicorn[standard]>=0.51.0
 pydantic>=2.7.4
-python-dotenv>=1.0.1
+python-dotenv>=1.2.4
 
 # ==========================================================
 # CORE DATA
