@@ -84,7 +84,7 @@ httpx==0.27.0
 fake-useragent==1.5.1
 newspaper3k==0.2.8
 trafilatura==2.1.0
-selenium>=4.0.0,<5.0.0
+selenium>=4.52.0,<5.0.0
 
 # ==========================================================
 # NLP / BM25 / TEXT ANALYTICS
